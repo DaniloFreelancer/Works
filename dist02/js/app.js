@@ -4280,8 +4280,8 @@
         item.image ? exploreItemTemplate += `\n  <a href="${item.url}" class="item-explore__image">\n\t<img src="${item.image}" class="item-explore__ibg ibg" alt="Image">\n</a>\n  \n  ` : null;
         exploreItemTemplate += `<div class="item-explore__body">`;
         exploreItemTemplate += `<div class="item-explore__date">${item.date}</div>`;
-        exploreItemTemplate += `<h3 class="item-explore__title title">${item.title}</h3>`;
-        item.text ? exploreItemTemplate += `\n        <div class="item-explore__text text">\n\t\t    ${item.text}\n\t    </div>\n    ` : null;
+        exploreItemTemplate += `<h3 class="item-explore__title">${item.title}</h3>`;
+        item.text ? exploreItemTemplate += `\n        <div class="item-explore__text">\n\t\t    ${item.text}\n\t    </div>\n    ` : null;
         exploreItemTemplate += `</div>`;
         if (item.tags) {
             exploreItemTemplate += `<div class="item-explore__tags">`;

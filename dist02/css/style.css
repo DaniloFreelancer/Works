@@ -1165,6 +1165,16 @@ textarea.input {
 .item-explore__title:not(:last-child) {
   margin-bottom: 1rem
 }
+.item-explore__title {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 125%;
+  color: #171921
+}
+.item-explore__text {
+  line-height: 155.555556%;
+  color: #9ea3b5
+}
 .item-explore__tags {
   display: flex;
   align-items: center;
