@@ -5,12 +5,8 @@
 	<title>HomePage</title>
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
-	<style>
-		body {
-			opacity: 0;
-		}
-	</style>
-	<link rel="stylesheet" href="css/style.min.css?_v=20240620170918">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20240612144625">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -20,634 +16,359 @@
 	<div class="wrapper">
 		<header class="header">
 			<div class="header__container-big">
-				<a href="#" class="header__logo"><img src="img/header/logo.svg" alt="Logo"></a>
+				<a href="#" class="header__logo"><img src="img/logo.svg" alt="Logo"></a>
 				<div class="header__menu menu">
-					<button type="button" class="menu__icon icon-menu"><span></span></button>
 					<nav class="menu__body">
 						<ul class="menu__list">
-							<li class="menu__item"><a href="#" data-goto=".about" class="menu__link">About Us</a></li>
-							<li class="menu__item"><a href="#" data-goto=".services" class="menu__link">Services</a></li>
-							<li class="menu__item"><a href="#" data-goto=".explore" class="menu__link">Our Blog</a></li>
-							<li class="menu__item"><a href="#" data-goto=".contact" class="menu__link">Contact</a></li>
+							<li class="menu__item"><a href="#" class="menu__link">Home</a></li>
+							<li class="menu__item"><a href="#" class="menu__link">About</a></li>
+							<li class="menu__item"><a href="#" class="menu__link">Features</a></li>
+							<li class="menu__item"><a href="#" class="menu__link">How it works</a></li>
 						</ul>
 					</nav>
 				</div>
-				<div data-da=".menu__body, 767.98" class="header__schedule">24 Hour Services</div>
+				<div class="header__actions">
+					<button type="button" class="header__button button button--border">Sign In</button>
+					<button data-da=".menu__body, 767.98" type="button" class="header__button button">Get Started</button>
+					<button type="button" class="icon-menu"><span></span></button>
+				</div>
 			</div>
 		</header>
 		<main class="page">
-			<section data-watch class="page__hero hero">
-				<div class="hero__shadow">
-					<img class="hero__image ibg ibg--top" src="img/hero/01.webp" alt="Image">
-				</div>
-				<div class="hero__body">
-					<div class="hero__content">
-						<ul class="hero__list">
-							<li class="hero__item">Maintenances</li>
-							<li class="hero__item">Repairs</li>
-							<li class="hero__item">Improvements</li>
-						</ul>
-						<h1 class="hero__title title title--color title--size">Need improvement or repair your home? we can help!</h1>
-						<div class="hero__done done">
-							<div class="done__item">
-								<div class="done__description">Free Quotes</div>
+			<section data-prlx-parent class="page__hero hero">
+				<div class="hero__container-big">
+					<div class="hero__container">
+						<div class="hero__content">
+							<h1 class="hero__title title">
+								The easiest and fastest way to <span>Invest</span> in Agriculture
+							</h1>
+							<div class="hero__text text">
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut eu, mollis aenean sit dictum tincidunt. Ut arcu, suscipit ac etLorem ipsum dolor sit amet.Lorem ipsum dolor sit amet, consectetur
 							</div>
-							<div class="done__item">
-								<div class="done__description">100% Commitment-Free </div>
+							<div class="hero__form">
+								<form action="#" class="form">
+									<input data-required="email" autocomplete="off" type="email" name="form[]" data-error="Error" placeholder="Enter your email" class="form__input">
+									<button type="submit" class="form__button button">Get Started</button>
+								</form>
 							</div>
 						</div>
-						<a href="#" class="hero__button button button--icon">
-							<span>Call Us Now</span>
-						</a>
-					</div>
-					<div class="hero__advantages advantages-hero">
-						<div class="advantages-hero__item">
-							<div class="advantages-hero__icon">
-								<img src="img/hero/advantages/01.svg" alt="Icon">
+						<div data-prlx class="hero__icons icons-hero">
+							<div data-prlx-mouse data-prlx-cx="300" data-prlx-cy="300" class="icons-hero__circle icons-hero__circle_1"></div>
+							<div data-prlx-mouse data-prlx-cx="300" data-prlx-cy="300" data-prlx-dxr data-prlx-dyr class="icons-hero__circle icons-hero__circle_2"></div>
+							<div data-prlx-mouse data-prlx-cx="10" data-prlx-cy="10" data-prlx-dxr data-prlx-dyr class="icons-hero__item icons-hero__item_1">
+								<img src="img/hero/02.svg" alt="Icon">
 							</div>
-							<div class="advantages-hero__text">Satisfaction Guarantee</div>
-						</div>
-						<div class="advantages-hero__item">
-							<div class="advantages-hero__icon">
-								<img src="img/hero/advantages/02.svg" alt="Icon">
+							<div data-prlx-mouse data-prlx-cx="10" data-prlx-cy="10" class="icons-hero__item icons-hero__item_2">
+								<img src="img/hero/01.svg" alt="Icon">
 							</div>
-							<div class="advantages-hero__text">24H Availability</div>
-						</div>
-						<div class="advantages-hero__item">
-							<div class="advantages-hero__icon">
-								<img src="img/hero/advantages/03.svg" alt="Icon">
+							<div data-prlx-mouse data-prlx-cx="10" data-prlx-cy="10" data-prlx-dxr data-prlx-dyr class="icons-hero__item icons-hero__item_3">
+								<img src="img/hero/03.svg" alt="Icon">
 							</div>
-							<div class="advantages-hero__text">Local US Professional</div>
-						</div>
-						<div class="advantages-hero__item">
-							<div class="advantages-hero__icon">
-								<img src="img/hero/advantages/04.svg" alt="Icon">
+							<div data-prlx-mouse data-prlx-cx="10" data-prlx-cy="10" class="icons-hero__item icons-hero__item_4">
+								<img src="img/hero/04.svg" alt="Icon">
 							</div>
-							<div class="advantages-hero__text">Flexible Appointments</div>
-						</div>
-					</div>
-				</div>
-				<div class="hero__shadow hero__shadow--right">
-					<img class="hero__image ibg ibg--top" src="img/hero/02.webp" alt="Image">
-				</div>
-				<div class="hero__decor decore-hero">
-					<div class="decore-hero__item"></div>
-					<div class="decore-hero__item"></div>
-				</div>
-			</section>
-			<section data-watch="navigator" data-watch-threshold="0.3" class="page__about about">
-				<div class="about__container-big">
-					<div class="about__container">
-						<div class="about__content">
-							<h2 class="about__title title">Professional for your home about</h2>
-							<div class="about__text text">
-								You need help for home care? We are home care professionals focused in the US region. We provide several about that support home about
+							<div data-prlx-mouse data-prlx-cx="10" data-prlx-cy="10" data-prlx-dxr data-prlx-dyr class="icons-hero__item icons-hero__item_5">
+								<img src="img/hero/05.svg" alt="Icon">
 							</div>
-							<div class="about__offers offers-about">
-								<div class="offers-about__item">
-									<div class="offers-about__description">Repair and Installation</div>
-									<div class="offers-about__description">Maintenance</div>
-									<div class="offers-about__description">Home Security about</div>
-								</div>
-								<div class="offers-about__item">
-									<div class="offers-about__description">Plumbing</div>
-									<div class="offers-about__description">Budget-friendly</div>
-									<div class="offers-about__description">Eco-friendly solutions</div>
-								</div>
+							<div data-prlx-mouse data-prlx-cx="10" data-prlx-cy="10" class="icons-hero__item icons-hero__item_6">
+								<img src="img/hero/06.svg" alt="Icon">
 							</div>
-							<div class="about__contact">
-								We already 24 hours fast about to help you. You can contact us at
-								<a href="tel:(888)6175894">(888) 617-5894</a>
-							</div>
-						</div>
-						<div class="about__image">
-							<img src="img/hero/about/image.webp" alt="Image">
-						</div>
-					</div>
-				</div>
-			</section>
-			<section data-watch="navigator" data-watch-threshold="0.3" class="page__services services">
-				<div class="services__container-big">
-					<div class="services__container">
-						<div class="services__header">
-							<h2 class="services__title title">Our Services</h2>
-							<div class="services__text text">
-								You have problems with leaking pipes, broken tiles, lost keys or want to tidy up the trees around you, of course you need our help!
-							</div>
-						</div>
-						<div class="services__items">
-							<article class="services__item item-services">
-								<div class="item-services__icon">
-									<img src="img/hero/services/01.svg" alt="Icon">
-								</div>
-								<h4 class="item-services__title">Plumbing services</h4>
-								<div class="item-services__text">Drain pipe leaking, pipe clogged, replace the pipe line</div>
-							</article>
-							<article class="services__item item-services">
-								<div class="item-services__icon">
-									<img src="img/hero/services/02.svg" alt="Icon">
-								</div>
-								<h4 class="item-services__title">Roofing repair</h4>
-								<div class="item-services__text">Roof leaks, tile replacement, roof cleaning and maintenance</div>
-							</article>
-							<article class="services__item item-services">
-								<div class="item-services__icon">
-									<img src="img/hero/services/03.svg" alt="Icon">
-								</div>
-								<h4 class="item-services__title">Mold Removal</h4>
-								<div class="item-services__text">Removing and cleaning mildew, Restoration and Prevention</div>
-							</article>
-							<article class="services__item item-services">
-								<div class="item-services__icon">
-									<img src="img/hero/services/04.svg" alt="Icon">
-								</div>
-								<h4 class="item-services__title">Tree Trimming</h4>
-								<div class="item-services__text">Trimming and cleaning, Deadwood removal, Tree shaping</div>
-							</article>
-							<article class="services__item item-services">
-								<div class="item-services__icon">
-									<img src="img/hero/services/05.svg" alt="Icon">
-								</div>
-								<h4 class="item-services__title">Appliance Repair</h4>
-								<div class="item-services__text">repair of washing machines, refrigerators, Air conditioner, etc</div>
-							</article>
-							<article class="services__item item-services">
-								<div class="item-services__icon">
-									<img src="img/hero/services/06.svg" alt="Icon">
-								</div>
-								<h4 class="item-services__title">Bathroom Remodeling</h4>
-								<div class="item-services__text">Design and Consulting, installation, Repairing, tile repair</div>
-							</article>
-							<article class="services__item item-services">
-								<div class="item-services__icon">
-									<img src="img/hero/services/07.svg" alt="Icon">
-								</div>
-								<h4 class="item-services__title">Locksmith</h4>
-								<div class="item-services__text">Lock Installation and Repair, Duplication, Lock Rekeying</div>
-							</article>
-							<article class="services__item item-services item-services--bg">
-								<h4 class="item-services__title item-services__title--color">More service?</h4>
-								<div class="item-services__text item-services__text--margin">You can tell us what you need and we can help! </div>
-								<a href="#" class="item-services__button button button--white button--fw">Call Us Now</a>
-							</article>
-						</div>
-					</div>
-				</div>
-			</section>
-			<section data-watch class="page__advantages advantages">
-				<div class="advantages__body">
-					<div class="advantages__container-big">
-						<div class="advantages__container">
-							<div class="advantages__header">
-								<h2 class="advantages__title title title--color">Fast, Friendly, and Satisfaction Guarantee</h2>
-								<div class="advantages__text text">
-									<p>
-										No matter how big or small your work is, whether it's for the interior or exterior of your home, we are ready to serve and help you solve your home problems.
-									</p>
-								</div>
-							</div>
-							<div class="advantages__items">
-								<div class="advantages__item item-advantages">
-									<div class="item-advantages__icon">
-										<img src="img/hero/item/01.svg" alt="Icon">
-									</div>
-									<div class="item-advantages__body">
-										<h4 class="item-advantages__title">Satisfaction Guarantee</h4>
-										<div class="item-advantages__text">
-											you don't need to worry about scams or our performance results. our company has been verified and strives for optimal results
-										</div>
-									</div>
-								</div>
-								<div class="advantages__item item-advantages">
-									<div class="item-advantages__icon">
-										<img src="img/hero/item/02.svg" alt="Icon">
-									</div>
-									<div class="item-advantages__body">
-										<h4 class="item-advantages__title">Free Quotes</h4>
-										<div class="item-advantages__text">
-											Get personalized cost estimates without any obligation. Experience transparency and peace of mind as you explore our service.
-										</div>
-									</div>
-								</div>
-								<div class="advantages__item item-advantages">
-									<div class="item-advantages__icon">
-										<img src="img/hero/item/03.svg" alt="Icon">
-									</div>
-									<div class="item-advantages__body">
-										<h4 class="item-advantages__title">Local Professionals</h4>
-										<div class="item-advantages__text">
-											Our services cover the Nationwide, US area, including urban, suburban, and rural locations for both long and short term maintenance
-										</div>
-									</div>
-								</div>
-								<div class="advantages__item item-advantages">
-									<div class="item-advantages__icon">
-										<img src="img/hero/item/04.svg" alt="Icon">
-									</div>
-									<div class="item-advantages__body">
-										<h4 class="item-advantages__title">Fast 24-Hour Service</h4>
-										<div class="item-advantages__text">
-											need fast handling for repairs to drains, leaks or something else? Our experts are available anytime to help you solve the problem
-										</div>
-									</div>
-								</div>
-								<div class="advantages__item item-advantages">
-									<div class="item-advantages__icon">
-										<img src="img/hero/item/05.svg" alt="Icon">
-									</div>
-									<div class="item-advantages__body">
-										<h4 class="item-advantages__title">Flexible Appointments</h4>
-										<div class="item-advantages__text">
-											We offer convenient appointment times that can accommodate your busy schedule, day or night, 7 days a week.
-										</div>
-									</div>
-								</div>
-								<div class="advantages__item item-advantages">
-									<div class="item-advantages__icon">
-										<img src="img/hero/item/06.svg" alt="Icon">
-									</div>
-									<div class="item-advantages__body">
-										<h4 class="item-advantages__title">100% Commitment-Free</h4>
-										<div class="item-advantages__text">
-											You are free to ask us about the problems you are facing. We offer a no-commitment approach to put your mind at ease
-										</div>
-									</div>
-								</div>
+							<div data-prlx-mouse data-prlx-cx="10" data-prlx-cy="10" data-prlx-dxr data-prlx-dyr class="icons-hero__item icons-hero__item_7">
+								<img src="img/hero/07.svg" alt="Icon">
 							</div>
 						</div>
 					</div>
 				</div>
 			</section>
-			<section data-watch class="page__works works">
+			<div class="page__partners partners">
+				<div class="partners__container-big">
+					<div class="partners__container">
+						<div class="partners__item">
+							<img src="img/partners/01.svg" alt="Brand">
+						</div>
+						<div class="partners__item">
+							<img src="img/partners/02.svg" alt="Brand">
+						</div>
+						<div class="partners__item">
+							<img src="img/partners/03.svg" alt="Brand">
+						</div>
+						<div class="partners__item">
+							<img src="img/partners/04.svg" alt="Brand">
+						</div>
+						<div class="partners__item">
+							<img src="img/partners/05.svg" alt="Brand">
+						</div>
+					</div>
+				</div>
+			</div>
+			<section data-prlx-parent class="page__works works">
 				<div class="works__container-big">
 					<div class="works__container">
-						<div class="works__image">
-							<img src="img/hero/works/image.webp" alt="Image">
-						</div>
 						<div class="works__content">
-							<h2 class="works__tilte title">How HomePro works?</h2>
-							<ol class="works__list list-works">
-								<li class="list-works__item">
-									<div class="list-works__title">Call us anytime 24/7</div>
-									<div class="list-works__text">
-										<p>
-											You can contact us directly, we will quickly put you in touch with our home care professionals who are ready anytime
+							<h2 class="works__title title title--size">How <span>FarmVest</span> Works</h2>
+							<div class="works__text text">
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut eu, mollis aenean sit dictum tincidunt. Ut arcu, suscipit ac etLorem ipsum dolor sit amet.Lorem ipsum dolor sit amet, consectetur
+							</div>
+							<div class="works__steps steps">
+								<div class="steps__item">
+									<div class="steps__icon">
+										<img src="img/works/01.svg" alt="Works-Icon">
+									</div>
+									<div class="steps__body">
+										<h4 class="steps__title">Download FarmVest</h4>
+										<p class="steps__text">Start by downloading FarmVest app
+											on your Android or IOS
 										</p>
 									</div>
-								</li>
-								<li class="list-works__item">
-									<div class="list-works__title">Schedule Service</div>
-									<div class="list-works__text">
-										<p>
-											After connecting your call, our home care experts will answer your questions and provide flexible appointment times
+								</div>
+								<div class="steps__item">
+									<div class="steps__icon">
+										<img src="img/works/02.svg" alt="Works-Icon">
+									</div>
+									<div class="steps__body">
+										<h4 class="steps__title">Create account</h4>
+										<p class="steps__text">Start by downloading FarmVest app
+											on your Android or IOS
 										</p>
 									</div>
-								</li>
-								<li class="list-works__item">
-									<div class="list-works__title">Your request is complated</div>
-									<div class="list-works__text">
-										<p>
-											Once your technician arrives, he will diagnose the problem and provide an estimate. If you decide to continue, the technician will get to work
+								</div>
+								<div class="steps__item">
+									<div class="steps__icon">
+										<img src="img/works/03.svg" alt="Works-Icon">
+									</div>
+									<div class="steps__body">
+										<h4 class="steps__title">Link your bank account</h4>
+										<p class="steps__text">Start by downloading FarmVest app
+											on your Android or IOS
 										</p>
 									</div>
-								</li>
-							</ol>
-						</div>
-					</div>
-				</div>
-			</section>
-			<section data-watch class="page__reviews reviews">
-				<div class="reviews__container-big">
-					<div class="reviews__container">
-						<h2 class="reviews__title title">Here our original reviews from trusted platform</h2>
-						<div class="reviews__body">
-							<div class="reviews__slider swiper">
-								<div class="reviews__wrapper swiper-wrapper">
-									<div class="reviews__slide slide-reviews swiper-slide">
-										<div class="slide-reviews__logo">
-											<img src="img/hero/reviews/logo.webp" alt="Logo">
-										</div>
-										<div class="slide-reviews__text text">
-											<p>
-												Roof repairs can be a real headache, but HomePro makes it easy! Their roofing team turned my leaky roof into a stockade. With their craftsmanship and the best materials, my house is now ready to weather any storm.
-											</p>
-										</div>
-										<div class="slide-reviews__user">
-											<div class="slide-reviews__avatar">
-												<img src="img/hero/reviews/person.webp" alt="Image">
-											</div>
-											<div class="slide-reviews__body">
-												<div class="slide-reviews__label">Kende Attila</div>
-												<div data-rating-value="4" data-rating="set" class="slide-reviews__rating rating"></div>
-											</div>
-										</div>
+								</div>
+								<div class="steps__item">
+									<div class="steps__icon">
+										<img src="img/works/04.svg" alt="Works-Icon">
 									</div>
-									<div class="reviews__slide slide-reviews swiper-slide">
-										<div class="slide-reviews__logo">
-											<img src="img/hero/reviews/logo.webp" alt="Logo">
-										</div>
-										<div class="slide-reviews__text text">
-											<p>
-												Roof repairs can be a real headache, but HomePro makes it easy! Their roofing team turned my leaky roof into a stockade. With their craftsmanship and the best materials, my house is now ready to weather any storm.
-											</p>
-											<p>
-												Roof repairs can be a real headache, but HomePro makes it easy! Their roofing team turned my leaky roof into a stockade. With their craftsmanship and the best materials, my house is now ready to weather any storm.
-											</p>
-										</div>
-										<div class="slide-reviews__user">
-											<div class="slide-reviews__avatar">
-												<img src="img/hero/reviews/person.webp" alt="Image">
-											</div>
-											<div class="slide-reviews__body">
-												<div class="slide-reviews__label">Kende Attila</div>
-												<div data-rating-value="4" data-rating="set" class="slide-reviews__rating rating"></div>
-											</div>
-										</div>
-									</div>
-									<div class="reviews__slide slide-reviews swiper-slide">
-										<div class="slide-reviews__logo">
-											<img src="img/hero/reviews/logo.webp" alt="Logo">
-										</div>
-										<div class="slide-reviews__text text">
-											<p>
-												Roof repairs can be a real headache, but HomePro makes it easy! Their roofing team turned my leaky roof into a stockade. With their craftsmanship and the best materials, my house is now ready to weather any storm.
-											</p>
-										</div>
-										<div class="slide-reviews__user">
-											<div class="slide-reviews__avatar">
-												<img src="img/hero/reviews/person.webp" alt="Image">
-											</div>
-											<div class="slide-reviews__body">
-												<div class="slide-reviews__label">Kende Attila</div>
-												<div data-rating-value="4" data-rating="set" class="slide-reviews__rating rating"></div>
-											</div>
-										</div>
-									</div>
-									<div class="reviews__slide slide-reviews swiper-slide">
-										<div class="slide-reviews__logo">
-											<img src="img/hero/reviews/logo.webp" alt="Logo">
-										</div>
-										<div class="slide-reviews__text text">
-											<p>
-												Roof repairs can be a real headache, but HomePro makes it easy! Their roofing team turned my leaky roof into a stockade. With their craftsmanship and the best materials, my house is now ready to weather any storm.
-											</p>
-										</div>
-										<div class="slide-reviews__user">
-											<div class="slide-reviews__avatar">
-												<img src="img/hero/reviews/person.webp" alt="Image">
-											</div>
-											<div class="slide-reviews__body">
-												<div class="slide-reviews__label">Kende Attila</div>
-												<div data-rating-value="4" data-rating="set" class="slide-reviews__rating rating"></div>
-											</div>
-										</div>
+									<div class="steps__body">
+										<h4 class="steps__title">Start Investing</h4>
+										<p class="steps__text">Start by downloading FarmVest app
+											on your Android or IOS
+										</p>
 									</div>
 								</div>
 							</div>
-							<button type="button" data-da=".reviews__pagination, 599.98" class="reviews__arrow reviews__arrow--left"></button>
-							<button type="button" data-da=".reviews__pagination, 599.98" class="reviews__arrow reviews__arrow--right"></button>
-							<div class="reviews__pagination">
-								<div class="reviews__bullets"></div>
+						</div>
+						<div class="works__img img-block">
+							<div data-coefficient="100" data-prlx data-direction="-1" class="img-block__item">
+								<img src="img/works/image.webp" alt="Image">
 							</div>
 						</div>
 					</div>
 				</div>
 			</section>
-			<section data-watch="navigator" data-watch-threshold="0.3" class="page__explore explore">
-				<div class="explore__container-big">
-					<div class="explore__container">
-						<div class="explore__header">
-							<h2 class="explore__title title">Explore Insights in Our Blog</h2>
-							<div class="explore__text">
-								<p>Find lots of insights and information on our blog. Explore, learn, and get inspired today.</p>
+			<section data-prlx-parent class="page__pathways pathways">
+				<div class="pathways__container-big">
+					<div class="pathways__container">
+						<div class="pathways__img img-block">
+							<div data-coefficient="100" data-prlx data-direction="1" class="img-block__item">
+								<img src="img/pathway/image01.webp" alt="Image">
 							</div>
 						</div>
-						<div class="explore__items">
-							<!-- <article class="explore__item item-explore">
-								<a href="#" class="item-explore__image">
-									<img src="img/hero/explore/01.webp" class="item-explore__ibg ibg" alt="Image">
-								</a>
-								<div class="item-explore__body">
-									<div class="item-explore__date">19 Jan 2023</div>
-									<h3 class="item-explore__title title">Understanding Smart Home Systems & Maintenance</h3>
-									<div class="item-explore__text text">
-										<p>
-											Discover the ultimate guide to troubleshooting common smart home issues in our latest blog post. From connectivity problems to device malfunctions, we provide step-by-step solutions to help you restore the seamless functionality of your smart home system. Gain expert insights, practical tips, and insider advice to keep your home automation running smoothly. Don't let technical glitches hinder your smart home experience - empower yourself with the knowledge to resolve issues and enjoy the convenience of your connected home. Visit our blog now and become a troubleshooting pro!
-										</p>
-									</div>
-								</div>
-								<div class="item-explore__tags">
-									<a href="#" class="item-explore__tag">Plumbing</a>
-									<a href="#" class="item-explore__tag">Architecture</a>
-									<a href="#" class="item-explore__tag">Maintenance</a>
-								</div>
-							</article>
-							<article class="explore__item item-explore">
-								<a href="#" class="item-explore__image">
-									<img src="img/hero/explore/02.webp" class="item-explore__ibg ibg" alt="Image">
-								</a>
-								<div class="item-explore__body">
-									<div class="item-explore__date">19 Jan 2023</div>
-									<h3 class="item-explore__title title">The Ultimate Guide to Home Repairs and Renovations</h3>
-									<div class="item-explore__text text">
-										<p>
-											Discover the ultimate guide to troubleshooting common smart home issues in our latest blog post. From connectivity problems to device malfunctions, we provide step-by-step solutions to help you restore the seamless functionality of your smart home system. Gain expert insights, practical tips, and insider advice to keep your home automation running smoothly. Don't let technical glitches hinder your smart home experience - empower yourself with the knowledge to resolve issues and enjoy the convenience of your connected home. Visit our blog now and become a troubleshooting pro!
-										</p>
-									</div>
-								</div>
-								<div class="item-explore__tags">
-									<a href="#" class="item-explore__tag">Plumbing</a>
-									<a href="#" class="item-explore__tag">Architecture</a>
-									<a href="#" class="item-explore__tag">Maintenance</a>
-								</div>
-							</article>
-							<article class="explore__item item-explore">
-								<a href="#" class="item-explore__image">
-									<img src="img/hero/explore/03.webp" class="item-explore__ibg ibg" alt="Image">
-								</a>
-								<div class="item-explore__body">
-									<div class="item-explore__date">19 Jan 2023</div>
-									<h3 class="item-explore__title title">Painting Techniques for a Kitchen Refresh</h3>
-									<div class="item-explore__text text">
-										<p>
-											Discover the ultimate guide to troubleshooting common smart home issues in our latest blog post. From connectivity problems to device malfunctions, we provide step-by-step solutions to help you restore the seamless functionality of your smart home system. Gain expert insights, practical tips, and insider advice to keep your home automation running smoothly. Don't let technical glitches hinder your smart home experience - empower yourself with the knowledge to resolve issues and enjoy the convenience of your connected home. Visit our blog now and become a troubleshooting pro!
-										</p>
-									</div>
-								</div>
-								<div class="item-explore__tags">
-									<a href="#" class="item-explore__tag">Plumbing</a>
-									<a href="#" class="item-explore__tag">Architecture</a>
-									<a href="#" class="item-explore__tag">Maintenance</a>
-								</div>
-							</article> -->
-						</div>
-						<a href="#" class="explore__link">View More</a>
-					</div>
-				</div>
-			</section>
-			<section data-watch="navigator" class="page__questions questions">
-				<div class="questions__container-big">
-					<div class="questions__container">
-						<div class="questions__content">
-							<h2 class="questions__title title">Frequently Asked Questions</h2>
-							<div class="questions__label">
-								<div class="questions__label-text">Still need help?</div>
-								<a href="#" class="questions__label-link">Get Help Now</a>
+						<div class="pathways__content">
+							<h2 class="pathways__title title">Your <span>pathway</span> to Future Investment</h2>
+							<div class="pathways__text text">
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut eu, mollis aenean sit dictum tincidunt. Ut arcu, suscipit ac etLorem ipsum dolor sit amet.Lorem ipsum dolor sit amet, consectetur
 							</div>
-						</div>
-						<div data-spollers class="questions__spollers spollers-questions">
-							<details class="spollers-questions__item">
-								<summary class="spollers-questions__title">What is HomePro?</summary>
-								<div class="spollers-questions__body">
-									<p>
-										HomePro is a home care platform that connects homeowners with professional service providers offering a wide range of home services, including repairs, maintenance, cleaning, and more.
-									</p>
-								</div>
-							</details>
-							<details class="spollers-questions__item">
-								<summary class="spollers-questions__title">Are the service providers on HomePro reliable and qualified?</summary>
-								<div class="spollers-questions__body">
-									<p>
-										HomePro is a home care platform that connects homeowners with professional service providers offering a wide range of home services, including repairs, maintenance, cleaning, and more.
-									</p>
-								</div>
-							</details>
-							<details class="spollers-questions__item">
-								<summary class="spollers-questions__title">What if I have an issue or complaint about a service provider?</summary>
-								<div class="spollers-questions__body">
-									<p>
-										HomePro is a home care platform that connects homeowners with professional service providers offering a wide range of home services, including repairs, maintenance, cleaning, and more.
-									</p>
-								</div>
-							</details>
-							<details class="spollers-questions__item">
-								<summary class="spollers-questions__title">How are payments handled on HomePro?</summary>
-								<div class="spollers-questions__body">
-									<p>
-										HomePro is a home care platform that connects homeowners with professional service providers offering a wide range of home services, including repairs, maintenance, cleaning, and more.
-									</p>
-								</div>
-							</details>
-							<details class="spollers-questions__item">
-								<summary class="spollers-questions__title">How do I leave a review for a service provider?</summary>
-								<div class="spollers-questions__body">
-									<p>
-										HomePro is a home care platform that connects homeowners with professional service providers offering a wide range of home services, including repairs, maintenance, cleaning, and more.
-									</p>
-								</div>
-							</details>
+							<div data-spollers class="pathways__spollers spollers-pathways">
+								<details class="spollers-pathways__item">
+									<summary class="spollers-pathways__title">What is FarmVest?</summary>
+									<div class="spollers-pathways__body text">
+										Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo quo provident aliquam dignissimos, alias, optio sapiente tempore delectus expedita adipisci itaque minus quidem doloribus dolore pariatur explicabo et nam autem?
+									</div>
+								</details>
+								<details class="spollers-pathways__item">
+									<summary class="spollers-pathways__title">How safe is FarmVest</summary>
+									<div class="spollers-pathways__body text">
+										Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem, possimus, aperiam, voluptate minima doloremque autem earum pariatur vel corrupti laudantium magnam aut enim modi! Minus adipisci necessitatibus totam. Inventore, eum.
+									</div>
+								</details>
+								<details class="spollers-pathways__item">
+									<summary class="spollers-pathways__title">What do I gain from using FarmVest?</summary>
+									<div class="spollers-pathways__body text">
+										Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt quod perferendis maxime neque repellat fuga amet autem tempore aliquid repellendus nemo itaque at, velit cum, magnam rem nam quos. Molestias?`
+									</div>
+								</details>
+							</div>
 						</div>
 					</div>
 				</div>
 			</section>
-			<section data-watch class="page__improve improve">
-				<div class="improve__container-big">
-					<div class="improve__container">
-						<div class="improve__content">
-							<h2 class="improve__title title title--size title--color">
-								Already to improve or repair your home? Let’s Talk!
+			<section data-prlx-parent class="page__farmwest farmwest">
+				<div class="farmwest__container-big">
+					<div class="farmwest__container">
+						<div class="farmwest__content">
+							<h2 class="farmwest__title title">Why choose <span>FarmVest</span> </h2>
+							<div class="farmwest__text text">
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut eu, mollis aenean sit dictum tincidunt. Ut arcu, suscipit ac
+							</div>
+							<div class="farmwest__list">
+								<div class="farmwest__item-list">
+									<div class="farmwest__item">
+										<div class="farmwest__icon">
+											<img src="img/why/01.svg" alt="Image">
+										</div>
+										<div class="farmwest__description">Real-time Checkup</div>
+									</div>
+									<div class="farmwest__item">
+										<div class="farmwest__icon">
+											<img src="img/why/02.svg" alt="Image">
+										</div>
+										<div class="farmwest__description">Flexibility in Investment</div>
+									</div>
+									<div class="farmwest__item">
+										<div class="farmwest__icon">
+											<img src="img/why/03.svg" alt="Image">
+										</div>
+										<div class="farmwest__description">Encrypted and Secured</div>
+									</div>
+									<div class="farmwest__item">
+										<div class="farmwest__icon">
+											<img src="img/why/04.svg" alt="Image">
+										</div>
+										<div class="farmwest__description">Withdraw Anytime</div>
+									</div>
+								</div>
+							</div>
+							<a href="#" class="farmwest__button">Learn More</a>
+						</div>
+						<div data-coefficient="100" data-prlx data-direction="-1" class="farmwest__img img-block">
+							<div class="img-block__item">
+								<img src="img/why/image.webp" alt="Image">
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section data-prlx-parent class="page__customers customers">
+				<div class="customers__container-big">
+					<div class="customers__container">
+						<div class="customers__content">
+							<h2 class="customers__title title">What <span>Customers</span> have to say</h2>
+							<div class="customers__text customers__text--margin text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut eu, mollis aenean sit dictum tincidunt. Ut arcu, suscipit ac</div>
+						</div>
+						<div class="customers__body">
+							<div data-coefficient="200" data-prlx data-direction="1" class="customers__box">
+								<div class="customers__img">
+									<img src="img/customers/image.webp" alt="Image">
+								</div>
+								<div class="customers__box-content">
+									<div class="customers__content-text text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut eu, mollis aenean sit dictum tincidunt. Ut arcu, suscipit ac</div>
+									<div class="customers__discription">Tonia Smart</div>
+								</div>
+							</div>
+							<div data-coefficient="200" data-prlx data-direction="-1" class="customers__box">
+								<div class="customers__img">
+									<img src="img/customers/image01.webp" alt="Image">
+								</div>
+								<div class="customers__box-content">
+									<div class="customers__content-text text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut eu, mollis aenean sit dictum tincidunt. Ut arcu, suscipit ac</div>
+									<div class="customers__discription">Grace Obi</div>
+								</div>
+							</div>
+						</div>
+						<a href="#" class="customers__button button">View All</a>
+					</div>
+				</div>
+			</section>
+			<section class="page__download download">
+				<div class="download__container-big">
+					<div class="download__container">
+						<div class="download__body">
+							<h2 class="download__title title title--56">
+								Download <span>FarmVest app</span> and invest in your future
 							</h2>
-							<div class="improve__done done">
-								<div class="done__item">
-									<div class="done__description">Free Quotes</div>
-								</div>
-								<div class="done__item">
-									<div class="done__description">100% Commitment-Free </div>
-								</div>
+							<div class="download__apps">
+								<a href="#" class="download__app-store">
+									<img src="img/download/01.svg" alt="Image">
+								</a>
+								<a href="#" class="download__google-play">
+									<img src="img/download/02.svg" alt="Image">
+								</a>
 							</div>
-							<a href="#" class="improve__button button button--icon">
-								<span>Call Us Now</span>
-							</a>
+							<div class="download__circle download__circle_1"></div>
+							<div class="download__circle download__circle_2"></div>
 						</div>
 					</div>
-				</div>
-				<div class="improve__footer">
-					<img class="improve__image ibg" src="img/hero/improve/image.webp" alt="Image">
 				</div>
 			</section>
 		</main>
 		<footer class="footer">
 			<div class="footer__container-big">
-				<div class="footer__container">
-					<div class="footer__content">
-						<div class="footer__subscribe subscribe">
-							<div class="subscribe__body">
-								<h4 class="subscribe__title">Stay Connected with Our Newsletter</h4>
-								<div class="subscribe__text">Subscribe to our newsletter to get more news, promo, or news services</div>
-							</div>
-							<form action="#" class="subscribe__form">
-								<input data-required autocomplete="off" type="email" name="form[]" data-error="Error" placeholder="Enter email address" class="subscribe__input input">
-								<button type="submit" class="subscribe__button button button--min">Subscribe</button>
-							</form>
+				<div class="footer__main main-footer">
+					<div class="main-footer__info">
+						<div class="main-footer__logo">
+							<img src="img/footer/logo.svg" alt="Image">
 						</div>
-						<div class="footer__body">
-							<div class="footer__info info">
-								<div class="info__logo"><img src="img/footer/logo.svg" alt="Logo"></div>
-								<div class="info__text">Home Pro is your premier destination for top-notch smart home service and repair. </div>
-								<div class="info__icons">
-									<a href="#" class="info__icons-item">
-										<img src="img/footer/icons/youtube.svg" alt="Icon">
-									</a>
-									<a href="#" class="info__icons-item">
-										<img src="img/footer/icons/instagram.svg" alt="Icon">
-									</a>
-									<a href="#" class="info__icons-item">
-										<img src="img/footer/icons/facebook.svg" alt="Icon">
-									</a>
-									<a href="#" class="info__icons-item">
-										<img src="img/footer/icons/twitter.svg" alt="Icon">
-									</a>
-									<a href="#" class="info__icons-item">
-										<img src="img/footer/icons/mail.svg" alt="Icon">
-									</a>
-								</div>
-							</div>
-							<div class="footer__menu menu-footer">
-								<div data-spollers="479" class="menu-footer__spollers">
-									<details class="menu-footer__block">
-										<summary class="menu-footer__title">Company</summary>
-										<ul class="menu-footer__list">
-											<li class="menu-footer__item">
-												<a href="#" class="menu-footer__link">About us</a>
-											</li>
-											<li class="menu-footer__item">
-												<a href="#" class="menu-footer__link">Services</a>
-											</li>
-											<li class="menu-footer__item">
-												<a href="#" class="menu-footer__link">Our Blog</a>
-											</li>
-											<li class="menu-footer__item">
-												<a href="#" class="menu-footer__link">Contact</a>
-											</li>
-										</ul>
-									</details>
-									<details class="menu-footer__block">
-										<summary class="menu-footer__title">Legal</summary>
-										<ul class="menu-footer__list">
-											<li class="menu-footer__item">
-												<a href="#" class="menu-footer__link">Terms</a>
-											</li>
-											<li class="menu-footer__item">
-												<a href="#" class="menu-footer__link">Privacy</a>
-											</li>
-											<li class="menu-footer__item">
-												<a href="#" class="menu-footer__link">Cookies</a>
-											</li>
-											<li class="menu-footer__item">
-												<a href="#" class="menu-footer__link">License</a>
-											</li>
-										</ul>
-									</details>
-								</div>
-							</div>
+						<div class="main-footer__text text">
+							High level experience in web design and development knowledge, producing quality work.
 						</div>
 					</div>
-					<div class="footer__bottom">©2023 HomePro . All rights reserved</div>
+					<div class="main-footer__form form-main">
+						<div class="form-main__text text">
+							Subscribe to stay tuned for new web design and latest updates. Let's do it!
+						</div>
+						<div class="form-main__form">
+							<form action="#" class="form">
+								<input data-required="email" autocomplete="off" type="email" name="form[]" data-error="Error" placeholder="Enter your email" class="form__input">
+								<button type="submit" class="form__button button">Subscribe</button>
+							</form>
+						</div>
+					</div>
+					<div class="main-footer__contacts">
+						<div class="main-footer__social">
+							<div class="main-footer__label">Follow us</div>
+							<div class="social">
+								<a href="#" class="social__item">
+									<img src="img/footer/insta.svg" alt="Instagram">
+								</a>
+								<a href="#" class="social__item">
+									<img src="img/footer/fb.svg" alt="Facebook">
+								</a>
+								<a href="#" class="social__item">
+									<img src="img/footer/twt.svg" alt="Twitter">
+								</a>
+							</div>
+						</div>
+						<div class="main-footer__call-us">
+							<div class="main-footer__label">Call us</div>
+							<a href="tel:+2349123456789" class="main-footer__phone">+2349123456789</a>
+						</div>
+					</div>
+				</div>
+				<div class="footer__bottom">
+					<div class="footer__copy">© 2021 All Rights Reserved</div>
+					<nav class="footer__menu menu-footer">
+						<ul class="menu-footer__list">
+							<li class="menu-footer__item">
+								<a href="#" class="menu-footer__link">Privacy Policy</a>
+							</li>
+							<li class="menu-footer__item">
+								<a href="#" class="menu-footer__link">Terms of Use</a>
+							</li>
+							<li class="menu-footer__item">
+								<a href="#" class="menu-footer__link">Sales and Refunds</a>
+							</li>
+							<li class="menu-footer__item">
+								<a href="#" class="menu-footer__link">Legal</a>
+							</li>
+							<li class="menu-footer__item">
+								<a href="#" class="menu-footer__link">Site Map</a>
+							</li>
+						</ul>
+					</nav>
 				</div>
 			</div>
 		</footer>
 	</div>
-	<script src="js/app.min.js?_v=20240620170918"></script>
+	<script src="js/app.min.js?_v=20240612144625"></script>
 </body>
 
 </html>
