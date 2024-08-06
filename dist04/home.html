@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20240804162650">
+	<link rel="stylesheet" href="css/style.min.css?_v=20240806142239">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,16 +14,16 @@
 
 <body>
 	<div class="wrapper">
-		<header class="header">
+		<header data-scroll-show data-scroll-show="800" class="header">
 			<div class="header__container">
 				<a href="#" class="header__logo"><img src="img/header/logo.svg" alt="Logo"></a>
 				<div class="header__location" data-da=".menu__body, 768">м.Київ, просп. Вознесенський 148</div>
 				<div class="header__menu menu">
 					<nav class="menu__body">
 						<ul class="menu__list">
-							<li class="menu__item"><a href="#" class="menu__link">Головна</a></li>
-							<li class="menu__item"><a href="#" class="menu__link">Про нас</a></li>
-							<li class="menu__item"><a href="#" class="menu__link">Контакти</a></li>
+							<li class="menu__item"><a data-goto-header href="#" data-goto=".hero" class="menu__link">Головна</a></li>
+							<li class="menu__item"><a data-goto-header href="#" data-goto=".planning" class="menu__link">Про нас</a></li>
+							<li class="menu__item"><a data-goto-header data-goto=".advice" href="#" class="menu__link">Контакти</a></li>
 						</ul>
 					</nav>
 				</div>
@@ -71,7 +71,7 @@
 			</div>
 		</div>
 		<main class="page">
-			<section class="page__hero hero">
+			<section data-watch-once data-watch="navigator" class="page__hero hero">
 				<div class="hero__container">
 					<div class="hero__body">
 						<div class="hero__content content-block">
@@ -79,7 +79,7 @@
 							<div class="content-block__text text">
 								<p>
 									При 100% оплаті знижка 5% від банку. Пропозиція дійсна до
-									31.12.22 р.
+									31.12.24 р.
 								</p>
 							</div>
 							<a href="#" data-popup="#popup" class="content-block__button button">Дзвінок</a>
@@ -92,7 +92,7 @@
 					<img class="hero__bg hero__bg--02" src="img/hero/bg02.webp" alt="Image-02" />
 				</div>
 			</section>
-			<section class="page__planning planning">
+			<section data-watch-once data-watch="navigator" class="page__planning planning">
 				<h3 class="planning__title">Особливості планування</h3>
 				<div class="planning__container">
 					<div class="planning__images">
@@ -141,7 +141,7 @@
 					</div>
 				</div>
 			</section>
-			<section class="page__advantages advantages">
+			<section data-watch-once data-watch="navigator" class="page__advantages advantages">
 				<h3 class="advantages__title">Переваги комплексу</h3>
 				<div class="advantages__container">
 					<div class="advantages__item item-advantages">
@@ -198,7 +198,7 @@
 					</div>
 				</div>
 			</section>
-			<section class="page__gallery gallery">
+			<section data-watch-once data-watch="navigator" class="page__gallery gallery">
 				<h2 class="gallery__title">Галерея</h2>
 				<div class="gallery__container">
 					<div class="gallery__slider swiper">
@@ -237,7 +237,7 @@
 					<a href="#" class="gallery__button button">Запис на перегляд</a>
 				</div>
 			</section>
-			<section class="page__infrastructure infrastructure">
+			<section data-watch-once data-watch="navigator" class="page__infrastructure infrastructure">
 				<h2 class="infrastructure__title">Інфраструктура</h2>
 				<div class="infrastructure__container">
 					<div class="infrastructure__text">
@@ -279,7 +279,7 @@
 					</div>
 				</div>
 			</section>
-			<section class="page__location location">
+			<section data-watch-once data-watch="navigator" class="page__location location">
 				<h2 class="location__title">Місце розположення</h2>
 				<div class="location__container">
 					<div class="location__body">
@@ -307,7 +307,7 @@
 					<a href="https://www.google.com.ua/maps/@50.4851493,30.4721233,14z?hl=ru" target="_blank" class="location__link-button button">На карту</a>
 				</div>
 			</section>
-			<section class="page__advice advice">
+			<section data-watch-once data-watch="navigator" class="page__advice advice">
 				<h2 class="advice__title">Отримати консультацію</h2>
 				<div class="advice__container">
 					<div class="advice__body">
@@ -439,7 +439,7 @@
 			</div>
 		</footer>
 	</div>
-	<script src="js/app.min.js?_v=20240804162650"></script>
+	<script src="js/app.min.js?_v=20240806142239"></script>
 </body>
 
 </html>
