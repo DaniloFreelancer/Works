@@ -425,7 +425,7 @@
             observer.observe(element);
         }));
     }));
-    window["FLS"] = true;
+    window["FLS"] = false;
     menuInit();
     pageNavigation();
     headerScroll();
