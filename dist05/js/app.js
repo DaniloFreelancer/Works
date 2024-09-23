@@ -409,7 +409,7 @@
                         if (index < text.length) {
                             element.textContent += text.charAt(index);
                             index++;
-                            setTimeout(typeText, 80);
+                            setTimeout(typeText, 45);
                         }
                     }
                     setTimeout((() => {

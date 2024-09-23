@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20240922154010">
+	<link rel="stylesheet" href="css/style.min.css?_v=20240923203456">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -126,6 +126,7 @@
 											<p id="amountRaised">$0 raised of $1,000,000</p>
 										</div>
 									</div>
+									<button class="item-investment__front-button">Tap</button>
 								</div>
 								<div class="item-investment__back">
 									<div class="item-investment__back-padding">
@@ -202,6 +203,7 @@
 											<p id="amountRaised">$0 raised of $1,000,000</p>
 										</div>
 									</div>
+									<button class="item-investment__front-button">Tap</button>
 								</div>
 								<div class="item-investment__back">
 									<div class="item-investment__back-padding">
@@ -278,6 +280,7 @@
 											<p id="amountRaised">$0 raised of $1,000,000</p>
 										</div>
 									</div>
+									<button class="item-investment__front-button">Tap</button>
 								</div>
 								<div class="item-investment__back">
 									<div class="item-investment__back-padding">
@@ -354,6 +357,7 @@
 											<p id="amountRaised">$0 raised of $1,000,000</p>
 										</div>
 									</div>
+									<button class="item-investment__front-button">Tap</button>
 								</div>
 								<div class="item-investment__back">
 									<div class="item-investment__back-padding">
@@ -430,6 +434,7 @@
 											<p id="amountRaised">$0 raised of $1,000,000</p>
 										</div>
 									</div>
+									<button class="item-investment__front-button">Tap</button>
 								</div>
 								<div class="item-investment__back">
 									<div class="item-investment__back-padding">
@@ -506,6 +511,7 @@
 											<p id="amountRaised">$0 raised of $1,000,000</p>
 										</div>
 									</div>
+									<button class="item-investment__front-button">Tap</button>
 								</div>
 								<div class="item-investment__back">
 									<div class="item-investment__back-padding">
@@ -609,10 +615,9 @@
 						</div>
 					</div>
 				</div>
-				<img class="capital__decor" src="img/investment/decor.svg" alt="Image">
+				<img class="capital__decor" src="img/investment/decor.svg" alt="Image" />
 			</section>
 		</main>
-
 		<footer class="footer">
 			<div class="footer__main-body">
 				<div class="footer__container">
@@ -687,7 +692,184 @@
 		</footer>
 
 	</div>
-	<script src="js/app.min.js?_v=20240922154010"></script>
+	<script src="js/app.min.js?_v=20240923203456"></script>
+	<div id="fls-preloader">
+		<!-- Скріпт прелоадера -->
+		<script>
+			function preloader() {
+				const preloaderImages = document.querySelector("[data-preloader]") ?
+					document.querySelectorAll("[data-preloader] img") :
+					document.querySelectorAll("img");
+				const preloaderContainer = document.querySelector("#fls-preloader");
+				if (preloaderImages.length) {
+					const preloaderStyleTemplate = `
+				<style>
+					* {
+						padding: 0px;
+						margin: 0px;
+						border: 0px;
+						box-sizing: border-box;
+					}
+					/* Головний блок */
+					.fls-preloader {
+						pointer-events: none;
+						z-index: 9999;
+						position: fixed;
+						width: 100%;
+						height: 100%;
+						top: 0;
+						left: 0;
+						display: flex;
+						justify-content: center;
+						align-items: center;
+						background-color: rgba(0, 0, 0, 0.8); /* Тло */
+					}
+					/* Блок з елементами */
+					.fls-preloader__body {
+						padding: 2rem;
+						display: flex;
+						flex-direction: column;
+						align-items: center;
+						background-color: #fff;
+						border-radius: 20px; /* Округлені краї */
+						box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+						animation: fadeIn 0.5s ease-out forwards; /* Анімація появи */
+					}
+					/* Блок з лічильником */
+					.fls-preloader__counter {
+						font-size: 5rem;
+						font-weight: bold;
+						color: #336EE1;
+						animation: bounce 1s infinite; /* Підскакування */
+					}
+					/* Прогресбар */
+					.fls-preloader__line {
+						width: 100%;
+						height: 10px;
+						background-color: #e0e0e0;
+						border-radius: 5px;
+						margin-top: 1rem;
+						overflow: hidden;
+					}
+					/* Лінія прогресбару */
+					.fls-preloader__line span {
+						display: inline-block;
+						height: 100%;
+						width: 0;
+						background: linear-gradient(90deg, #7B61FF, #336EE1);
+						border-radius: 5px;
+						transition: width 0.4s ease;
+					}
+					.lock body {
+						overflow: hidden;
+						touch-action: none;
+						overscroll-behavior: none;
+					}
+					.loading body > *:not(.fls-preloader) {
+						opacity: 0;
+						visibility: hidden;
+					}
+					.loaded body > *:not(.fls-preloader) {
+						transition: opacity 0.5s ease;
+						opacity: 1;
+						visibility: visible;
+					}
+
+					/* Анімація появи контейнера */
+					@keyframes fadeIn {
+						0% {
+							opacity: 0;
+							transform: scale(0.9);
+						}
+						100% {
+							opacity: 1;
+							transform: scale(1);
+						}
+					}
+
+					/* Анімація підскакування для цифр */
+					@keyframes bounce {
+						0%, 100% {
+							transform: translateY(0);
+						}
+						50% {
+							transform: translateY(-10px);
+						}
+					}
+				</style>`;
+
+					document.head.insertAdjacentHTML("beforeend", preloaderStyleTemplate);
+
+					const preloaderTemplate = `
+					<div class="fls-preloader">
+						<div class="fls-preloader__body">
+							<div class="fls-preloader__counter">0%</div>
+							<div class="fls-preloader__line"><span></span></div>
+						</div>
+					</div>`;
+					document.body.insertAdjacentHTML("beforeend", preloaderTemplate);
+
+					const preloader = document.querySelector(".fls-preloader"),
+						showPecentLoad = document.querySelector(".fls-preloader__counter"),
+						showLineLoad = document.querySelector(".fls-preloader__line span"),
+						htmlDocument = document.documentElement;
+
+					let imagesLoadedCount = (counter = progress = 0);
+
+					htmlDocument.classList.add("loading");
+					htmlDocument.classList.add("lock");
+
+					preloaderImages.forEach((preloaderImage) => {
+						const imgClone = document.createElement("img");
+						if (imgClone) {
+							imgClone.onload = imageLoaded;
+							imgClone.onerror = imageLoaded;
+							preloaderImage.dataset.src ?
+								(imgClone.src = preloaderImage.dataset.src) :
+								(imgClone.src = preloaderImage.src);
+						}
+					});
+
+					function setValueProgress(progress) {
+						showPecentLoad ? (showPecentLoad.innerText = `${progress}%`) : null;
+						showLineLoad ? (showLineLoad.style.width = `${progress}%`) : null;
+					}
+					showPecentLoad ? setValueProgress(progress) : null;
+
+					function imageLoaded() {
+						imagesLoadedCount++;
+						progress = Math.round(
+							(100 / preloaderImages.length) * imagesLoadedCount
+						);
+						const intervalId = setInterval(() => {
+							counter >= progress ?
+								clearInterval(intervalId) :
+								setValueProgress(++counter);
+							counter >= 100 ? addLoadedClass() : null;
+						}, 10);
+					}
+
+					function addLoadedClass() {
+						htmlDocument.classList.add("loaded");
+						htmlDocument.classList.remove("lock");
+						htmlDocument.classList.remove("loading");
+						setTimeout(() => {
+							preloader.style.opacity = "0"; /* Плавне зникання */
+							preloader.style.transition = "opacity 0.5s ease";
+							setTimeout(() => {
+								preloader.remove();
+								preloaderContainer.remove();
+							}, 500);
+						}, 500);
+					}
+				} else {
+					preloaderContainer.remove();
+				}
+			}
+			preloader();
+		</script>
+	</div>
+
 </body>
 
 </html>
