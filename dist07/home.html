@@ -1,0 +1,929 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>HomePage</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20241103120541">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container">
+				<a href="#" class="header__logo"><img src="img/logo.svg" alt="Logo"></a>
+				<div class="header__menu menu">
+					<nav class="menu__body">
+						<ul class="menu__list">
+							<li class="menu__item"><a href="#" data-goto-header data-goto=".categories" class="menu__link">Explore</a></li>
+							<li class="menu__item"><a href="#" data-goto-header data-goto=".collections" class="menu__link">Collections</a></li>
+							<li class="menu__item"><a href="#" data-goto-header data-goto=".tranding" class="menu__link">Creators</a></li>
+							<li class="menu__item"><a href="#" data-goto-header data-goto=".insights" class="menu__link">Blog</a></li>
+						</ul>
+					</nav>
+				</div>
+				<div class="header__actions actions-header">
+					<a href="#" data-da=".menu__body, 479.98" class="actions-header__button button">Connect Wallet</a>
+					<button type="button" class="actions-header__icon icon-menu"><span></span></button>
+				</div>
+			</div>
+		</header>
+		<main class="page">
+			<section data-watch="navigator" data-watch-once class="page__hero hero">
+				<div class="hero__container">
+					<div class="hero__content">
+						<h3 class="hero__sub-title">NFT Marketplace</h3>
+						<h1 class="hero__title">Collect rare digital artworks</h1>
+						<div data-da=".hero__container, 991.98" class="hero__body body-hero">
+							<a data-da=".hero__content, 991.98" href="#" class="body-hero__button button">Explore</a>
+							<div class="body-hero__avatar">
+								<picture>
+									<source srcset="img/hero/01.webp">
+									<img src="img/hero/01.webp" alt="Image-01">
+								</picture>
+								<picture>
+									<source srcset="img/hero/02.webp">
+									<img src="img/hero/02.webp" alt="Image-02">
+								</picture>
+								<picture>
+									<source srcset="img/hero/03.webp">
+									<img src="img/hero/03.webp" alt="Image-03">
+								</picture>
+								<div class="body-hero__box">
+									<svg width="146" height="120" viewBox="0 0 146 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path id="line1" d="M119.666 91.423C120.698 72.7245 116.768 53.9602 102.376 40.065C89.3859 27.5231 71.762 25.1597 63.3776 43.6589C59.4085 52.416 60.8412 65.2717 69.7115 70.8408C79.5937 77.0453 87.3225 67.4889 87 60C86.2469 42.5088 56.6781 44.2536 36.5 43.6589C12.6044 42.9547 0.852925 21.698 0.999961 21.6289" stroke="white" stroke-miterlimit="1.5" stroke-linecap="round" stroke-linejoin="round" />
+										<path id="line2" d="M136.351 77.7485C134.253 78.321 132.627 79.6527 130.933 80.9029C125.372 85.0077 120.748 91.107 119.633 97.8446C118.38 90.5722 114.171 81.552 106.601 78.7139" stroke="white" stroke-miterlimit="1.5" stroke-linecap="round" stroke-linejoin="round" />
+									</svg>
+								</div>
+							</div>
+							<div data-watch class="body-hero__counters counters">
+								<div class="counters__item">
+									<h5 data-digits-counter class="counters__number">50
+									</h5><!--!Спробувати before додати літеру-->
+									<p class="counters__description">Artwork</p>
+								</div>
+								<div class="counters__item">
+									<h5 data-digits-counter class="counters__number">35
+									</h5>
+									<p class="counters__description">Auction</p>
+								</div>
+								<div class="counters__item">
+									<h5 data-digits-counter class="counters__number">23
+									</h5>
+									<p class="counters__description">Artist</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div data-da=".hero__container, 991.98" class="hero__images">
+						<img class="hero__image ibg" src="img/hero/image.webp" alt="Image">
+						<div class="hero__animation-element element">
+							<svg width="181" height="179" viewBox="0 0 181 179" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M121.872 8.10758L119.037 16.0318L114.671 5.53158L110.995 4.21664L107.222 14.7622L109.934 15.7323L112.763 7.82307L117.12 18.3029L120.811 19.6232L124.583 9.07762L121.872 8.10758Z" fill="white" />
+								<path d="M144.365 24.04L145.817 22.1094L136.356 14.991L129.622 23.9408L131.924 25.6723L134.03 22.8723L140.423 27.682L141.885 25.7387L135.493 20.9289L137.205 18.6531L144.365 24.04Z" fill="white" />
+								<path d="M162.976 41.3605L154.83 30.2711L152.883 31.7014L156.103 36.0856L149.024 41.2859L150.729 43.607L157.808 38.4066L161.029 42.7909L162.976 41.3605Z" fill="white" />
+								<path d="M176.834 84.1618L176.374 80.3012L167.97 76.5824L175.263 70.9912L174.803 67.1305L163.682 68.4571L164.023 71.3168L171.649 70.4072L164.574 75.9401L164.821 78.0054L172.998 81.719L165.372 82.6287L165.713 85.4884L176.834 84.1618Z" fill="white" />
+								<path d="M162.905 107.899L162.168 110.996L174.405 107.957L175.305 104.174L165.748 95.9609L165.014 99.0427L167.055 100.762L165.502 107.284L162.905 107.899ZM168.893 102.302L172.783 105.58L167.836 106.738L168.893 102.302Z" fill="white" />
+								<path d="M158.081 134.951C160.21 136.254 162.499 135.61 163.826 133.44L168.42 125.934L158.867 120.088L157.364 122.544L159.916 124.106L157.494 128.064L153.998 128.044L152.227 130.937L156.143 130.914C155.863 132.506 156.525 133.999 158.081 134.951ZM164.856 127.129L162.183 131.496C161.732 132.233 161.031 133.38 159.584 132.495C158.151 131.618 158.853 130.471 159.304 129.734L161.976 125.367L164.856 127.129Z" fill="white" />
+								<path d="M142.315 157.157L145.638 154.323L147.943 144.722L151.712 149.141L153.903 147.272L146.635 138.751L144.444 140.62L145.835 142.251L144.848 146.395L138.077 146.051L135.046 148.636L144.247 148.969L142.315 157.157Z" fill="white" />
+								<path d="M119.532 166.814L120.423 168.922L131.328 164.31L126.966 153.994L116.061 158.606L116.952 160.713L125.204 157.223L126.089 159.316L117.837 162.806L118.647 164.722L126.899 161.232L127.784 163.324L119.532 166.814Z" fill="white" />
+								<path d="M95.1612 174.103L108.841 172.622L108.581 170.22L103.173 170.806L102.227 162.073L99.3636 162.383L100.309 171.116L94.901 171.701L95.1612 174.103Z" fill="white" />
+								<path d="M73.8422 172.371L82.4778 174.064L84.6326 163.074L81.8064 162.519L81.2307 165.456L75.4213 164.317C72.9249 163.827 70.9056 165.062 70.4254 167.511C69.9452 169.96 71.3457 171.882 73.8422 172.371ZM75.7416 166.841L80.7659 167.826L80.1164 171.139L75.0921 170.154C74.2442 169.988 72.9253 169.73 73.2516 168.065C73.5748 166.417 74.8937 166.675 75.7416 166.841Z" fill="white" />
+								<path d="M59.4216 158.731L55.3925 166.536L57.9516 167.857L63.089 157.905L52.8524 152.621L51.7442 154.768L59.4216 158.731Z" fill="white" />
+								<path d="M36.678 139.657L34.41 137.422L30.6748 149.465L33.4443 152.194L45.4195 148.27L43.1629 146.047L40.6349 146.903L35.8595 142.197L36.678 139.657ZM38.3665 147.678L33.5474 149.308L35.1183 144.477L38.3665 147.678Z" fill="white" />
+								<path d="M23.3181 132.582C26.6451 130.9 27.5198 128.091 25.2963 123.693C23.2822 119.709 20.7437 118.482 17.7151 119.691L19.0362 122.304C20.7867 121.724 22.0646 122.655 23.1402 124.783C24.4541 127.382 24.0748 128.972 22.0187 130.011C19.9768 131.044 18.4928 130.414 17.1717 127.801C16.0888 125.659 16.089 124.099 17.5798 123.04L16.2587 120.427C13.5043 122.143 13.0015 124.907 15.0156 128.891C17.2391 133.289 20.0055 134.256 23.3181 132.582Z" fill="white" />
+								<path d="M7.77008 98.3133L5.51555 98.7032L7.53341 110.37L18.5696 108.461L16.5517 96.7944L14.2972 97.1844L15.8242 106.013L13.5854 106.401L12.0584 97.5716L10.0088 97.9261L11.5359 106.755L9.29711 107.142L7.77008 98.3133Z" fill="white" />
+								<path d="M20.7822 60.1763L18.568 61.3131C17.8967 60.5258 16.9393 59.949 15.7208 59.5572C12.2022 58.4258 9.60112 59.8247 8.09747 64.5009C6.58893 69.1923 7.87686 71.825 11.4107 72.9613C14.9597 74.1025 17.5559 72.7188 19.0644 68.0274C19.5689 66.4585 19.7622 65.1257 19.659 63.9832L22.0947 62.7328L20.7822 60.1763ZM12.2923 70.2195C10.1141 69.5192 9.47669 68.1041 10.3975 65.2405C11.3183 62.3769 12.6762 61.6035 14.8392 62.299C17.0173 62.9994 17.6803 64.4394 16.7644 67.2878C15.8485 70.1362 14.4857 70.9248 12.2923 70.2195Z" fill="white" />
+								<path d="M25.1119 36.408L23.246 35.0838L16.3933 44.7391L25.5267 51.2215L32.3794 41.5661L30.5136 40.2419L25.3277 47.5486L23.4749 46.2336L28.6608 38.9269L26.9646 37.723L21.7787 45.0298L19.926 43.7148L25.1119 36.408Z" fill="white" />
+								<path d="M41.8693 20.344L40.4391 18.5581L31.1975 25.9594L38.1987 34.7014L47.4403 27.3002L46.01 25.5143L39.0164 31.1153L37.5962 29.3419L44.5898 23.7409L43.2896 22.1174L36.2959 27.7184L34.8757 25.945L41.8693 20.344Z" fill="white" />
+								<path d="M64.0986 11.9403C64.3885 11.1535 64.4021 10.3217 64.1124 9.59312C63.5036 8.06172 62.2962 7.14707 59.9322 8.08697L50.7735 11.7283L54.9114 22.1359L64.4269 18.3527C66.7909 17.4128 67.3085 15.7263 66.6109 13.9718C66.1321 12.7675 65.2094 12.1357 64.0986 11.9403ZM54.2182 12.5971L59.7343 10.404C60.4628 10.1144 61.117 9.85429 61.5426 10.9248C61.9741 12.0101 61.3199 12.2702 60.6063 12.554L60.5914 12.5599L55.0754 14.753L54.2182 12.5971ZM62.9511 16.5461L56.766 19.0052L55.8911 16.8048L62.0762 14.3457C62.7899 14.0619 63.4441 13.8018 63.8815 14.9021C64.3189 16.0023 63.6647 16.2624 62.9511 16.5461Z" fill="white" />
+							</svg>
+							<span class="element__icon">
+								<img class="element__icon-image" src="img/hero/play.svg" alt="Icon">
+							</span>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section data-watch="navigator" data-watch-once class="page__categories categories">
+				<div class="categories__container">
+					<h2 class="categories__title title">popular categories</h2>
+					<div class="categories__body">
+						<div class="categories__slider swiper">
+							<div class="categories__wrapper swiper-wrapper">
+								<div class="categories__slide swiper-slide">
+									<div class="swiper-slide__image">
+										<img src="img/categories/01.webp" alt="Image">
+									</div>
+									<div class="swiper-slide__description">Games</div>
+								</div>
+								<div class="categories__slide swiper-slide">
+									<div class="swiper-slide__image">
+										<img src="img/categories/02.webp" alt="Image">
+									</div>
+									<div class="swiper-slide__description">Sports</div>
+								</div>
+								<div class="categories__slide swiper-slide">
+									<div class="swiper-slide__image">
+										<img src="img/categories/03.webp" alt="Image">
+									</div>
+									<div class="swiper-slide__description">Metaverse</div>
+								</div>
+								<div class="categories__slide swiper-slide">
+									<div class="swiper-slide__image">
+										<img src="img/categories/04.webp" alt="Image">
+									</div>
+									<div class="swiper-slide__description">Art</div>
+								</div>
+								<div class="categories__slide swiper-slide">
+									<div class="swiper-slide__image">
+										<img src="img/categories/05.webp" alt="Image">
+									</div>
+									<div class="swiper-slide__description">Music</div>
+								</div>
+								<div class="categories__slide swiper-slide">
+									<div class="swiper-slide__image">
+										<img src="img/categories/06.webp" alt="Image">
+									</div>
+									<div class="swiper-slide__description">Photography</div>
+								</div>
+								<div class="categories__slide swiper-slide">
+									<div class="swiper-slide__image">
+										<img src="img/hero/image.webp" alt="Image">
+									</div>
+									<div class="swiper-slide__description">Hip-pop</div>
+								</div>
+							</div>
+							<div class="categories__controll">
+								<button type="button" class="categories__arrow categories__arrow--left _icon-arrow"></button>
+								<button type="button" class="categories__arrow categories__arrow--right _icon-arrow"></button>
+							</div>
+							<div class="swiper__pagination">
+								<div class="swiper__bullets">
+									<span class="swiper-pagination-bullet"></span>
+									<span class="swiper-pagination-bullet"></span>
+									<span class="swiper-pagination-bullet"></span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section data-watch="navigator" data-watch-once class="page__collections collections">
+				<div class="collections__container">
+					<div data-tabs class="collections__tabs tabs">
+						<div class="tabs__top">
+							<h2 class="tabs__collections-title title">top collections</h2>
+							<nav data-tabs-titles class="tabs__navigation">
+								<button type="button" class="tabs__title _tab-active">7 Days</button>
+								<button type="button" class="tabs__title">30 Days</button>
+							</nav>
+						</div>
+						<div data-tabs-body class="tabs__content">
+							<div data-showmore="items" data-showmore-media="319.98,min" class="tabs__items">
+								<div data-showmore-content="3" data-watch data-watch-once class="tabs__body body-tabs">
+									<div class="body-tabs__item">
+										<div class="body-tabs__image">
+											<img src="img/tabs/01.webp" alt="Image">
+											<span>1</span>
+										</div>
+										<div class="body-tabs__content">
+											<div class="body-tabs__description description-body">
+												<h4 class="description-body__title">NFT Worlds</h4>
+												<div class="description-body__label">Floor: 0.80ETH</div>
+											</div>
+											<div class="body-tabs__price price-body">
+												<div class="price-body__eth">5.8k ETH</div>
+												<div class="price-body__mil">$8.4M</div>
+												<div class="price-body__percent">+294.7%</div>
+											</div>
+										</div>
+									</div>
+									<div class="body-tabs__item">
+										<div class="body-tabs__image">
+											<img src="img/tabs/03.webp" alt="Image">
+											<span>5</span>
+										</div>
+										<div class="body-tabs__content">
+											<div class="body-tabs__description description-body">
+												<h4 class="description-body__title">Etherpilots</h4>
+												<div class="description-body__label">Floor: 0.05ETH</div>
+											</div>
+											<div class="body-tabs__price price-body">
+												<div class="price-body__eth">5.8k ETH</div>
+												<div class="price-body__mil">$8.4M</div>
+												<div class="price-body__percent">+294.7%</div>
+											</div>
+										</div>
+									</div>
+									<div class="body-tabs__item">
+										<div class="body-tabs__image">
+											<img src="img/tabs/06.webp" alt="Image">
+											<span>9</span>
+										</div>
+										<div class="body-tabs__content">
+											<div class="body-tabs__description description-body">
+												<h4 class="description-body__title">Mineblowings</h4>
+												<div class="description-body__label">Floor: 0.07ETH</div>
+											</div>
+											<div class="body-tabs__price price-body">
+												<div class="price-body__eth">5.8k ETH</div>
+												<div class="price-body__mil">$8.4M</div>
+												<div class="price-body__percent">+294.7%</div>
+											</div>
+										</div>
+									</div>
+									<div class="body-tabs__item">
+										<div class="body-tabs__image">
+											<img src="img/tabs/02.webp" alt="Image">
+											<span>2</span>
+										</div>
+										<div class="body-tabs__content">
+											<div class="body-tabs__description description-body">
+												<h4 class="description-body__title">Super Worlds</h4>
+												<div class="description-body__label">Floor: 0.70ETH</div>
+											</div>
+											<div class="body-tabs__price price-body">
+												<div class="price-body__eth">5.8k ETH</div>
+												<div class="price-body__mil">$8.4M</div>
+												<div class="price-body__percent">+294.7%</div>
+											</div>
+										</div>
+									</div>
+									<div class="body-tabs__item">
+										<div class="body-tabs__image">
+											<img src="img/tabs/05.webp" alt="Image">
+											<span>6</span>
+										</div>
+										<div class="body-tabs__content">
+											<div class="body-tabs__description description-body">
+												<h4 class="description-body__title">Kive Core</h4>
+												<div class="description-body__label">Floor: 0.06ETH</div>
+											</div>
+											<div class="body-tabs__price price-body">
+												<div class="price-body__eth">5.8k ETH</div>
+												<div class="price-body__mil">$8.4M</div>
+												<div class="price-body__percent">+294.7%</div>
+											</div>
+										</div>
+									</div>
+									<div class="body-tabs__item">
+										<div class="body-tabs__image">
+											<img src="img/tabs/04.webp" alt="Image">
+											<span>10</span>
+										</div>
+										<div class="body-tabs__content">
+											<div class="body-tabs__description description-body">
+												<h4 class="description-body__title">NFT Flow</h4>
+												<div class="description-body__label">Floor: 0.50ETH</div>
+											</div>
+											<div class="body-tabs__price price-body">
+												<div class="price-body__eth">5.8k ETH</div>
+												<div class="price-body__mil">$8.4M</div>
+												<div class="price-body__percent">+294.7%</div>
+											</div>
+										</div>
+									</div>
+									<div class="body-tabs__item">
+										<div class="body-tabs__image">
+											<img src="img/tabs/03.webp" alt="Image">
+											<span>3</span>
+										</div>
+										<div class="body-tabs__content">
+											<div class="body-tabs__description description-body">
+												<h4 class="description-body__title">Bidether</h4>
+												<div class="description-body__label">Floor: 0.10ETH</div>
+											</div>
+											<div class="body-tabs__price price-body">
+												<div class="price-body__eth">5.8k ETH</div>
+												<div class="price-body__mil">$8.4M</div>
+												<div class="price-body__percent">+294.7%</div>
+											</div>
+										</div>
+									</div>
+									<div class="body-tabs__item">
+										<div class="body-tabs__image">
+											<img src="img/tabs/02.webp" alt="Image">
+											<span>7</span>
+										</div>
+										<div class="body-tabs__content">
+											<div class="body-tabs__description description-body">
+												<h4 class="description-body__title">Varipack</h4>
+												<div class="description-body__label">Floor: 0.90ETH</div>
+											</div>
+											<div class="body-tabs__price price-body">
+												<div class="price-body__eth">5.8k ETH</div>
+												<div class="price-body__mil">$8.4M</div>
+												<div class="price-body__percent">+294.7%</div>
+											</div>
+										</div>
+									</div>
+									<div class="body-tabs__item">
+										<div class="body-tabs__image">
+											<img src="img/tabs/05.webp" alt="Image">
+											<span>11</span>
+										</div>
+										<div class="body-tabs__content">
+											<div class="body-tabs__description description-body">
+												<h4 class="description-body__title">Nether</h4>
+												<div class="description-body__label">Floor: 0.08ETH</div>
+											</div>
+											<div class="body-tabs__price price-body">
+												<div class="price-body__eth">5.8k ETH</div>
+												<div class="price-body__mil">$8.4M</div>
+												<div class="price-body__percent">+294.7%</div>
+											</div>
+										</div>
+									</div>
+									<div class="body-tabs__item">
+										<div class="body-tabs__image">
+											<img src="img/tabs/04.webp" alt="Image">
+											<span>4</span>
+										</div>
+										<div class="body-tabs__content">
+											<div class="body-tabs__description description-body">
+												<h4 class="description-body__title">Nether</h4>
+												<div class="description-body__label">Floor: 0.10ETH</div>
+											</div>
+											<div class="body-tabs__price price-body">
+												<div class="price-body__eth">5.8k ETH</div>
+												<div class="price-body__mil">$8.4M</div>
+												<div class="price-body__percent">+294.7%</div>
+											</div>
+										</div>
+									</div>
+									<div class="body-tabs__item">
+										<div class="body-tabs__image">
+											<img src="img/tabs/06.webp" alt="Image">
+											<span>8</span>
+										</div>
+										<div class="body-tabs__content">
+											<div class="body-tabs__description description-body">
+												<h4 class="description-body__title">Proof Corn</h4>
+												<div class="description-body__label">Floor: 0.90ETH</div>
+											</div>
+											<div class="body-tabs__price price-body">
+												<div class="price-body__eth">5.8k ETH</div>
+												<div class="price-body__mil">$8.4M</div>
+												<div class="price-body__percent">+294.7%</div>
+											</div>
+										</div>
+									</div>
+									<div class="body-tabs__item">
+										<div class="body-tabs__image">
+											<img src="img/tabs/01.webp" alt="Image">
+											<span>12</span>
+										</div>
+										<div class="body-tabs__content">
+											<div class="body-tabs__description description-body">
+												<h4 class="description-body__title">Parallel</h4>
+												<div class="description-body__label">Floor: 0.08ETH</div>
+											</div>
+											<div class="body-tabs__price price-body">
+												<div class="price-body__eth">5.8k ETH</div>
+												<div class="price-body__mil">$8.4M</div>
+												<div class="price-body__percent">+294.7%</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<button data-showmore-button type="button" class="tabs__button button">
+									<span>See All Collection</span>
+									<span>Hide Collection</span>
+								</button>
+							</div>
+							<div data-showmore="size" data-showmore-media="319.98,min" class="tabs__items">
+								<div data-showmore-content="120" data-watch data-watch-once class="tabs__body body-tabs">
+									<div class="body-tabs__item">
+										<div class="body-tabs__image">
+											<img src="img/tabs/01.webp" alt="Image">
+											<span>1</span>
+										</div>
+										<div class="body-tabs__content">
+											<div class="body-tabs__description description-body">
+												<h4 class="description-body__title">NFT Worlds</h4>
+												<div class="description-body__label">Floor: 0.80ETH</div>
+											</div>
+											<div class="body-tabs__price price-body">
+												<div class="price-body__eth">5.8k ETH</div>
+												<div class="price-body__mil">$8.4M</div>
+												<div class="price-body__percent">+294.7%</div>
+											</div>
+										</div>
+									</div>
+									<div class="body-tabs__item">
+										<div class="body-tabs__image">
+											<img src="img/tabs/03.webp" alt="Image">
+											<span>5</span>
+										</div>
+										<div class="body-tabs__content">
+											<div class="body-tabs__description description-body">
+												<h4 class="description-body__title">Etherpilots</h4>
+												<div class="description-body__label">Floor: 0.05ETH</div>
+											</div>
+											<div class="body-tabs__price price-body">
+												<div class="price-body__eth">5.8k ETH</div>
+												<div class="price-body__mil">$8.4M</div>
+												<div class="price-body__percent">+294.7%</div>
+											</div>
+										</div>
+									</div>
+									<div class="body-tabs__item">
+										<div class="body-tabs__image">
+											<img src="img/tabs/06.webp" alt="Image">
+											<span>9</span>
+										</div>
+										<div class="body-tabs__content">
+											<div class="body-tabs__description description-body">
+												<h4 class="description-body__title">Mineblowings</h4>
+												<div class="description-body__label">Floor: 0.07ETH</div>
+											</div>
+											<div class="body-tabs__price price-body">
+												<div class="price-body__eth">5.8k ETH</div>
+												<div class="price-body__mil">$8.4M</div>
+												<div class="price-body__percent">+294.7%</div>
+											</div>
+										</div>
+									</div>
+									<div class="body-tabs__item">
+										<div class="body-tabs__image">
+											<img src="img/tabs/02.webp" alt="Image">
+											<span>2</span>
+										</div>
+										<div class="body-tabs__content">
+											<div class="body-tabs__description description-body">
+												<h4 class="description-body__title">Super Worlds</h4>
+												<div class="description-body__label">Floor: 0.70ETH</div>
+											</div>
+											<div class="body-tabs__price price-body">
+												<div class="price-body__eth">5.8k ETH</div>
+												<div class="price-body__mil">$8.4M</div>
+												<div class="price-body__percent">+294.7%</div>
+											</div>
+										</div>
+									</div>
+									<div class="body-tabs__item">
+										<div class="body-tabs__image">
+											<img src="img/tabs/05.webp" alt="Image">
+											<span>6</span>
+										</div>
+										<div class="body-tabs__content">
+											<div class="body-tabs__description description-body">
+												<h4 class="description-body__title">Kive Core</h4>
+												<div class="description-body__label">Floor: 0.06ETH</div>
+											</div>
+											<div class="body-tabs__price price-body">
+												<div class="price-body__eth">5.8k ETH</div>
+												<div class="price-body__mil">$8.4M</div>
+												<div class="price-body__percent">+294.7%</div>
+											</div>
+										</div>
+									</div>
+									<div class="body-tabs__item">
+										<div class="body-tabs__image">
+											<img src="img/tabs/04.webp" alt="Image">
+											<span>10</span>
+										</div>
+										<div class="body-tabs__content">
+											<div class="body-tabs__description description-body">
+												<h4 class="description-body__title">NFT Flow</h4>
+												<div class="description-body__label">Floor: 0.50ETH</div>
+											</div>
+											<div class="body-tabs__price price-body">
+												<div class="price-body__eth">5.8k ETH</div>
+												<div class="price-body__mil">$8.4M</div>
+												<div class="price-body__percent">+294.7%</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<button data-showmore-button type="button" class="tabs__button button">
+									<span>See All Collection</span>
+									<span>Hide Collection</span>
+								</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section data-watch="navigator" data-watch-once class="page__tranding tranding">
+				<div class="tranding__container">
+					<h2 class="tranding__title title">Tranding nfts</h2>
+					<div class="tranding__body">
+						<div class="tranding__slider swiper">
+							<div class="tranding__wrapper swiper-wrapper">
+								<div class="tranding__slide swiper-slide">
+									<div class="swiper-slide__image">
+										<img src="img/tranding/01.webp" alt="Image">
+									</div>
+									<div class="swiper-slide__body">
+										<h3 class="swiper-slide__title">Rare Crypto</h3>
+										<div class="swiper-slide__hashtag">#QA5200 The Kive</div>
+										<div class="swiper-slide__content">
+											<div class="swiper-slide__content-block">
+												<div class="swiper-slide__label">Price</div>
+												<div class="swiper-slide__eth">0.03 ETH</div>
+											</div>
+											<div class="swiper-slide__content-block">
+												<div class="swiper-slide__label">Highest Bid</div>
+												<div class="swiper-slide__eth">0.07 ETH</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="tranding__slide swiper-slide">
+									<div class="swiper-slide__image">
+										<img src="img/tranding/02.webp" alt="Image">
+									</div>
+									<div class="swiper-slide__body">
+										<h3 class="swiper-slide__title">Kive Boy</h3>
+										<div class="swiper-slide__hashtag">#QA5200 The Kive</div>
+										<div class="swiper-slide__content">
+											<div class="swiper-slide__content-block">
+												<div class="swiper-slide__label">Price</div>
+												<div class="swiper-slide__eth">0.03 ETH</div>
+											</div>
+											<div class="swiper-slide__content-block">
+												<div class="swiper-slide__label">Highest Bid</div>
+												<div class="swiper-slide__eth">0.07 ETH</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="tranding__slide swiper-slide">
+									<div class="swiper-slide__image">
+										<img src="img/tranding/03.webp" alt="Image">
+									</div>
+									<div class="swiper-slide__body">
+										<h3 class="swiper-slide__title">Kive Boy</h3>
+										<div class="swiper-slide__hashtag">#QA5200 The Kive</div>
+										<div class="swiper-slide__content">
+											<div class="swiper-slide__content-block">
+												<div class="swiper-slide__label">Price</div>
+												<div class="swiper-slide__eth">0.03 ETH</div>
+											</div>
+											<div class="swiper-slide__content-block">
+												<div class="swiper-slide__label">Highest Bid</div>
+												<div class="swiper-slide__eth">0.07 ETH</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="tranding__slide swiper-slide">
+									<div class="swiper-slide__image">
+										<img src="img/tranding/04.webp" alt="Image">
+									</div>
+									<div class="swiper-slide__body">
+										<h3 class="swiper-slide__title">Kive Boy</h3>
+										<div class="swiper-slide__hashtag">#QA5200 The Kive</div>
+										<div class="swiper-slide__content">
+											<div class="swiper-slide__content-block">
+												<div class="swiper-slide__label">Price</div>
+												<div class="swiper-slide__eth">0.03 ETH</div>
+											</div>
+											<div class="swiper-slide__content-block">
+												<div class="swiper-slide__label">Highest Bid</div>
+												<div class="swiper-slide__eth">0.07 ETH</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="tranding__slide swiper-slide">
+									<div class="swiper-slide__image">
+										<img src="img/tranding/01.webp" alt="Image">
+									</div>
+									<div class="swiper-slide__body">
+										<h3 class="swiper-slide__title">Rare Crypto</h3>
+										<div class="swiper-slide__hashtag">#QA5200 The Kive</div>
+										<div class="swiper-slide__content">
+											<div class="swiper-slide__content-block">
+												<div class="swiper-slide__label">Price</div>
+												<div class="swiper-slide__eth">0.03 ETH</div>
+											</div>
+											<div class="swiper-slide__content-block">
+												<div class="swiper-slide__label">Highest Bid</div>
+												<div class="swiper-slide__eth">0.07 ETH</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="tranding__controll">
+								<button type="button" class="tranding__arrow tranding__arrow--left _icon-arrow"></button>
+								<button type="button" class="tranding__arrow tranding__arrow--right _icon-arrow"></button>
+							</div>
+							<div class="swiper__pagination">
+								<div class="swiper__bullets">
+									<span class="swiper-pagination-bullet"></span>
+									<span class="swiper-pagination-bullet"></span>
+									<span class="swiper-pagination-bullet"></span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section data-watch="navigator" data-watch-once class="page__insights insights">
+				<div class="insights__container">
+					<h2 class="insights__title title">insights</h2>
+					<div class="insights__items">
+						<div class="insights__item item-insights">
+							<div class="item-insights__image">
+								<img src="img/insights/01.webp" alt="Image">
+							</div>
+							<div class="item-insights__body">
+								<div class="item-insights__content">
+									<a href="#" class="item-insights__link-button">TECHNOLOGY</a>
+									<div class="item-insights__date">John Doe • 19 Jan 2022</div>
+								</div>
+								<h3 class="item-insights__title">Gesture for the people and the culture</h3>
+							</div>
+							<div class="item-insights__link _icon-arrow">Read More</div>
+						</div>
+						<div class="insights__item item-insights">
+							<div class="item-insights__image">
+								<img src="img/insights/02.webp" alt="Image">
+							</div>
+							<div class="item-insights__body">
+								<div class="item-insights__content">
+									<a href="#" class="item-insights__link-button">Webiner</a>
+									<div class="item-insights__date">John Doe • 19 Jan 2022</div>
+								</div>
+								<h3 class="item-insights__title">Mostly metaverse is only as good as its tools and it is totally true.</h3>
+							</div>
+							<div class="item-insights__link _icon-arrow">Read More</div>
+						</div>
+						<div class="insights__item item-insights item-insights--big">
+							<div class="item-insights__image">
+								<img src="img/insights/03.webp" alt="Image">
+							</div>
+							<div class="item-insights__body">
+								<div class="item-insights__content">
+									<a href="#" class="item-insights__link-button">Crypto Currency</a>
+									<div class="item-insights__date">John Doe • 19 Jan 2022</div>
+								</div>
+								<h3 class="item-insights__title">Crypto business is only as good as its tools and it is totally true.</h3>
+							</div>
+							<div class="item-insights__link _icon-arrow">Read More</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section data-watch="navigator" data-watch-once class="page__download download">
+				<div class="download__container">
+					<div class="download__body">
+						<h2 class="download__title title">
+							Download Qeeb app to track your NFT portfolio and discover more
+						</h2>
+						<div class="download__apps apps-download">
+							<a href="#https://www.apple.com/tr/app-store/" target="_blank" class="apps-download__item _icon-apple">App Store</a>
+							<a href="http://surl.li/daihls" target="_blank" class="apps-download__item apps-download__item--active _icon-android">Google Play</a>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+				<div class="footer__body">
+					<a href="#" class="footer__logo"><img src="img/logo.svg" alt="Logo"></a>
+					<div class="footer__body-content">
+						<div data-spollers="767.98,max" class="footer__spollers spollers">
+							<details class="spollers__item">
+								<summary class="spollers__title">Quick Links</summary>
+								<ul class="spollers__body-list list-body">
+									<li class="list-body__item"><a href="#" class="list-body__link">About us</a></li>
+									<li class="list-body__item"><a href="#" class="list-body__link">Services</a></li>
+									<li class="list-body__item"><a href="#" class="list-body__link">API</a></li>
+									<li class="list-body__item"><a href="#" class="list-body__link">Become a Partner</a></li>
+									<li class="list-body__item"><a href="#" class="list-body__link">Branding</a></li>
+									<li class="list-body__item"><a href="#" class="list-body__link">Career</a></li>
+								</ul>
+							</details>
+							<details class="spollers__item">
+								<summary class="spollers__title">Marketplace</summary>
+								<ul class="spollers__body-list list-body">
+									<li class="list-body__item"><a href="#" class="list-body__link">Explore</a></li>
+									<li class="list-body__item"><a href="#" class="list-body__link">How it works</a></li>
+									<li class="list-body__item"><a href="#" class="list-body__link">Insights</a></li>
+									<li class="list-body__item"><a href="#" class="list-body__link">Help Center</a></li>
+								</ul>
+							</details>
+						</div>
+						<div class="content">
+							<address class="content__item item-content">
+								<h4 class="item-content__title">Office</h4>
+								<div class="item-content__content">
+									<a href="https://www.redfin.com/CA/San-Francisco/545-Leavenworth-St-94109/unit-11/home/1206545" class="item-content__link">545, Street 11, Block F
+										California, U.S.A</a>
+								</div>
+							</address>
+							<address class="content__item item-content">
+								<h4 class="item-content__title">Contact</h4>
+								<div class="item-content__content">
+									<a href="tel:923023003215" class="item-content__link">+92 302 300 3215</a>
+									<a href="mailto:ouraddress@email.com" class="item-content__link">ouraddress@email.com</a>
+								</div>
+							</address>
+							<div class="content__terms terms">
+								<div class="terms__description">
+									<div class="terms__01">Terms</div>
+									<div class="terms__02">& conditions</div>
+									<div class="terms__03">Privacy</div>
+								</div>
+								<ul class="terms__list">
+									<li class="terms__item">
+										<a href="#" class="terms__link _icon-twitter"></a>
+									</li>
+									<li class="terms__item">
+										<a href="#" class="terms__link _icon-facebook"></a>
+									</li>
+									<li class="terms__item">
+										<a href="#" class="terms__link _icon-dribbble"></a>
+									</li>
+									<li class="terms__item">
+										<a href="#" class="terms__link _icon-github"></a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="footer__receive receive">
+						<h3 class="receive__title">Sign Up to Receive Updates Services</h3>
+						<h3 class="receive__title receive__title--mobile">Sign Up to Receive Product Updates and More</h3>
+						<form action="#" class="receive__form form">
+							<input data-required="email" autocomplete="off" type="text" name="form[]" data-error="Error" placeholder="youremail@gmail.com" class="form__input input">
+							<button type="submit" class="form__button">
+								<img src="img/icons/form-send.svg" alt="Image">
+							</button>
+						</form>
+					</div>
+				</div>
+				<div class="footer__copyright copyright">
+					<div class="copyright__body">
+						<div class="copyright__text">Qeeb 2022. All Rights Reserved</div>
+						<a href="#" class="copyright__link-text">Terms & Conditions Privacy</a>
+						<ul class="copyright__list">
+							<li class="copyright__item">
+								<a href="#" class="copyright__link _icon-twitter"></a>
+							</li>
+							<li class="copyright__item">
+								<a href="#" class="copyright__link _icon-facebook"></a>
+							</li>
+							<li class="copyright__item">
+								<a href="#" class="copyright__link _icon-insta"></a>
+							</li>
+							<li class="copyright__item">
+								<a href="#" class="copyright__link _icon-linkedin"></a>
+							</li>
+							<li class="copyright__item">
+								<a href="#" class="copyright__link _icon-tiktok"></a>
+							</li>
+							<li class="copyright__item">
+								<a href="#" class="copyright__link _icon-youtube"></a>
+							</li>
+						</ul>
+					</div>
+					<div class="copyright__content">Copyright 2022. All Rights Reserved</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<!-- Документація: https://template.fls.guru/template-docs/modul-preloader.html -->
+	<div id="fls-preloader">
+		<!-- Скріпт прелоадера -->
+		<script>
+			function preloader() {
+				const preloaderImages = document.querySelector("[data-preloader]") ?
+					document.querySelectorAll("[data-preloader] img") :
+					document.querySelectorAll("img");
+				const preloaderContainer = document.querySelector("#fls-preloader");
+				if (preloaderImages.length) {
+					const preloaderStyleTemplate = `
+				<style>
+					* {
+						padding: 0px;
+						margin: 0px;
+						border: 0px;
+						box-sizing: border-box;
+					}
+					/* Головний блок */
+					.fls-preloader{
+						pointer-events: none;
+						z-index: 100;
+						position: fixed;
+						width: 100%;
+						height: 100%;
+						top: 0;
+						left: 0;
+						display: flex;
+						justify-content:center;
+						align-items: center;
+						background-color: rgba(255, 255, 255, 1);
+					}
+					/* Анімаційний прелоадер */
+					.loader {
+						width: 25px;
+						height: 50px;
+						display: grid;
+						color: #000;
+						background:
+							linear-gradient(currentColor 0 0) top/100% 2px,
+							radial-gradient(farthest-side at  top, #0000 calc(100% - 2px),currentColor calc(100% - 1px) ,#0000) top,
+							linear-gradient(currentColor 0 0) bottom/100% 2px,
+							radial-gradient(farthest-side at  bottom, #0000 calc(100% - 2px),currentColor calc(100% - 1px) ,#0000) bottom;
+						background-size: 100% 1px,100% 50%; 
+						background-repeat: no-repeat;
+						animation: l18 4s infinite linear;
+					}
+					.loader::before,
+					.loader::after {
+						content: "";
+						grid-area: 1/1;
+						background: inherit;
+						border: inherit;
+						animation: inherit;
+					}
+					.loader::after {
+						animation-duration: 2s;
+					}
+					@keyframes l18 {
+						100% {transform: rotate(1turn)}
+					}
+					.lock body{
+						overflow: hidden;
+						touch-action: none;
+						overscroll-behavior: none;
+					}
+					.loading body>*:not(.fls-preloader){
+						opacity: 0;
+						visibility: hidden;
+					}
+					.loaded body>*:not(.fls-preloader){
+						transition: opacity 0.5s ease 0s;
+						opacity: 1;
+						visibility: visible;
+					}
+				</style>`;
+
+					document.head.insertAdjacentHTML("beforeend", preloaderStyleTemplate);
+
+					const preloaderTemplate = `
+					<div class="fls-preloader">
+						<div class="loader"></div>
+					</div>`;
+					document.body.insertAdjacentHTML("beforeend", preloaderTemplate);
+
+					const preloader = document.querySelector(".fls-preloader"),
+						htmlDocument = document.documentElement;
+
+					let imagesLoadedCount = (counter = progress = 0);
+
+					htmlDocument.classList.add("loading");
+					htmlDocument.classList.add("lock");
+
+					preloaderImages.forEach((preloaderImage) => {
+						const imgClone = document.createElement("img");
+						if (imgClone) {
+							imgClone.onload = imageLoaded;
+							imgClone.onerror = imageLoaded;
+							preloaderImage.dataset.src ?
+								(imgClone.src = preloaderImage.dataset.src) :
+								(imgClone.src = preloaderImage.src);
+						}
+					});
+
+					function imageLoaded() {
+						imagesLoadedCount++;
+						progress = Math.round(
+							(100 / preloaderImages.length) * imagesLoadedCount
+						);
+						if (progress >= 100) addLoadedClass();
+					}
+
+					function addLoadedClass() {
+						htmlDocument.classList.add("loaded");
+						htmlDocument.classList.remove("lock");
+						htmlDocument.classList.remove("loading");
+						setTimeout(() => {
+							preloader.remove();
+							preloaderContainer.remove();
+						}, 800);
+					}
+				} else {
+					preloaderContainer.remove();
+				}
+			}
+			preloader();
+		</script>
+	</div>
+
+	<script src="js/app.min.js?_v=20241103120541"></script>
+</body>
+
+</html>
