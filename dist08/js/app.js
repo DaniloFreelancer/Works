@@ -3927,7 +3927,7 @@
         const span = document.createElement("span");
         span.textContent = char;
         span.classList.add("letter");
-        span.style.animationDelay = `${index * .055}s`;
+        span.style.animationDelay = `${index * .06}s`;
         wrapper.appendChild(span);
     }));
     const observer = new IntersectionObserver((entries => {
@@ -3981,7 +3981,7 @@
     }
     window.addEventListener("resize", checkHeight);
     document.addEventListener("DOMContentLoaded", checkHeight);
-    window["FLS"] = true;
+    window["FLS"] = false;
     menuInit();
     tabs();
     headerScroll();
