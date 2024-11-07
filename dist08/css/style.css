@@ -71,7 +71,7 @@ h6 {
   font-size: inherit
 }
 body {
-  background-color: #c4c4c4
+  background-color: #f4f4f4
 }
 .lock body {
   overflow: hidden;
@@ -254,7 +254,8 @@ body {
   flex-wrap: wrap;
   -webkit-column-gap: 1.25rem;
   -moz-column-gap: 1.25rem;
-  column-gap: 1.25rem
+  column-gap: 1.25rem;
+  padding: .625rem
 }
 .footer__info {
   text-align: center;
@@ -1762,7 +1763,10 @@ body {
     overflow: auto;
     padding: 8.75rem .9375rem .9375rem 1.875rem;
     transition: all .4s;
-    background-color: rgba(62,134,245,.8)
+    background-color: rgba(62,134,245,.8);
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start
   }
   .menu__body::before {
     content: "";
@@ -1785,7 +1789,7 @@ body {
     row-gap: 2rem
   }
   .menu__link {
-    font-size: 1.75rem
+    font-size: 2.1875rem
   }
   .icon-menu {
     display: block;

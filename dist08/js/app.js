@@ -3927,7 +3927,7 @@
         const span = document.createElement("span");
         span.textContent = char;
         span.classList.add("letter");
-        span.style.animationDelay = `${index * .06}s`;
+        span.style.animationDelay = `${index * .062}s`;
         wrapper.appendChild(span);
     }));
     const observer = new IntersectionObserver((entries => {
