@@ -413,7 +413,7 @@ textarea.input {
   display: grid;
   grid-template-columns: auto 1fr auto;
   align-items: center;
-  gap: .75rem
+  gap: 1.25rem
 }
 .header__logo {
   position: relative;
@@ -437,6 +437,11 @@ textarea.input {
 }
 .menu-open .header__logo img:nth-child(2) {
   display: block
+}
+.actions-header__link-button img {
+  flex: 0 0 1.25rem;
+  width: 1.25rem;
+  height: 1.25rem
 }
 .footer {
   border-top: .0625rem solid #434343;
@@ -618,6 +623,9 @@ textarea.input {
   -webkit-animation: up .5s ease .8s forwards;
   animation: up .5s ease .8s forwards
 }
+.content-hero__top a {
+  aspect-ratio: 196/28
+}
 .content-hero__top img {
   max-width: 100%
 }
@@ -750,6 +758,7 @@ textarea.input {
 }
 .item-about__image {
   width: 2.8125rem;
+  aspect-ratio: 45/45;
   -webkit-filter: drop-shadow(3px 3px 13px #ae10c8);
   filter: drop-shadow(3px 3px 13px #ae10c8)
 }
@@ -1100,7 +1109,9 @@ textarea.input {
 .contacts__mail,
 .contacts__phone,
 .contacts__telegram {
-  flex: 0 0 1.5625rem
+  flex: 0 0 1.5625rem;
+  width: 1.5625rem;
+  height: 1.5625rem
 }
 .contacts__item-text {
   line-height: 122.222222%
@@ -1994,7 +2005,9 @@ textarea.input {
   .contacts__mail,
   .contacts__phone,
   .contacts__telegram {
-    flex: 0 0 1.125rem
+    flex: 0 0 1.125rem;
+    width: 1.125rem;
+    height: 1.125rem
   }
   .contacts__right-items {
     margin: 0 -.9375rem
