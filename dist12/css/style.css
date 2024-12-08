@@ -70,6 +70,9 @@ h6 {
   font-weight: inherit;
   font-size: inherit
 }
+body {
+  -webkit-tap-highlight-color: transparent
+}
 .lock body {
   overflow: hidden;
   touch-action: none;

@@ -1021,7 +1021,7 @@
             scaleImages[index].style.borderRadius = toRem(30);
         }));
     }));
-    window["FLS"] = true;
+    window["FLS"] = false;
     menuInit();
     spollers();
     tabs();
