@@ -580,8 +580,8 @@ textarea.input {
 }
 .hero__image--top {
   position: relative;
-  width: 54.166667%;
-  aspect-ratio: 325/325;
+  width: 54.178%;
+  aspect-ratio: 321/321;
   opacity: 0;
   -webkit-transform: translate(-100%,0);
   transform: translate(-100%,0)
@@ -612,8 +612,8 @@ textarea.input {
 }
 .hero__image--bottom {
   position: relative;
-  width: 68.333333%;
-  aspect-ratio: 410/410;
+  width: 68.355%;
+  aspect-ratio: 405/405;
   opacity: 0;
   -webkit-transform: translate(100%,0);
   transform: translate(100%,0)
@@ -1433,6 +1433,12 @@ textarea.input {
   .page__top {
     padding-bottom: 1.375rem
   }
+  .page__faq {
+    padding-top: 1.375rem
+  }
+  .page__faq {
+    padding-bottom: 1.375rem
+  }
   .hero__title {
     font-size: 4rem
   }
@@ -1661,6 +1667,12 @@ textarea.input {
     padding-top: .6875rem
   }
   .page__top {
+    padding-bottom: .6875rem
+  }
+  .page__faq {
+    padding-top: .6875rem
+  }
+  .page__faq {
     padding-bottom: .6875rem
   }
   .hero__title:not(:last-child) {
@@ -2133,6 +2145,12 @@ textarea.input {
     padding-top: clamp(.6875rem ,.4457417582rem + 1.2087912088vw ,1.375rem)
   }
   .page__top {
+    padding-bottom: clamp(.6875rem ,.4457417582rem + 1.2087912088vw ,1.375rem)
+  }
+  .page__faq {
+    padding-top: clamp(.6875rem ,.4457417582rem + 1.2087912088vw ,1.375rem)
+  }
+  .page__faq {
     padding-bottom: clamp(.6875rem ,.4457417582rem + 1.2087912088vw ,1.375rem)
   }
   .hero__title:not(:last-child) {
