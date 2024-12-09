@@ -73,11 +73,14 @@ h6 {
 body {
   -webkit-tap-highlight-color: transparent
 }
-.lock body {
+.lock body.loaded {
   overflow: hidden;
   touch-action: none;
   -ms-scroll-chaining: none;
   overscroll-behavior: none
+}
+body.loaded {
+  overflow: auto
 }
 .wrapper {
   min-height: 100%;
@@ -525,7 +528,7 @@ textarea.input {
   font-weight: 700
 }
 .page__hero {
-  padding-top: 2.8125rem
+  padding-top: 3.4375rem
 }
 .page__frame {
   width: 100%;
@@ -1865,6 +1868,7 @@ textarea.input {
   .menu__body::before {
     content: "";
     position: fixed;
+    background-color: #2f2f2f;
     width: 65%;
     height: 4.25rem;
     right: -100%;
