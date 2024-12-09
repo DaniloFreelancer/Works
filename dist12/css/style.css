@@ -79,6 +79,9 @@ body {
   -ms-scroll-chaining: none;
   overscroll-behavior: none
 }
+.menu-open body {
+  overflow: hidden
+}
 .wrapper {
   min-height: 100%;
   display: flex;
@@ -1856,7 +1859,7 @@ textarea.input {
   .menu__body {
     position: fixed;
     width: 65%;
-    height: 100svh;
+    height: 100vh;
     right: -100%;
     top: 0;
     overflow: auto;
