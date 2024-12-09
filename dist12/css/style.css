@@ -1856,7 +1856,7 @@ textarea.input {
   .menu__body {
     position: fixed;
     width: 65%;
-    height: 100vh;
+    height: 100svh;
     right: -100%;
     top: 0;
     overflow: auto;
