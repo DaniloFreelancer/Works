@@ -4617,9 +4617,10 @@
         if (document.querySelector(".hero__slider")) new swiper_core_Swiper(".hero__slider", {
             direction: "vertical",
             loop: true,
-            grabCursor: true,
+            grabCursor: false,
             modules: [ Navigation, Autoplay ],
             observer: true,
+            allowTouchMove: false,
             observeParents: true,
             slidesPerView: 1,
             spaceBetween: 10,
@@ -6731,7 +6732,7 @@ PERFORMANCE OF THIS SOFTWARE.
             const itemElement = document.createElement("article");
             itemElement.classList.add("popup__item", "item-popup");
             itemElement.dataset.id = item.id;
-            itemElement.innerHTML = `\n      <div class="item-popup__image">\n        <img src="${item.image}" alt="${item.name}">\n      </div>\n      <div class="item-popup__description">${item.name}</div>\n      <div class="item-popup__price">${(item.price * item.quantity).toFixed(2)}$</div>\n      <div class="item-popup__quantity quantity">\n        <button class="quantity__decrease">-</button>\n        <div class="quantity__number">${item.quantity}</div>\n        <button class="quantity__increase">+</button>\n      </div>\n    `;
+            itemElement.innerHTML = `\n      <div class="item-popup__image">\n        <img src="${item.image}" alt="${item.name}">\n      </div>\n      <div class="item-popup__description">${item.name}</div>\n      <div class="item-popup__price">${(item.price * item.quantity).toFixed(2)}$</div>\n      <div class="item-popup__quantity quantity">\n        <button class="quantity__decrease" aria-label="Button that decrease amout of item">-</button>\n        <div class="quantity__number">${item.quantity}</div>\n        <button class="quantity__increase" aria-label="Button that increase amout of item">+</button>\n      </div>\n    `;
             popupItems.appendChild(itemElement);
         }));
         addQuantityHandlers(popupItems);
@@ -6759,9 +6760,6 @@ PERFORMANCE OF THIS SOFTWARE.
                 saveCartToLocalStorage();
                 updatePopupContent(popupItems);
             }));
-        }));
-        document.addEventListener("click", (event => {
-            if (!popup.contains(event.target) && !event.target.closest(".product__button")) popup.setAttribute("aria-hidden", "true");
         }));
     };
     initCart();

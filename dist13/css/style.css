@@ -78,7 +78,6 @@ h6 {
   font-size: inherit
 }
 body {
-  -webkit-tap-highlight-color: transparent;
   background-color: #fff9ef
 }
 body::-webkit-scrollbar {
