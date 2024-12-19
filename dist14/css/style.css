@@ -798,6 +798,7 @@ body::-webkit-scrollbar {
   animation: up .5s ease .4s forwards
 }
 .collections__items .collections__item {
+  position: relative;
   display: grid;
   align-items: end
 }
@@ -820,7 +821,8 @@ body::-webkit-scrollbar {
   height: 80%;
   background: linear-gradient(90.11deg,#ff8e5e 1.88%,#fd3a5b 28.61%,#500048 99.9%);
   border-radius: 1.25rem 3.75rem;
-  overflow: hidden
+  overflow: hidden;
+  pointer-events: none
 }
 .collections__items .collections__item:nth-child(odd) .item-collections__images::after {
   content: "";
@@ -830,6 +832,7 @@ body::-webkit-scrollbar {
   border-radius: 50%;
   overflow: hidden;
   aspect-ratio: 983/983;
+  pointer-events: none;
   background: radial-gradient(50% 50% at 50% 50%,rgba(255,255,255,.204) 0,rgba(0,0,0,0) 100%);
   z-index: -1
 }
@@ -884,7 +887,8 @@ body::-webkit-scrollbar {
   height: 80%;
   background: linear-gradient(270.11deg,#ff4060 4.08%,#ff81c5 50.76%,#6d5eea 93.7%);
   border-radius: 1.25rem 3.75rem;
-  overflow: hidden
+  overflow: hidden;
+  pointer-events: none
 }
 .collections__items .collections__item:nth-child(even) .item-collections__images::after {
   content: "";
@@ -894,6 +898,7 @@ body::-webkit-scrollbar {
   border-radius: 50%;
   overflow: hidden;
   aspect-ratio: 983/983;
+  pointer-events: none;
   background: radial-gradient(50% 50% at 50% 50%,rgba(255,255,255,.204) 0,rgba(0,0,0,0) 100%);
   z-index: -1
 }
