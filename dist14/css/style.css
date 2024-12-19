@@ -439,39 +439,6 @@ body::-webkit-scrollbar {
   -o-object-fit: cover;
   object-fit: cover
 }
-.footer__logo svg path {
-  fill: transparent;
-  stroke: #fff;
-  stroke-width: 1.2;
-  stroke-dasharray: 1000;
-  stroke-dashoffset: 1000;
-  -webkit-animation: logoAnimation 10s ease-in-out 1 forwards;
-  animation: logoAnimation 10s ease-in-out 1 forwards
-}
-@-webkit-keyframes logoAnimation {
-  0% {
-    stroke-dashoffset: 1000
-  }
-  70% {
-    fill: #fff
-  }
-  100% {
-    fill: #fff;
-    stroke-dashoffset: 0
-  }
-}
-@keyframes logoAnimation {
-  0% {
-    stroke-dashoffset: 1000
-  }
-  70% {
-    fill: #fff
-  }
-  100% {
-    fill: #fff;
-    stroke-dashoffset: 0
-  }
-}
 .footer__made-by {
   font-family: Roboto;
   font-weight: 400;
