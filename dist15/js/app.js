@@ -3330,7 +3330,12 @@
                         } else valueOfThreshold = 1;
                         item.setAttribute("data-watch-threshold", valueOfThreshold.toFixed(2));
                     }
-                    if (item.hasAttribute("data-watch-mobile-adjust") && window.innerWidth <= 480) {
+                    if (item.hasAttribute("data-watch-mobile-adjust") && window.innerWidth <= 770) {
+                        let thresholdValue = item.dataset.watchThreshold || "0";
+                        thresholdValue = thresholdValue.split(",").map((val => (parseFloat(val) * .35).toFixed(2))).join(",");
+                        item.setAttribute("data-watch-threshold", thresholdValue);
+                    }
+                    if (item.hasAttribute("data-watch-smallmobile-adjust") && window.innerWidth <= 600) {
                         let thresholdValue = item.dataset.watchThreshold || "0";
                         thresholdValue = thresholdValue.split(",").map((val => (parseFloat(val) * .15).toFixed(2))).join(",");
                         item.setAttribute("data-watch-threshold", thresholdValue);
