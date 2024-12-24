@@ -4128,6 +4128,9 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
     -webkit-transform: scale(1.1);
     transform: scale(1.1)
   }
+  .address-contact a.address-contact__info:hover {
+    text-decoration: underline
+  }
   .gallery__item:hover img {
     -webkit-transform: scale(1.1);
     transform: scale(1.1)

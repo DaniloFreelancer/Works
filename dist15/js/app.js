@@ -3321,7 +3321,7 @@
         scrollWatcherConstructor(items) {
             if (items.length) {
                 this.scrollWatcherLogging(`Прокинувся, стежу за об'єктами (${items.length})...`);
-                let uniqParams = uniqArray(Array.from(items).map((function(item) {
+                let uniqParams = uniqArray(Array.from(items).map((item => {
                     if (item.dataset.watch === "navigator" && !item.dataset.watchThreshold) {
                         let valueOfThreshold;
                         if (item.clientHeight > 2) {
@@ -3329,6 +3329,11 @@
                             if (valueOfThreshold > 1) valueOfThreshold = 1;
                         } else valueOfThreshold = 1;
                         item.setAttribute("data-watch-threshold", valueOfThreshold.toFixed(2));
+                    }
+                    if (item.hasAttribute("data-watch-mobile-adjust") && window.innerWidth <= 480) {
+                        let thresholdValue = item.dataset.watchThreshold || "0";
+                        thresholdValue = thresholdValue.split(",").map((val => (parseFloat(val) * .15).toFixed(2))).join(",");
+                        item.setAttribute("data-watch-threshold", thresholdValue);
                     }
                     return `${item.dataset.watchRoot ? item.dataset.watchRoot : null}|${item.dataset.watchMargin ? item.dataset.watchMargin : "0px"}|${item.dataset.watchThreshold ? item.dataset.watchThreshold : 0}`;
                 })));
@@ -5326,7 +5331,7 @@ PERFORMANCE OF THIS SOFTWARE.
         item.style.animationDelay = `${index * .08}s`;
         item.style.setProperty("--index", index);
     }));
-    window["FLS"] = false;
+    window["FLS"] = true;
     menuInit();
     pageNavigation();
     headerScroll();
