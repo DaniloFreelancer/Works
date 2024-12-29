@@ -601,6 +601,7 @@ textarea.input {
   font-weight: 600
 }
 .magazine__body {
+  text-align: left;
   display: grid;
   grid-template-columns: 1fr 28.092105%;
   align-items: start
@@ -910,10 +911,10 @@ textarea.input {
   height: .0625rem;
   pointer-events: none;
   background-color: #000;
-  transition-delay: .4s;
-  transition: width .8s
+  transition: width .8s;
+  transition-delay: .4s
 }
-._watcher-view .podcast__header::before {
+.podcast__header._watcher-view::before {
   width: 100%
 }
 .podcast__title {
@@ -948,19 +949,19 @@ textarea.input {
   -webkit-transform: translate(0,20%);
   transform: translate(0,20%)
 }
-._watcher-view .podcast__items .podcast__item:nth-child(1) {
+.podcast__items .podcast__item._watcher-view:nth-child(1) {
   -webkit-animation: up .5s ease .45s forwards;
   animation: up .5s ease .45s forwards
 }
-._watcher-view .podcast__items .podcast__item:nth-child(2) {
+.podcast__items .podcast__item._watcher-view:nth-child(2) {
   -webkit-animation: up .5s ease .6s forwards;
   animation: up .5s ease .6s forwards
 }
-._watcher-view .podcast__items .podcast__item:nth-child(3) {
+.podcast__items .podcast__item._watcher-view:nth-child(3) {
   -webkit-animation: up .5s ease .75s forwards;
   animation: up .5s ease .75s forwards
 }
-._watcher-view .podcast__items .podcast__item:nth-child(4) {
+.podcast__items .podcast__item._watcher-view:nth-child(4) {
   -webkit-animation: up .5s ease .9s forwards;
   animation: up .5s ease .9s forwards
 }
@@ -1066,8 +1067,8 @@ textarea.input {
   height: .0625rem;
   pointer-events: none;
   background-color: #000;
-  transition-delay: .3s;
-  transition: width .8s
+  transition: width .8s;
+  transition-delay: .3s
 }
 ._watcher-view .authors__header::before {
   width: 100%
@@ -1249,6 +1250,11 @@ textarea.input {
     max-width: 23.0625rem
   }
 }
+@media (min-width:29.99875em)and (min-width:95em) {
+  .page__lead {
+    padding-bottom: 1.5625rem
+  }
+}
 @media (min-width:43.8125em) {
   .item-magazine__image {
     max-width: 21.708%
@@ -1318,12 +1324,6 @@ textarea.input {
   }
   .page__lead {
     padding-top: 2.375rem
-  }
-  .page__lead {
-    padding-bottom: 1.5625rem
-  }
-  .page__magazine {
-    padding-top: 1.5625rem
   }
   .page__magazine {
     padding-bottom: 6rem
@@ -1617,12 +1617,6 @@ textarea.input {
   .page__lead {
     padding-top: .75rem
   }
-  .page__lead {
-    padding-bottom: .625rem
-  }
-  .page__magazine {
-    padding-top: .625rem
-  }
   .page__magazine {
     padding-bottom: .75rem
   }
@@ -1773,8 +1767,14 @@ textarea.input {
     font-size: 4.375rem;
     text-align: center
   }
+  .magazine__container {
+    text-align: center
+  }
   .magazine__body {
     grid-template-columns: auto
+  }
+  .magazine__link-button.link-button {
+    text-align: center
   }
   .item-magazine__body {
     -webkit-column-gap: .75rem;
@@ -1956,6 +1956,11 @@ textarea.input {
     flex-direction: column
   }
 }
+@media (max-width:29.99875em)and (max-width:20em) {
+  .page__magazine {
+    padding-top: .625rem
+  }
+}
 @media (max-width:23.75em) {
   .podcast__header {
     flex-direction: column
@@ -2017,12 +2022,6 @@ textarea.input {
   }
   .page__lead {
     padding-top: clamp(.75rem ,.3166666667rem + 2.1666666667vw ,2.375rem)
-  }
-  .page__lead {
-    padding-bottom: clamp(.625rem ,.375rem + 1.25vw ,1.5625rem)
-  }
-  .page__magazine {
-    padding-top: clamp(.625rem ,.375rem + 1.25vw ,1.5625rem)
   }
   .page__magazine {
     padding-bottom: clamp(.75rem ,-.65rem + 7vw ,6rem)
@@ -2299,6 +2298,26 @@ textarea.input {
 @media (min-width:48.06125em)and (max-width:95em) {
   .navigation-footer__title svg {
     width: clamp(8.75rem ,4.3343702565rem + 9.1875049932vw ,13.0625rem)
+  }
+}
+@media (min-width:29.99875em)and (min-width:20em)and (max-width:95em) {
+  .page__lead {
+    padding-bottom: clamp(.625rem ,.375rem + 1.25vw ,1.5625rem)
+  }
+}
+@media (min-width:29.99875em)and (max-width:20em) {
+  .page__lead {
+    padding-bottom: .625rem
+  }
+}
+@media (max-width:29.99875em)and (min-width:95em) {
+  .page__magazine {
+    padding-top: 1.5625rem
+  }
+}
+@media (max-width:29.99875em)and (min-width:20em)and (max-width:95em) {
+  .page__magazine {
+    padding-top: clamp(.625rem ,.375rem + 1.25vw ,1.5625rem)
   }
 }
 @media (min-width:61.999375em)and (max-width:95em) {

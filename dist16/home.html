@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20241228222451">
+	<link rel="stylesheet" href="css/style.min.css?_v=20241229121145">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,7 +16,7 @@
 	<div class="wrapper">
 		<header class="header">
 			<div class="header__container">
-				<div class="header__logo" aria-label="Site Logo">
+				<div class="header__logo">
 					<svg width="210" height="19" viewBox="0 0 210 19" fill="none" xmlns="http://www.w3.org/2000/svg">
 						<path d="M3.648 18.116V11.54H9.96V8.39599H3.648V4.05199H11.136V0.883986H0V18.116H3.648Z" fill="black" />
 						<path d="M21.7526 11.636L27.8966 0.883986H24.2246L20.0486 8.29999L15.9446 0.883986H12.0086L18.1046 11.636V18.116H21.7526V11.636Z" fill="black" />
@@ -366,9 +366,9 @@
 					</a>
 				</div>
 			</section>
-			<section data-watch data-watch-once data-watch-threshold="0.5" data-watch-mobile-adjust class="page__podcast podcast">
+			<section class="page__podcast podcast">
 				<div class="podcast__container">
-					<div class="podcast__header">
+					<div data-watch data-watch-once data-watch-threshold="0.35" class="podcast__header">
 						<h2 class="podcast__title">Podcast</h2>
 						<a href="#" class="podcast__link-button link-button" aria-label="More about podcast">
 							<div class="link-button__link-text">All episodes</div>
@@ -379,8 +379,8 @@
 							</div>
 						</a>
 					</div>
-					<div data-watch data-watch-once data-watch-threshold="0.7" data-watch-mobile-adjust class="podcast__items">
-						<article class="podcast__item item-podcast">
+					<div class="podcast__items">
+						<article data-watch data-watch-once data-watch-threshold="0.4" class="podcast__item item-podcast">
 							<a href="#" class="item-podcast__body" aria-label="Link to the next page">
 								<img src="img/podcast/01.webp" class="item-podcast__image" alt="Image 1">
 								<div class="item-podcast__header-block">
@@ -410,7 +410,7 @@
 								</div>
 							</div>
 						</article>
-						<article class="podcast__item item-podcast">
+						<article data-watch data-watch-once data-watch-threshold="0.4" class="podcast__item item-podcast">
 							<a href="#" class="item-podcast__body" aria-label="Link to the next page">
 								<img src="img/podcast/02.webp" class="item-podcast__image" alt="Image 2">
 								<div class="item-podcast__header-block">
@@ -440,7 +440,7 @@
 								</div>
 							</div>
 						</article>
-						<article class="podcast__item item-podcast">
+						<article data-watch data-watch-once data-watch-threshold="0.4" class="podcast__item item-podcast">
 							<a href="#" class="item-podcast__body" aria-label="Link to the next page">
 								<img src="img/podcast/03.webp" class="item-podcast__image" alt="Image 3">
 								<div class="item-podcast__header-block">
@@ -693,10 +693,12 @@
 		</footer>
 	</div>
 	<div id="fls-preloader">
-		<div class="loader">
-			<svg class="loader__svg" width="194" height="205" viewBox="0 0 1520 205" fill="none" xmlns="http://www.w3.org/2000/svg">
-				<path d="M759.865 96.5387C746.539 82.0283 740.616 74.0327 740.616 63.0759C740.616 50.9345 749.204 42.3467 760.753 42.3467C772.894 42.3467 781.482 49.75 782.963 63.6681H821.164C820.868 31.0937 796.881 9.47619 760.753 9.47619C724.921 9.47619 698.269 31.9821 698.269 62.7797C698.269 74.9211 701.823 85.5818 709.226 95.9464C686.72 108.68 673.098 127.632 673.098 150.138C673.098 189.82 701.527 215.287 745.947 215.287C765.491 215.287 783.555 207.884 799.546 193.966L817.018 212.622H867.656L823.237 164.649C832.121 148.065 838.043 127.632 838.339 109.865H800.731C800.435 119.341 799.546 128.817 797.769 137.405L759.865 96.5387ZM712.484 147.769C712.484 135.628 719.295 125.856 730.252 120.229L778.521 171.46C770.229 178.271 759.865 181.824 748.908 181.824C724.921 181.824 712.484 166.722 712.484 147.769Z" fill="black" />
-			</svg>
+		<div class="prealoder">
+			<div class="loader"></div>
+			<div class="preloader__progress">
+				<div class="preloader__progress-bar"></div>
+			</div>
+			<div class="preloader__percentage">0%</div>
 		</div>
 		<script>
 			function preloader() {
@@ -717,37 +719,89 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
+						text-align: center;
             z-index: 9999;
-            background-color: #f8f7f5;
+            background-color: #fff;
             transition: opacity 0.5s ease;
           }
-
-          .loader {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
+					.loader {
+						display: inline-grid;
+						padding: 5px;
+						background-color: rgb(255, 255, 255, 0.6);
+						filter: blur(4px) contrast(12);
+					}
+					.loader:before,
+					.loader:after {
+						content: "";
+						grid-area: 1/1;
+						height: 90px;
+						aspect-ratio: 3;
+						--c: #0000 64%,#000 66% 98%,#0000 101%;
+						background:
+							radial-gradient(35% 146% at 50% 159%,var(--c)) 0 0,
+							radial-gradient(35% 146% at 50% -59%,var(--c)) 100% 100%;
+						background-size: calc(200%/3) 50%;
+						background-repeat: repeat-x;
+						clip-path: inset(0 100% 0 0);
+						animation: l16 1.6s infinite linear;
+						@media (max-width: 61.999em){
+							height: 75px;
+						}
+						@media (max-width: 30em){
+							height: 60px;
+						}
+						@media (max-width: 23.75em){
+							height: 45px;
+						}
+					}
+					.loader:after {
+						scale: -1 1;
+						animation-delay: -.75s;
+					}
+					@keyframes l16{
+						50% {clip-path: inset(0)}
+						to {clip-path: inset(0 0 0 100%)}
+					}
+					.preloader__progress {
+            margin-top: 20px;
+						margin-left: auto;
+						margin-right: auto;
+            width: 80%;
+            height: 20px;
+            background-color: rgba(255, 255, 255, 0.2);
+            border-radius: 7px;
+            overflow: hidden;
           }
-					.loader__svg{
-						width: 194px;
-						height: 205px;
-						opacity: 0;
-						transform: scale(0);
-						animation: scaleAn 8s ease 0.4s forwards;
+
+          .preloader__progress-bar {
+            width: 0;
+            height: 100%;
+            background-color: #333333;
+          }
+          .preloader__percentage {
+            margin-top: 10px;
+            font-family: "GeneralSans";
+            font-weight: 700;
+            font-size: 20px;
+            animation: fadeIn 0.5s ease forwards;
+          }
+					@media (max-width: 30em){
+						.preloader__progress {
+							height: 15px;
+							width: 70%;
+						}
+						.preloader__percentage{
+							font-size: 18px;
+						}
 					}
-					@keyframes scaleAn {
-						0%{
-							opacity: 0;
-							transform: scale(0);
-						}
-						50%{
-							opacity: 1;
-						}
-						100%{
-							transform: scale(200);
-						}
-					}
+					@keyframes fadeIn {
+            0% {
+              opacity: 0;
+            }
+            100% {
+              opacity: 1;
+            }
+          }
           html.loaded #fls-preloader {
             opacity: 0;
             visibility: hidden;
@@ -759,21 +813,39 @@
 				document.head.insertAdjacentHTML("beforeend", preloaderStyleTemplate);
 
 				const preloaderContainer = document.querySelector("#fls-preloader");
-				document.documentElement.classList.add("loading");
-				setTimeout(() => {
-					document.documentElement.classList.remove("loading");
-					document.documentElement.classList.add("loaded");
-					setTimeout(() => {
-						preloaderContainer.remove();
-					}, 0);
-				}, 5900);
+				const progressBar = document.querySelector(".preloader__progress-bar");
+				const percentage = document.querySelector(".preloader__percentage");
+
+				let progress = 0;
+				const interval = setInterval(() => {
+					progress += 1;
+					progressBar.style.width = `${progress}%`;
+					percentage.textContent = `${progress}%`;
+
+					if (progress >= 100) {
+						clearInterval(interval);
+						document.documentElement.classList.remove("loading");
+						document.documentElement.classList.add("loaded");
+						setTimeout(() => {
+							preloaderContainer.remove();
+						}, 400);
+					}
+				}, 45);
+				// document.documentElement.classList.add("loading");
+				// setTimeout(() => {
+				//   document.documentElement.classList.remove("loading");
+				//   document.documentElement.classList.add("loaded");
+				//   setTimeout(() => {
+				//     preloaderContainer.remove();
+				//   }, 0);
+				// }, 5900);
 			}
 
 			preloader();
 		</script>
 	</div>
 
-	<script src="js/app.min.js?_v=20241228222451"></script>
+	<script src="js/app.min.js?_v=20241229121145"></script>
 </body>
 
 </html>
