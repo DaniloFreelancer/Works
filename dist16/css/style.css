@@ -612,7 +612,8 @@ textarea.input {
 .navigation-footer__item-link {
   font-weight: 400;
   font-size: 1rem;
-  line-height: 180%
+  line-height: 180%;
+  position: relative
 }
 .social-footer__item svg {
   flex: 0 0 1.25rem;
