@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Purchase</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20250126194637">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="wrapper" id="wrap">
+		<div id="popup" aria-hidden="true" class="popup">
+			<div class="popup__wrapper">
+				<div class="popup__content">
+					<div class="popup__top-content">
+						<h3 class="popup__title">Create Account</h3>
+						<button data-close type="button" class="popup__close">
+							<svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<g opacity="0.4" clip-path="url(#clip0_201_28914)">
+									<path d="M12.9397 12.08L17.7997 7.21996C17.9089 7.09243 17.9659 6.92838 17.9595 6.76059C17.953 6.59281 17.8834 6.43365 17.7647 6.31492C17.646 6.19619 17.4868 6.12664 17.319 6.12015C17.1512 6.11367 16.9872 6.17074 16.8597 6.27996L11.9997 11.14L7.13966 6.2733C7.01212 6.16408 6.84807 6.10701 6.68029 6.11349C6.5125 6.11997 6.35334 6.18952 6.23461 6.30825C6.11589 6.42698 6.04633 6.58614 6.03985 6.75393C6.03337 6.92171 6.09044 7.08576 6.19966 7.2133L11.0597 12.08L6.19299 16.94C6.1232 16.9997 6.06652 17.0733 6.02651 17.156C5.98649 17.2387 5.964 17.3288 5.96046 17.4206C5.95691 17.5124 5.97238 17.604 6.0059 17.6895C6.03941 17.7751 6.09025 17.8528 6.15522 17.9177C6.22019 17.9827 6.29789 18.0335 6.38344 18.0671C6.46899 18.1006 6.56055 18.116 6.65236 18.1125C6.74417 18.1089 6.83426 18.0865 6.91697 18.0464C6.99968 18.0064 7.07323 17.9498 7.13299 17.88L11.9997 13.02L16.8597 17.88C16.9872 17.9892 17.1512 18.0463 17.319 18.0398C17.4868 18.0333 17.646 17.9637 17.7647 17.845C17.8834 17.7263 17.953 17.5671 17.9595 17.3993C17.9659 17.2315 17.9089 17.0675 17.7997 16.94L12.9397 12.08Z" fill="#333333" />
+								</g>
+								<defs>
+									<clipPath id="clip0_201_28914">
+										<rect width="24" height="24" fill="white" transform="translate(0 0.0799561)" />
+									</clipPath>
+								</defs>
+							</svg>
+						</button>
+					</div>
+					<div class="popup__body">
+						<form data-ajax action="#" method="GET" class="popup__form-body form-popup">
+							<div class="form-popup__item">
+								<label for="name" class="form-popup__label">Name and Surname</label>
+								<input data-required type="text" name="name" id="name" data-error="Error" placeholder="Enter your name and surname" class="form-popup__input input">
+							</div>
+							<div class="form-popup__item">
+								<label for="email" class="form-popup__label">Email Address</label>
+								<input data-required="email" type="text" name="email" id="email" data-error="Invalid email address" placeholder="Enter your email address" class="form-popup__input input">
+							</div>
+							<div class="form-popup__item">
+								<label for="password" class="form-popup__label">Password</label>
+								<div class="form-popup__wrapper">
+									<input data-required autocomplete="off" type="password" id="password" placeholder="Enter your password" name="password" class="form-popup__input input">
+									<button class="form__viewpass" type="button">
+										<img src="img/popup/see.svg" alt="Show Icon">
+										<img src="img/popup/hide.svg" alt="Hide Icon">
+									</button>
+								</div>
+							</div>
+							<div class="form-popup__item form-popup__item--checkbox">
+								<input type="checkbox" class="form-popup__checkbox" id="checkbox"></input>
+								<label for="checkbox">I agree with <a target="_blank" href="https://www.travelwta.com/travel-terms-glossary/">Terms</a> and <a target="_blank" href="https://wixuzman.wixstudio.com/travel-agency/privacy-policy">Privacy</a></label>
+							</div>
+							<div class="form-popup__buttons form-popup__buttons--disable">
+								<button type="submit" class="form-popup__signUp-button colorfull-button" title="Sign Up">sign up</button>
+								<span>or</span>
+								<a href="https://accounts.google.com/signup/v2/kidaccountinfo?flowName=GlifWebSignIn&flowEntry=ServiceLogin&ddm=1" target="_blank" class="form-popup__google-button" title="Sign Up with Google">
+									<svg class="form-popup__icon" width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<g clip-path="url(#clip0_201_28942)">
+											<path d="M5.26623 9.84496C5.73412 8.4294 6.63709 7.19777 7.84635 6.32575C9.0556 5.45374 10.5094 4.98589 12.0002 4.98896C13.6902 4.98896 15.2182 5.58896 16.4182 6.57096L19.9102 3.07996C17.7822 1.22496 15.0552 0.0799561 12.0002 0.0799561C7.27023 0.0799561 3.19823 2.77796 1.24023 6.72996L5.26623 9.84496Z" fill="#EA4335" />
+											<path d="M16.0403 18.093C14.9503 18.796 13.5663 19.171 12.0003 19.171C10.5154 19.1741 9.06711 18.71 7.86054 17.8444C6.65398 16.9788 5.75025 15.7556 5.2773 14.348L1.2373 17.415C2.22855 19.4213 3.76257 21.1094 5.66513 22.2876C7.56768 23.4657 9.76251 24.0867 12.0003 24.08C14.9333 24.08 17.7353 23.037 19.8343 21.08L16.0413 18.093H16.0403Z" fill="#34A853" />
+											<path d="M19.834 21.0799C22.029 19.0319 23.454 15.9839 23.454 12.0799C23.454 11.3699 23.345 10.6069 23.182 9.89795H12V14.5349H18.436C18.119 16.0939 17.266 17.301 16.041 18.0929L19.834 21.0799Z" fill="#4A90E2" />
+											<path d="M5.27712 14.348C5.03247 13.6169 4.90819 12.8509 4.90912 12.08C4.90912 11.298 5.03412 10.547 5.26612 9.84498L1.24012 6.72998C0.416494 8.39267 -0.00807994 10.2245 0.000116455 12.08C0.000116455 14 0.445116 15.81 1.23712 17.415L5.27712 14.348Z" fill="#FBBC05" />
+										</g>
+										<defs>
+											<clipPath id="clip0_201_28942">
+												<rect width="24" height="24" fill="white" transform="translate(0 0.0799561)" />
+											</clipPath>
+										</defs>
+									</svg>
+									<span>Sign Up with Google</span>
+								</a>
+							</div>
+						</form>
+						<div class="popup__login">
+							<span>Already have an account?</span>
+							<button data-popup="#popup-login" class="popup__login-button">Log In</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="popup-login" aria-hidden="true" class="popup">
+			<div class="popup__wrapper">
+				<div class="popup__content">
+					<div class="popup__top-content">
+						<h3 class="popup__title">Login</h3>
+						<button data-close type="button" class="popup__close">
+							<svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<g opacity="0.4" clip-path="url(#clip0_201_28914)">
+									<path d="M12.9397 12.08L17.7997 7.21996C17.9089 7.09243 17.9659 6.92838 17.9595 6.76059C17.953 6.59281 17.8834 6.43365 17.7647 6.31492C17.646 6.19619 17.4868 6.12664 17.319 6.12015C17.1512 6.11367 16.9872 6.17074 16.8597 6.27996L11.9997 11.14L7.13966 6.2733C7.01212 6.16408 6.84807 6.10701 6.68029 6.11349C6.5125 6.11997 6.35334 6.18952 6.23461 6.30825C6.11589 6.42698 6.04633 6.58614 6.03985 6.75393C6.03337 6.92171 6.09044 7.08576 6.19966 7.2133L11.0597 12.08L6.19299 16.94C6.1232 16.9997 6.06652 17.0733 6.02651 17.156C5.98649 17.2387 5.964 17.3288 5.96046 17.4206C5.95691 17.5124 5.97238 17.604 6.0059 17.6895C6.03941 17.7751 6.09025 17.8528 6.15522 17.9177C6.22019 17.9827 6.29789 18.0335 6.38344 18.0671C6.46899 18.1006 6.56055 18.116 6.65236 18.1125C6.74417 18.1089 6.83426 18.0865 6.91697 18.0464C6.99968 18.0064 7.07323 17.9498 7.13299 17.88L11.9997 13.02L16.8597 17.88C16.9872 17.9892 17.1512 18.0463 17.319 18.0398C17.4868 18.0333 17.646 17.9637 17.7647 17.845C17.8834 17.7263 17.953 17.5671 17.9595 17.3993C17.9659 17.2315 17.9089 17.0675 17.7997 16.94L12.9397 12.08Z" fill="#333333" />
+								</g>
+								<defs>
+									<clipPath id="clip0_201_28914">
+										<rect width="24" height="24" fill="white" transform="translate(0 0.0799561)" />
+									</clipPath>
+								</defs>
+							</svg>
+						</button>
+					</div>
+					<div class="popup__body">
+						<form data-ajax action="#" method="GET" class="popup__form-body form-popup">
+							<div class="form-popup__item">
+								<label for="email" class="form-popup__label">Email Address</label>
+								<input data-required="email" type="text" name="email" id="email" data-error="Invalid email address" placeholder="Enter your email address" class="form-popup__input input">
+							</div>
+							<div class="form-popup__item">
+								<label for="password" class="form-popup__label">Password</label>
+								<div class="form-popup__wrapper">
+									<input data-required autocomplete="off" type="password" id="password" placeholder="Enter your password" name="password" class="form-popup__input input">
+									<button class="form__viewpass" type="button">
+										<img src="img/popup/see.svg" alt="Show Icon">
+										<img src="img/popup/hide.svg" alt="Hide Icon">
+									</button>
+								</div>
+							</div>
+							<a href="#" data-popup="#pass" class="form-popup__password-forgot">Forgot your password?</a>
+							<div class="form-popup__buttons">
+								<button type="submit" class="form-popup__signUp-button sign-in colorfull-button" title="Sign In">sign in</button>
+								<span>or</span>
+								<a href="https://accounts.google.com/signup/v2/kidaccountinfo?flowName=GlifWebSignIn&flowEntry=ServiceLogin&ddm=1" target="_blank" class="form-popup__google-button" title="Sign In with Google">
+									<svg class="form-popup__icon" width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<g clip-path="url(#clip0_201_28942)">
+											<path d="M5.26623 9.84496C5.73412 8.4294 6.63709 7.19777 7.84635 6.32575C9.0556 5.45374 10.5094 4.98589 12.0002 4.98896C13.6902 4.98896 15.2182 5.58896 16.4182 6.57096L19.9102 3.07996C17.7822 1.22496 15.0552 0.0799561 12.0002 0.0799561C7.27023 0.0799561 3.19823 2.77796 1.24023 6.72996L5.26623 9.84496Z" fill="#EA4335" />
+											<path d="M16.0403 18.093C14.9503 18.796 13.5663 19.171 12.0003 19.171C10.5154 19.1741 9.06711 18.71 7.86054 17.8444C6.65398 16.9788 5.75025 15.7556 5.2773 14.348L1.2373 17.415C2.22855 19.4213 3.76257 21.1094 5.66513 22.2876C7.56768 23.4657 9.76251 24.0867 12.0003 24.08C14.9333 24.08 17.7353 23.037 19.8343 21.08L16.0413 18.093H16.0403Z" fill="#34A853" />
+											<path d="M19.834 21.0799C22.029 19.0319 23.454 15.9839 23.454 12.0799C23.454 11.3699 23.345 10.6069 23.182 9.89795H12V14.5349H18.436C18.119 16.0939 17.266 17.301 16.041 18.0929L19.834 21.0799Z" fill="#4A90E2" />
+											<path d="M5.27712 14.348C5.03247 13.6169 4.90819 12.8509 4.90912 12.08C4.90912 11.298 5.03412 10.547 5.26612 9.84498L1.24012 6.72998C0.416494 8.39267 -0.00807994 10.2245 0.000116455 12.08C0.000116455 14 0.445116 15.81 1.23712 17.415L5.27712 14.348Z" fill="#FBBC05" />
+										</g>
+										<defs>
+											<clipPath id="clip0_201_28942">
+												<rect width="24" height="24" fill="white" transform="translate(0 0.0799561)" />
+											</clipPath>
+										</defs>
+									</svg>
+									<span>Sign In with Google</span>
+								</a>
+							</div>
+						</form>
+						<div class="popup__login">
+							<span>Don’t have an account ? </span>
+							<button data-popup="#popup" class="popup__login-button">Sign Up</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="pass" aria-hidden="true" class="popup">
+			<div class="popup__wrapper">
+				<div class="popup__content">
+					<div class="popup__top-content popup__top-content--password">
+						<div class="popup__top-icon">
+							<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M7 17C8.15196 16.9985 9.26816 16.5998 10.1604 15.8711C11.0526 15.1424 11.6663 14.1284 11.898 13H14V15H16V13H18V16H20V13H21V11H11.898C11.6663 9.87158 11.0526 8.85755 10.1604 8.1289C9.26816 7.40025 8.15196 7.00154 7 7C4.243 7 2 9.243 2 12C2 14.757 4.243 17 7 17ZM7 9C8.654 9 10 10.346 10 12C10 13.654 8.654 15 7 15C5.346 15 4 13.654 4 12C4 10.346 5.346 9 7 9Z" fill="#FA8B02" />
+							</svg>
+						</div>
+						<h3 class="popup__title">Forgot Password</h3>
+						<div class="popup__top-text">
+							<p>
+								No worries, we'll send you reset instructions.
+							</p>
+						</div>
+					</div>
+					<div class="popup__body">
+						<form action="#" class="popup__form-body form-popup">
+							<div class="form-popup__item">
+								<label for="email" class="form-popup__label">Email Address</label>
+								<input data-required="email" type="text" name="email" id="email" data-error="Invalid email address" placeholder="Enter your email address" class="form-popup__input input">
+							</div>
+							<button type="submit" class="form-popup__signUp-button reset-password colorfull-button" title="Reset Password">Reset Password</button>
+						</form>
+						<div class="popup__login">
+							<img src="img/popup/arrow.svg" alt="Arrow Icon">
+							<button data-popup="#popup-login" class="popup__login-button popup__login-button--password">Back to Login</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<header data-scroll="100" class="header">
+			<div class="header__container">
+				<a href="#" class="header__logo"><img src="img/header/logo.svg" alt="Site Logo"></a>
+				<div class="header__menu menu">
+					<nav class="menu__body">
+						<ul class="menu__list">
+							<li class="menu__item"><a href="home.html" target="_blank" class="menu__link _active">Home</a></li>
+							<li class="menu__item"><a href="about.html" target="_blank" class="menu__link">About Us</a></li>
+							<li class="menu__item"><a href="packages.html" target="_blank" class="menu__link">Tour Packages</a></li>
+							<li class="menu__item"><a href="contact.html" target="_blank" class="menu__link">Contact Us</a></li>
+						</ul>
+					</nav>
+				</div>
+				<div class="header__actions actions-header">
+					<div class="actions-header__lang">
+						<span>Eng</span>
+						<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<g opacity="0.6">
+								<path d="M15.4163 7.29163L9.99967 12.7083L4.58301 7.29163" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+							</g>
+						</svg>
+					</div>
+					<button data-popup="#popup-login" class="actions-header__login" aria-label="Login button" title="Login">Login</button>
+					<button data-popup="#popup" data-da=".menu__body, 480" class="actions-header__reg-button colorfull-button" aria-label="Sign Up button" title="Sign Up">Sign
+						Up</button>
+					<button type="button" class="actions-header__icon icon-menu" aria-label="Open menu button">
+						<span></span>
+						<span></span>
+						<span></span>
+						<span></span>
+					</button>
+				</div>
+			</div>
+		</header>
+		<main class="page">
+			<div class="page__purchase purchase">
+				<div class="purchase__container">
+					<form action="#" class="purchase__forms forms-purchase">
+						<div class="forms-purchase__progress-bar progress-bar">
+							<div class="progress-bar__progress" id="progress"></div>
+							<div class="progress-bar__step progress-bar__step--active" data-title="Booking Details"></div>
+							<div class="progress-bar__step" data-title="Your Details"></div>
+							<div class="progress-bar__step" data-title="Payment"></div>
+						</div>
+						<div data-one-select class="forms-purchase__booking forms-purchase-step forms-purchase-step-active booking-forms">
+							<div class="booking-forms__content-body">
+								<div class="booking-forms__item">
+									<label for="date" class="booking-forms__label">When you will visit?</label>
+									<select name="date" id="date" data-class-modif="forms-purchase__select">
+										<option value="" selected data-asset="">FRI, 23 DEC 2026</option>
+										<option value="2">MON, 24 DEC 2026</option>
+										<option value="3">WED, 26 DEC 2026</option>
+										<option value="4">THU, 27 DEC 2026</option>
+									</select>
+								</div>
+								<div class="booking-forms__item">
+									<label for="time" class="booking-forms__label">Which time?</label>
+									<select name="time" id="time" data-class-modif="forms-purchase__select">
+										<option value="" selected data-asset="">15:00</option>
+										<option value="2">11:00</option>
+										<option value="3">14:00</option>
+										<option value="4">21:00</option>
+									</select>
+								</div>
+								<div class="booking-forms__info">
+									<h3 class="booking-forms__title">Select Your Tickets</h3>
+									<ul class="booking-forms__list">
+										<li class="booking-forms__list-item"><span>Free for kids under 6 and disabled visitors (74%+)</span></li>
+										<li class="booking-forms__list-item"><span>
+												Pregnant women, families with strollers, and visitors on crutches can buy priority tickets at
+												the venue
+											</span></li>
+									</ul>
+								</div>
+								<div class="booking-forms__ticket ticket-booking">
+									<div class="ticket-booking__content">
+										<span id="description">Adult (18+)</span>
+										<span data-price="34">€34.00 </span>
+									</div>
+									<div class="ticket-booking__counter">
+										<span class="ticket-booking__decrease _disable">-</span>
+										<span id="counter">0</span>
+										<span class="ticket-booking__increase">+</span>
+									</div>
+								</div>
+								<div class="booking-forms__ticket ticket-booking">
+									<div class="ticket-booking__content">
+										<span id="description">Child (6-17)</span>
+										<ul class="ticket-booking__list">
+											<li class="ticket-booking__item-list"><span>With valid ID</span></li>
+											<li class="ticket-booking__item-list"><span>Only in combination with: Adult (18+)</span></li>
+										</ul>
+										<span data-price="22">€22.00 </span>
+									</div>
+									<div class="ticket-booking__counter">
+										<span class="ticket-booking__decrease _disable">-</span>
+										<span id="counter">0</span>
+										<span class="ticket-booking__increase">+</span>
+									</div>
+								</div>
+								<div class="booking-forms__ticket ticket-booking">
+									<div class="ticket-booking__content">
+										<span id="description">Infant (0-5) </span>
+										<ul class="ticket-booking__list">
+											<li class="ticket-booking__item-list"><span>Only in combination with: Adult (18+)</span></li>
+										</ul>
+										<span data-price="0">FREE</span>
+									</div>
+									<div class="ticket-booking__counter">
+										<span class="ticket-booking__decrease _disable">-</span>
+										<span id="counter">0</span>
+										<span class="ticket-booking__increase">+</span>
+									</div>
+								</div>
+							</div>
+							<div class="booking-forms__overview-body overview-body">
+								<div class="overview-body__padding">
+									<h3 class="overview-body__title">Your Tickets Overview</h3>
+									<div class="overview-body__frame">
+										<div class="overview-body__image"><img src="img/purchase/image.webp" alt="Image"></div>
+										<div class="overview-body__frame-content">
+											<h4 class="overview-body__frame-title">Wine tasting In Tuscany</h4>
+											<div class="overview-body__visit">
+												<div class="overview-body__visit-item">
+													<svg class="overview-body__icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<path d="M2.85742 7.42855H21.1431M5.14314 2.85712H18.8574C19.4636 2.85712 20.045 3.09793 20.4737 3.52659C20.9023 3.95524 21.1431 4.53662 21.1431 5.14283V18.8571C21.1431 19.4633 20.9023 20.0447 20.4737 20.4734C20.045 20.902 19.4636 21.1428 18.8574 21.1428H5.14314C4.53693 21.1428 3.95555 20.902 3.52689 20.4734C3.09824 20.0447 2.85742 19.4633 2.85742 18.8571V5.14283C2.85742 4.53662 3.09824 3.95524 3.52689 3.52659C3.95555 3.09793 4.53693 2.85712 5.14314 2.85712V2.85712Z" stroke="#FA8B02" stroke-linecap="round" stroke-linejoin="round" />
+														<path d="M12.0003 13.1428C12.6315 13.1428 13.1431 12.6312 13.1431 12C13.1431 11.3688 12.6315 10.8571 12.0003 10.8571C11.3691 10.8571 10.8574 11.3688 10.8574 12C10.8574 12.6312 11.3691 13.1428 12.0003 13.1428Z" fill="#FA8B02" />
+														<path d="M7.42875 13.1428C8.05993 13.1428 8.5716 12.6312 8.5716 12C8.5716 11.3688 8.05993 10.8571 7.42875 10.8571C6.79756 10.8571 6.28589 11.3688 6.28589 12C6.28589 12.6312 6.79756 13.1428 7.42875 13.1428Z" fill="#FA8B02" />
+														<path d="M16.5713 13.1428C17.2025 13.1428 17.7142 12.6312 17.7142 12C17.7142 11.3688 17.2025 10.8571 16.5713 10.8571C15.9401 10.8571 15.4285 11.3688 15.4285 12C15.4285 12.6312 15.9401 13.1428 16.5713 13.1428Z" fill="#FA8B02" />
+														<path d="M12.0003 17.7142C12.6315 17.7142 13.1431 17.2026 13.1431 16.5714C13.1431 15.9402 12.6315 15.4285 12.0003 15.4285C11.3691 15.4285 10.8574 15.9402 10.8574 16.5714C10.8574 17.2026 11.3691 17.7142 12.0003 17.7142Z" fill="#FA8B02" />
+														<path d="M7.42875 17.7142C8.05993 17.7142 8.5716 17.2026 8.5716 16.5714C8.5716 15.9402 8.05993 15.4285 7.42875 15.4285C6.79756 15.4285 6.28589 15.9402 6.28589 16.5714C6.28589 17.2026 6.79756 17.7142 7.42875 17.7142Z" fill="#FA8B02" />
+														<path d="M16.5713 17.7142C17.2025 17.7142 17.7142 17.2026 17.7142 16.5714C17.7142 15.9402 17.2025 15.4285 16.5713 15.4285C15.9401 15.4285 15.4285 15.9402 15.4285 16.5714C15.4285 17.2026 15.9401 17.7142 16.5713 17.7142Z" fill="#FA8B02" />
+													</svg>
+													<span id="date-content">FRI, 23 DEC 2022</span>
+												</div>
+												<div class="overview-body__visit-item">
+													<svg class="overview-body__icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<path d="M11.9997 21.1429C6.95026 21.1429 2.85686 17.0495 2.85686 12C2.85686 6.95057 6.95026 2.85718 11.9997 2.85718C17.0492 2.85718 21.1426 6.95057 21.1426 12C21.1426 17.0495 17.0492 21.1429 11.9997 21.1429Z" stroke="#FA8B02" stroke-linecap="round" stroke-linejoin="round" />
+														<path d="M12 8.57141V13.1428H16" stroke="#FA8B02" stroke-linecap="round" stroke-linejoin="round" />
+													</svg>
+													<span id="time-content">15:00</span>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="overview-body__content"></div>
+									<div class="overview-body__general">
+										<h4 class="overview-body__price-title"> Total Price</h4>
+										<span class="overview-body__total-price">€<span id="total">0.00</span></span>
+									</div>
+									<a href="#" class="overview-body__next-button colorfull-button next-btn">Go to the Next Step</a>
+								</div>
+							</div>
+						</div>
+						<div class="forms-purchase__yours forms-purchase-step yours-purchase">
+							<article class="yours-purchase__content-body">
+								<h3 class="yours-purchase__title">Who shall we send these tickets to?</h3>
+								<form action="#" style="display: none; pointer-events: none;"></form>
+								<form action="#" class="yours-purchase__form form-purchase">
+									<div class="form-purchase__item">
+										<label for="name-text" class="form-purchase__label">Name</label>
+										<input data-required type="text" name="name-text" id="name-text" data-error="Error" placeholder="Enter your name " class="form-purchase__input input" aria-label="Area for user name">
+									</div>
+									<div class="form-purchase__item">
+										<label for="surname-text" class="form-purchase__label">surname</label>
+										<input data-required type="text" name="surname-text" id="surname-text" data-error="Error" placeholder="Enter your surname " class="form-purchase__input input" aria-label="Area for user surname">
+									</div>
+									<div class="form-purchase__item">
+										<label for="phone" class="form-purchase__label">Telephone Number</label>
+										<input data-required type="tel" name="phone" id="phone" data-error="Error" placeholder="Enter your telephone number " class="form-purchase__input input" aria-label="Area for user phone number">
+									</div>
+									<div class="form-purchase__item">
+										<label for="email" class="form-purchase__label">Email Address</label>
+										<input data-required="email" type="text" name="email" id="email" data-error="Wrong email address" placeholder="Enter your email address" class="form-purchase__input input" aria-label="Area for email">
+									</div>
+								</form>
+							</article>
+							<div class="yours-purchase__overview-body overview-body">
+								<div class="overview-body__padding">
+									<h3 class="overview-body__title">Your Tickets Overview</h3>
+									<div class="overview-body__frame">
+										<div class="overview-body__image"><img src="img/purchase/image.webp" alt="Image"></div>
+										<div class="overview-body__frame-content">
+											<h4 class="overview-body__frame-title">Wine tasting In Tuscany</h4>
+											<div class="overview-body__visit">
+												<div class="overview-body__visit-item">
+													<svg class="overview-body__icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<path d="M2.85742 7.42855H21.1431M5.14314 2.85712H18.8574C19.4636 2.85712 20.045 3.09793 20.4737 3.52659C20.9023 3.95524 21.1431 4.53662 21.1431 5.14283V18.8571C21.1431 19.4633 20.9023 20.0447 20.4737 20.4734C20.045 20.902 19.4636 21.1428 18.8574 21.1428H5.14314C4.53693 21.1428 3.95555 20.902 3.52689 20.4734C3.09824 20.0447 2.85742 19.4633 2.85742 18.8571V5.14283C2.85742 4.53662 3.09824 3.95524 3.52689 3.52659C3.95555 3.09793 4.53693 2.85712 5.14314 2.85712V2.85712Z" stroke="#FA8B02" stroke-linecap="round" stroke-linejoin="round" />
+														<path d="M12.0003 13.1428C12.6315 13.1428 13.1431 12.6312 13.1431 12C13.1431 11.3688 12.6315 10.8571 12.0003 10.8571C11.3691 10.8571 10.8574 11.3688 10.8574 12C10.8574 12.6312 11.3691 13.1428 12.0003 13.1428Z" fill="#FA8B02" />
+														<path d="M7.42875 13.1428C8.05993 13.1428 8.5716 12.6312 8.5716 12C8.5716 11.3688 8.05993 10.8571 7.42875 10.8571C6.79756 10.8571 6.28589 11.3688 6.28589 12C6.28589 12.6312 6.79756 13.1428 7.42875 13.1428Z" fill="#FA8B02" />
+														<path d="M16.5713 13.1428C17.2025 13.1428 17.7142 12.6312 17.7142 12C17.7142 11.3688 17.2025 10.8571 16.5713 10.8571C15.9401 10.8571 15.4285 11.3688 15.4285 12C15.4285 12.6312 15.9401 13.1428 16.5713 13.1428Z" fill="#FA8B02" />
+														<path d="M12.0003 17.7142C12.6315 17.7142 13.1431 17.2026 13.1431 16.5714C13.1431 15.9402 12.6315 15.4285 12.0003 15.4285C11.3691 15.4285 10.8574 15.9402 10.8574 16.5714C10.8574 17.2026 11.3691 17.7142 12.0003 17.7142Z" fill="#FA8B02" />
+														<path d="M7.42875 17.7142C8.05993 17.7142 8.5716 17.2026 8.5716 16.5714C8.5716 15.9402 8.05993 15.4285 7.42875 15.4285C6.79756 15.4285 6.28589 15.9402 6.28589 16.5714C6.28589 17.2026 6.79756 17.7142 7.42875 17.7142Z" fill="#FA8B02" />
+														<path d="M16.5713 17.7142C17.2025 17.7142 17.7142 17.2026 17.7142 16.5714C17.7142 15.9402 17.2025 15.4285 16.5713 15.4285C15.9401 15.4285 15.4285 15.9402 15.4285 16.5714C15.4285 17.2026 15.9401 17.7142 16.5713 17.7142Z" fill="#FA8B02" />
+													</svg>
+													<span id="date-content">FRI, 23 DEC 2022</span>
+												</div>
+												<div class="overview-body__visit-item">
+													<svg class="overview-body__icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<path d="M11.9997 21.1429C6.95026 21.1429 2.85686 17.0495 2.85686 12C2.85686 6.95057 6.95026 2.85718 11.9997 2.85718C17.0492 2.85718 21.1426 6.95057 21.1426 12C21.1426 17.0495 17.0492 21.1429 11.9997 21.1429Z" stroke="#FA8B02" stroke-linecap="round" stroke-linejoin="round" />
+														<path d="M12 8.57141V13.1428H16" stroke="#FA8B02" stroke-linecap="round" stroke-linejoin="round" />
+													</svg>
+													<span id="time-content">15:00</span>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="overview-body__content"></div>
+									<div class="overview-body__general">
+										<h4 class="overview-body__price-title"> Total Price</h4>
+										<span class="overview-body__total-price">€<span id="total">0.00</span></span>
+									</div>
+									<button class="overview-body__next-button colorfull-button next-btn">Go to the Next Step</button>
+								</div>
+							</div>
+						</div>
+						<div class="forms-purchase__payment forms-purchase-step payment-purchase">
+							<article class="payment-purchase__content-body">
+								<h3 class="payment-purchase__title">Select a payment method</h3>
+								<form action="#" class="payment-purchase__form form-payment">
+									<div id="paypal" class="form-payment__item">
+										<div class="form-payment__body">
+											<div class="form-payment__options options">
+												<div class="options__item">
+													<input id="o_1" class="options__input" type="radio" value="1" name="option">
+													<label for="o_1" class="options__label"><span class="options__text">PayPal</span></label>
+												</div>
+											</div>
+											<div class="form-payment__description">
+												<p>
+													You will be redirected to the PayPal website after submitting your order
+												</p>
+											</div>
+											<div class="form-payment__payment-method"><img src="img/payment/paypal.svg" alt="PayPal Icon">
+											</div>
+										</div>
+									</div>
+									<div class="form-payment__item form-payment__item--active">
+										<div class="form-payment__body">
+											<div class="form-payment__options options">
+												<div class="options__item">
+													<input id="o_2" class="options__input" checked type="radio" value="2" name="option">
+													<label for="o_2" class="options__label"><span class="options__text">Pay with Credit Card</span></label>
+												</div>
+											</div>
+											<div class="form-payment__methods">
+												<div class="form-payment__payment-method"><img src="img/payment/visa.svg" alt="Visa Icon">
+												</div>
+												<div class="form-payment__payment-method"><img src="img/payment/discover.svg" alt="Discover Icon">
+												</div>
+												<div class="form-payment__payment-method"><img src="img/payment/maestro.svg" alt="Maestro Icon">
+												</div>
+												<div class="form-payment__payment-method"><img src="img/payment/mastercard.svg" alt="Mastercard Icon">
+												</div>
+											</div>
+										</div>
+										<div class="form-payment__pay pay">
+											<div class="pay__item">
+												<label class="pay__label" for="card-number">Card number</label>
+												<div class="pay__wrapper">
+													<input class="pay__input input" data-required data-error="Invalid card number" type="text" id="card-number" placeholder="1234 5678 9101 3456" maxlength="19" />
+													<span class="pay__check-icon hidden"><img src="img/payment/check-icon.svg" alt="Check Icon"></span>
+												</div>
+											</div>
+											<div class="pay__item">
+												<label class="pay__label" for="expiration-date">Expiration Date</label>
+												<div class="pay__wrapper">
+													<input class="pay__input input" data-required data-error="Invalid expiration date" type="text" id="expiration-date" placeholder="MM/YY" maxlength="5" />
+													<span class="pay__check-icon hidden"><img src="img/payment/check-icon.svg" alt="Check Icon"></span>
+												</div>
+											</div>
+											<div class="pay__item">
+												<label class="pay__label" for="security-code">Card Security Code</label>
+												<div class="pay__wrapper">
+													<input class="pay__input input" data-required data-error="Invalid security code" type="password" id="security-code" placeholder="***" maxlength="3" />
+													<a href="https://en.wikipedia.org/wiki/Card_security_code" target="_blank" class="pay__item-info">What is this?</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</form>
+							</article>
+							<div class="payment-purchase__overview-body overview-body">
+								<div class="overview-body__padding">
+									<h3 class="overview-body__title">Your Tickets Overview</h3>
+									<div class="overview-body__frame">
+										<div class="overview-body__image"><img src="img/purchase/image.webp" alt="Image"></div>
+										<div class="overview-body__frame-content">
+											<h4 class="overview-body__frame-title">Wine tasting In Tuscany</h4>
+											<div class="overview-body__visit">
+												<div class="overview-body__visit-item">
+													<svg class="overview-body__icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<path d="M2.85742 7.42855H21.1431M5.14314 2.85712H18.8574C19.4636 2.85712 20.045 3.09793 20.4737 3.52659C20.9023 3.95524 21.1431 4.53662 21.1431 5.14283V18.8571C21.1431 19.4633 20.9023 20.0447 20.4737 20.4734C20.045 20.902 19.4636 21.1428 18.8574 21.1428H5.14314C4.53693 21.1428 3.95555 20.902 3.52689 20.4734C3.09824 20.0447 2.85742 19.4633 2.85742 18.8571V5.14283C2.85742 4.53662 3.09824 3.95524 3.52689 3.52659C3.95555 3.09793 4.53693 2.85712 5.14314 2.85712V2.85712Z" stroke="#FA8B02" stroke-linecap="round" stroke-linejoin="round" />
+														<path d="M12.0003 13.1428C12.6315 13.1428 13.1431 12.6312 13.1431 12C13.1431 11.3688 12.6315 10.8571 12.0003 10.8571C11.3691 10.8571 10.8574 11.3688 10.8574 12C10.8574 12.6312 11.3691 13.1428 12.0003 13.1428Z" fill="#FA8B02" />
+														<path d="M7.42875 13.1428C8.05993 13.1428 8.5716 12.6312 8.5716 12C8.5716 11.3688 8.05993 10.8571 7.42875 10.8571C6.79756 10.8571 6.28589 11.3688 6.28589 12C6.28589 12.6312 6.79756 13.1428 7.42875 13.1428Z" fill="#FA8B02" />
+														<path d="M16.5713 13.1428C17.2025 13.1428 17.7142 12.6312 17.7142 12C17.7142 11.3688 17.2025 10.8571 16.5713 10.8571C15.9401 10.8571 15.4285 11.3688 15.4285 12C15.4285 12.6312 15.9401 13.1428 16.5713 13.1428Z" fill="#FA8B02" />
+														<path d="M12.0003 17.7142C12.6315 17.7142 13.1431 17.2026 13.1431 16.5714C13.1431 15.9402 12.6315 15.4285 12.0003 15.4285C11.3691 15.4285 10.8574 15.9402 10.8574 16.5714C10.8574 17.2026 11.3691 17.7142 12.0003 17.7142Z" fill="#FA8B02" />
+														<path d="M7.42875 17.7142C8.05993 17.7142 8.5716 17.2026 8.5716 16.5714C8.5716 15.9402 8.05993 15.4285 7.42875 15.4285C6.79756 15.4285 6.28589 15.9402 6.28589 16.5714C6.28589 17.2026 6.79756 17.7142 7.42875 17.7142Z" fill="#FA8B02" />
+														<path d="M16.5713 17.7142C17.2025 17.7142 17.7142 17.2026 17.7142 16.5714C17.7142 15.9402 17.2025 15.4285 16.5713 15.4285C15.9401 15.4285 15.4285 15.9402 15.4285 16.5714C15.4285 17.2026 15.9401 17.7142 16.5713 17.7142Z" fill="#FA8B02" />
+													</svg>
+													<span id="date-content">FRI, 23 DEC 2022</span>
+												</div>
+												<div class="overview-body__visit-item">
+													<svg class="overview-body__icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<path d="M11.9997 21.1429C6.95026 21.1429 2.85686 17.0495 2.85686 12C2.85686 6.95057 6.95026 2.85718 11.9997 2.85718C17.0492 2.85718 21.1426 6.95057 21.1426 12C21.1426 17.0495 17.0492 21.1429 11.9997 21.1429Z" stroke="#FA8B02" stroke-linecap="round" stroke-linejoin="round" />
+														<path d="M12 8.57141V13.1428H16" stroke="#FA8B02" stroke-linecap="round" stroke-linejoin="round" />
+													</svg>
+													<span id="time-content">15:00</span>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="overview-body__content"></div>
+									<div class="overview-body__general">
+										<h4 class="overview-body__price-title"> Total Price</h4>
+										<span class="overview-body__total-price">€<span id="total">0.00</span></span>
+									</div>
+									<button class="overview-body__next-button colorfull-button next-btn">Go to the Next Step</button>
+								</div>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</main>
+		<footer class="footer">
+			<div class="footer__content-body">
+				<div class="footer__container">
+					<div class="footer__body">
+						<a href="#" data-goto-header data-goto='.hero' class="footer__logo"><img src="img/header/logo.svg" alt="Bottom Site Logo"></a>
+						<div class="footer__content">
+							<div class="footer__item">
+								<h3 class="footer__item-title">Services</h3>
+								<ul class="footer__list">
+									<li class="footer__list-item"><a href="#" class="footer__link-item">Bike and Rickshaw rental</a></li>
+									<li class="footer__list-item"><a href="#" class="footer__link-item">Guided Tours of Lucca</a></li>
+									<li class="footer__list-item"><a href="#" class="footer__link-item">Guided Bike Tour of Lucca</a></li>
+									<li class="footer__list-item"><a href="#" class="footer__link-item">Trip In The Tuscan Hills</a></li>
+									<li class="footer__list-item"><a href="#" class="footer__link-item">Transportation With Luxury Cars</a></li>
+									<li class="footer__list-item"><a href="#" class="footer__link-item">Wine Tours By Bus With Guide</a></li>
+								</ul>
+							</div>
+							<div class="footer__item">
+								<h3 class="footer__item-title">Home</h3>
+								<ul class="footer__list">
+									<li class="footer__list-item"><a href="#" class="footer__link-item">Home</a></li>
+									<li class="footer__list-item"><a href="#" class="footer__link-item">About Us</a></li>
+									<li class="footer__list-item"><a href="#" class="footer__link-item">Tour Packages</a></li>
+								</ul>
+							</div>
+							<div class="footer__item">
+								<h3 class="footer__item-title">Help</h3>
+								<ul class="footer__list">
+									<li class="footer__list-item"><a href="#" class="footer__link-item">Terms of Use</a></li>
+									<li class="footer__list-item"><a href="#" class="footer__link-item">Provicy Policy</a></li>
+								</ul>
+							</div>
+							<address class="footer__address address">
+								<h3 class="address__title">Contacts</h3>
+								<div class="address__item">
+									<svg class="address__icon" width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M12.5998 23C11.0563 21.6835 9.62571 20.2402 8.32284 18.6852C6.36767 16.35 4.0459 12.8722 4.0459 9.55818C4.04505 7.86568 4.54631 6.21097 5.48624 4.80347C6.42618 3.39596 7.76253 2.29893 9.32618 1.6512C10.8898 1.00348 12.6105 0.834177 14.2704 1.16473C15.9303 1.49527 17.4548 2.31081 18.6511 3.50813C19.4475 4.30103 20.0788 5.24401 20.5083 6.28249C20.9379 7.32098 21.1573 8.43435 21.1537 9.55818C21.1537 12.8722 18.8319 16.35 16.8767 18.6852C15.5739 20.2402 14.1432 21.6835 12.5998 23ZM12.5998 5.89222C11.6275 5.89222 10.6951 6.27846 10.0076 6.96596C9.32007 7.65346 8.93384 8.58591 8.93384 9.55818C8.93384 10.5304 9.32007 11.4629 10.0076 12.1504C10.6951 12.8379 11.6275 13.2241 12.5998 13.2241C13.5721 13.2241 14.5045 12.8379 15.192 12.1504C15.8795 11.4629 16.2657 10.5304 16.2657 9.55818C16.2657 8.58591 15.8795 7.65346 15.192 6.96596C14.5045 6.27846 13.5721 5.89222 12.5998 5.89222Z" fill="#FA8B02" />
+									</svg>
+									<a target="_blank" href="https://www.google.com/maps/place/P.za+Napoleone,+55100+Lucca+LU,+%D0%98%D1%82%D0%B0%D0%BB%D0%B8%D1%8F/data=!4m2!3m1!1s0x12d5838a16d74ecb:0x975f20ba2efb457e?sa=X&ved=1t:242&ictx=111" class="address__link">Piazza Napoleone, Lucca, Tuscany
+									</a>
+								</div>
+								<div class="address__item">
+									<svg class="address__icon" width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<g clip-path="url(#clip0_201_3513)">
+											<path d="M10.2468 13.7598C11.6384 15.1716 13.3223 16.2616 15.1801 16.9532L17.6934 14.9532C17.7679 14.9018 17.8563 14.8744 17.9468 14.8744C18.0372 14.8744 18.1256 14.9018 18.2001 14.9532L22.8668 17.9598C23.0439 18.0663 23.1939 18.2126 23.3048 18.387C23.4158 18.5615 23.4846 18.7593 23.506 18.9649C23.5273 19.1705 23.5005 19.3783 23.4278 19.5718C23.355 19.7653 23.2383 19.9392 23.0868 20.0798L20.9001 22.2398C20.5869 22.5492 20.2021 22.7763 19.7798 22.9008C19.3575 23.0253 18.911 23.0433 18.4801 22.9532C14.1816 22.0654 10.2195 19.9862 7.04676 16.9532C3.94442 13.89 1.79761 9.99239 0.866761 5.73316C0.774805 5.30892 0.793997 4.86812 0.922478 4.45348C1.05096 4.03883 1.28437 3.66441 1.60009 3.36649L3.86676 1.17983C4.00703 1.03568 4.17808 0.925143 4.36713 0.856478C4.55617 0.787813 4.75829 0.762805 4.95837 0.783325C5.15844 0.803846 5.35128 0.869364 5.52245 0.974973C5.69362 1.08058 5.83868 1.22355 5.94676 1.39316L9.05343 5.99983C9.10701 6.07216 9.13594 6.1598 9.13594 6.24983C9.13594 6.33985 9.10701 6.42749 9.05343 6.49983L7.00676 8.95983C7.71715 10.7805 8.82392 12.4201 10.2468 13.7598Z" fill="#FA8B02" />
+										</g>
+										<defs>
+											<clipPath id="clip0_201_3513">
+												<rect width="24" height="24" fill="white" transform="translate(0.0996094)" />
+											</clipPath>
+										</defs>
+									</svg>
+									<a href="tel:	+393463685708" class="address__link"> +39 346 368 5708
+									</a>
+								</div>
+								<div class="address__item">
+									<svg class="address__icon" width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M4.76628 2.83301C3.79382 2.83301 2.86118 3.21932 2.17355 3.90695C1.48592 4.59458 1.09961 5.52721 1.09961 6.49967V6.86818L12.0996 12.7917L23.0996 6.87001V6.49967C23.0996 5.52721 22.7133 4.59458 22.0257 3.90695C21.338 3.21932 20.4054 2.83301 19.4329 2.83301H4.76628ZM23.0996 8.95084L12.5341 14.6397C12.4006 14.7116 12.2513 14.7492 12.0996 14.7492C11.9479 14.7492 11.7987 14.7116 11.6651 14.6397L1.09961 8.95084V17.4997C1.09961 18.4721 1.48592 19.4048 2.17355 20.0924C2.86118 20.78 3.79382 21.1663 4.76628 21.1663H19.4329C20.4054 21.1663 21.338 20.78 22.0257 20.0924C22.7133 19.4048 23.0996 18.4721 23.0996 17.4997V8.95084Z" fill="#FA8B02" />
+									</svg>
+									<a href="mailto:	italiainlimo@gmail.com" class="address__link"> italiainlimo@gmail.com
+									</a>
+								</div>
+							</address>
+							<div class="footer__social social">
+								<h3 class="social__title">Social</h3>
+								<div class="social__items">
+									<a href="#" class="social__item" aria-label="Twitter Icon">
+										<svg width="51" height="50" viewBox="0 0 51 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M25.7998 3.125C13.7197 3.125 3.9248 12.9199 3.9248 25C3.9248 37.0801 13.7197 46.875 25.7998 46.875C37.8799 46.875 47.6748 37.0801 47.6748 25C47.6748 12.9199 37.8799 3.125 25.7998 3.125ZM36.3125 19.6143C36.3271 19.8438 36.3271 20.083 36.3271 20.3174C36.3271 27.4854 30.8682 35.7422 20.8926 35.7422C17.8164 35.7422 14.9648 34.8486 12.5625 33.3105C13.002 33.3594 13.4219 33.3789 13.8711 33.3789C16.4102 33.3789 18.7441 32.5195 20.6045 31.0645C18.2217 31.0156 16.2197 29.4531 15.5361 27.3047C16.3711 27.4268 17.123 27.4268 17.9824 27.207C16.7555 26.9578 15.6527 26.2914 14.8614 25.3212C14.0701 24.351 13.6391 23.1368 13.6416 21.8848V21.8164C14.3594 22.2217 15.2041 22.4707 16.0879 22.5049C15.3449 22.0097 14.7356 21.3389 14.314 20.5519C13.8924 19.7649 13.6715 18.886 13.6709 17.9932C13.6709 16.9824 13.9346 16.0596 14.4082 15.2588C15.77 16.9352 17.4694 18.3064 19.3958 19.283C21.3223 20.2597 23.4327 20.8201 25.5898 20.9277C24.8232 17.2412 27.5771 14.2578 30.8877 14.2578C32.4502 14.2578 33.8564 14.9121 34.8477 15.9668C36.0732 15.7373 37.2451 15.2783 38.29 14.6631C37.8848 15.918 37.0352 16.9775 35.9072 17.6465C37.001 17.5293 38.0557 17.2266 39.0322 16.8018C38.2949 17.8857 37.3721 18.8477 36.3125 19.6143Z" fill="#FA8B02" />
+										</svg>
+									</a>
+									<a href="#" class="social__item" aria-label="Facebook Icon">
+										<svg width="51" height="50" viewBox="0 0 51 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M25.7998 1C12.5448 1 1.7998 11.745 1.7998 25C1.7998 38.255 12.5448 49 25.7998 49C39.0548 49 49.7998 38.255 49.7998 25C49.7998 11.745 39.0548 1 25.7998 1ZM31.4848 17.585H27.8773C27.4498 17.585 26.9748 18.1475 26.9748 18.895V21.5H31.4873L30.8048 25.215H26.9748V36.3675H22.7173V25.215H18.8548V21.5H22.7173V19.315C22.7173 16.18 24.8923 13.6325 27.8773 13.6325H31.4848V17.585Z" fill="#FA8B02" />
+										</svg>
+									</a>
+									<a href="#" class="social__item" aria-label="Instagram Icon">
+										<svg width="51" height="50" viewBox="0 0 51 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path fill-rule="evenodd" clip-rule="evenodd" d="M3.9248 25C3.9248 12.9199 13.7197 3.125 25.7998 3.125C37.8799 3.125 47.6748 12.9199 47.6748 25C47.6748 37.0801 37.8799 46.875 25.7998 46.875C13.7197 46.875 3.9248 37.0801 3.9248 25ZM25.7998 14C22.8118 14 22.4378 14.012 21.2648 14.066H21.2638C20.0938 14.12 19.2938 14.306 18.5938 14.577C17.8603 14.8534 17.1958 15.2865 16.6468 15.846C16.0869 16.3953 15.6535 17.0601 15.3768 17.794C15.1058 18.494 14.9188 19.294 14.8658 20.466C14.8128 21.638 14.7998 22.012 14.7998 25C14.7998 27.987 14.8118 28.361 14.8658 29.536C14.9198 30.706 15.1058 31.506 15.3768 32.206C15.6531 32.9399 16.0862 33.6047 16.6458 34.154C17.1956 34.7133 17.8607 35.146 18.5948 35.422C19.2948 35.694 20.0948 35.881 21.2648 35.934C22.4378 35.987 22.8118 36 25.7998 36C28.7878 36 29.1618 35.988 30.3358 35.934C31.5058 35.88 32.3058 35.694 33.0058 35.422C33.7388 35.146 34.4038 34.714 34.9538 34.154C35.5131 33.6042 35.9458 32.9391 36.2218 32.205C36.4938 31.505 36.6808 30.705 36.7338 29.535C36.7868 28.362 36.7998 27.988 36.7998 25C36.7998 22.013 36.7878 21.639 36.7338 20.464C36.6798 19.294 36.4938 18.494 36.2218 17.794C35.9458 17.06 35.5138 16.396 34.9538 15.847C34.4038 15.287 33.7388 14.854 33.0058 14.577C32.3058 14.306 31.5058 14.119 30.3338 14.066C29.1618 14.013 28.7878 14 25.7998 14ZM25.7998 15.982C28.7368 15.982 29.0848 15.993 30.2448 16.046C31.3178 16.095 31.8998 16.274 32.2878 16.425C32.7655 16.6012 33.1977 16.8821 33.5528 17.247C33.9378 17.632 34.1748 17.999 34.3748 18.512C34.5258 18.9 34.7048 19.482 34.7538 20.555C34.8068 21.715 34.8178 22.063 34.8178 25C34.8178 27.937 34.8068 28.285 34.7538 29.445C34.7048 30.518 34.5258 31.1 34.3748 31.488C34.1988 31.965 33.9178 32.398 33.5528 32.753C33.1678 33.138 32.8008 33.375 32.2878 33.575C31.8998 33.726 31.3178 33.905 30.2448 33.954C29.0848 34.007 28.7378 34.018 25.7998 34.018C22.8618 34.018 22.5148 34.007 21.3548 33.954C20.2818 33.905 19.6998 33.726 19.3118 33.575C18.8348 33.399 18.4018 33.118 18.0468 32.753C17.6818 32.398 17.4008 31.965 17.2248 31.488C17.0738 31.1 16.8948 30.518 16.8458 29.445C16.7928 28.285 16.7818 27.937 16.7818 25C16.7818 22.063 16.7928 21.715 16.8458 20.555C16.8948 19.482 17.0738 18.9 17.2248 18.512C17.401 18.0343 17.6818 17.6021 18.0468 17.247C18.4318 16.862 18.7988 16.625 19.3118 16.425C19.6998 16.274 20.2818 16.095 21.3548 16.046C22.5148 15.993 22.8628 15.982 25.7998 15.982ZM26.8667 28.5157C26.0532 28.7617 25.1795 28.7176 24.3948 28.391C23.8936 28.1832 23.4448 27.8668 23.0805 27.4647C22.7163 27.0626 22.4457 26.5847 22.2883 26.0655C22.131 25.5463 22.0906 24.9986 22.1703 24.462C22.25 23.9253 22.4477 23.413 22.7491 22.9619C23.0505 22.5107 23.4483 22.1321 23.9136 21.8531C24.379 21.5742 24.9004 21.4019 25.4403 21.3486C25.9802 21.2954 26.5253 21.3625 27.0361 21.5451C27.547 21.7278 28.011 22.0215 28.3948 22.405C28.9968 23.005 29.3718 23.7953 29.4559 24.6411C29.5399 25.4869 29.3276 26.3356 28.8554 27.0422C28.3832 27.7489 27.6803 28.2697 26.8667 28.5157ZM23.6361 19.7764C22.9501 20.0605 22.3268 20.477 21.8018 21.002C20.7415 22.0623 20.1458 23.5005 20.1458 25C20.1458 26.4995 20.7415 27.9377 21.8018 28.998C22.8621 30.0583 24.3003 30.654 25.7998 30.654C27.2993 30.654 28.7375 30.0583 29.7978 28.998C30.3228 28.473 30.7393 27.8497 31.0234 27.1637C31.3076 26.4777 31.4538 25.7425 31.4538 25C31.4538 24.2575 31.3076 23.5223 31.0234 22.8363C30.7393 22.1503 30.3228 21.527 29.7978 21.002C29.2728 20.477 28.6495 20.0605 27.9635 19.7764C27.2775 19.4922 26.5423 19.346 25.7998 19.346C25.0573 19.346 24.3221 19.4922 23.6361 19.7764ZM33.0141 19.754C32.9421 19.9177 32.8379 20.0653 32.7078 20.188C32.4548 20.4267 32.1187 20.5574 31.7709 20.5523C31.4231 20.5472 31.0909 20.4068 30.845 20.1608C30.599 19.9149 30.4586 19.5827 30.4535 19.2349C30.4484 18.8871 30.5791 18.551 30.8178 18.298C30.9405 18.1679 31.0881 18.0637 31.2518 17.9917C31.4155 17.9197 31.592 17.8812 31.7709 17.8786C31.9497 17.876 32.1273 17.9093 32.293 17.9765C32.4587 18.0438 32.6093 18.1436 32.7358 18.27C32.8622 18.3965 32.962 18.5471 33.0293 18.7128C33.0965 18.8785 33.1298 19.0561 33.1272 19.2349C33.1246 19.4138 33.0862 19.5903 33.0141 19.754Z" fill="#FA8B02" />
+										</svg>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="footer__copyright">Copyright © 2024. All rights reserved.</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<script src="js/app.min.js?_v=20250126194637"></script>
+</body>
+
+</html>

@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20250106142807">
+	<link rel="stylesheet" href="css/style.min.css?_v=20250126194637">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,17 +14,183 @@
 
 <body>
 	<div class="wrapper">
+		<div id="popup" aria-hidden="true" class="popup">
+			<div class="popup__wrapper">
+				<div class="popup__content">
+					<div class="popup__top-content">
+						<h3 class="popup__title">Create Account</h3>
+						<button data-close type="button" class="popup__close">
+							<svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<g opacity="0.4" clip-path="url(#clip0_201_28914)">
+									<path d="M12.9397 12.08L17.7997 7.21996C17.9089 7.09243 17.9659 6.92838 17.9595 6.76059C17.953 6.59281 17.8834 6.43365 17.7647 6.31492C17.646 6.19619 17.4868 6.12664 17.319 6.12015C17.1512 6.11367 16.9872 6.17074 16.8597 6.27996L11.9997 11.14L7.13966 6.2733C7.01212 6.16408 6.84807 6.10701 6.68029 6.11349C6.5125 6.11997 6.35334 6.18952 6.23461 6.30825C6.11589 6.42698 6.04633 6.58614 6.03985 6.75393C6.03337 6.92171 6.09044 7.08576 6.19966 7.2133L11.0597 12.08L6.19299 16.94C6.1232 16.9997 6.06652 17.0733 6.02651 17.156C5.98649 17.2387 5.964 17.3288 5.96046 17.4206C5.95691 17.5124 5.97238 17.604 6.0059 17.6895C6.03941 17.7751 6.09025 17.8528 6.15522 17.9177C6.22019 17.9827 6.29789 18.0335 6.38344 18.0671C6.46899 18.1006 6.56055 18.116 6.65236 18.1125C6.74417 18.1089 6.83426 18.0865 6.91697 18.0464C6.99968 18.0064 7.07323 17.9498 7.13299 17.88L11.9997 13.02L16.8597 17.88C16.9872 17.9892 17.1512 18.0463 17.319 18.0398C17.4868 18.0333 17.646 17.9637 17.7647 17.845C17.8834 17.7263 17.953 17.5671 17.9595 17.3993C17.9659 17.2315 17.9089 17.0675 17.7997 16.94L12.9397 12.08Z" fill="#333333" />
+								</g>
+								<defs>
+									<clipPath id="clip0_201_28914">
+										<rect width="24" height="24" fill="white" transform="translate(0 0.0799561)" />
+									</clipPath>
+								</defs>
+							</svg>
+						</button>
+					</div>
+					<div class="popup__body">
+						<form data-ajax action="#" method="GET" class="popup__form-body form-popup">
+							<div class="form-popup__item">
+								<label for="name" class="form-popup__label">Name and Surname</label>
+								<input data-required type="text" name="name" id="name" data-error="Error" placeholder="Enter your name and surname" class="form-popup__input input">
+							</div>
+							<div class="form-popup__item">
+								<label for="email" class="form-popup__label">Email Address</label>
+								<input data-required="email" type="text" name="email" id="email" data-error="Invalid email address" placeholder="Enter your email address" class="form-popup__input input">
+							</div>
+							<div class="form-popup__item">
+								<label for="password" class="form-popup__label">Password</label>
+								<div class="form-popup__wrapper">
+									<input data-required autocomplete="off" type="password" id="password" placeholder="Enter your password" name="password" class="form-popup__input input">
+									<button class="form__viewpass" type="button">
+										<img src="img/popup/see.svg" alt="Show Icon">
+										<img src="img/popup/hide.svg" alt="Hide Icon">
+									</button>
+								</div>
+							</div>
+							<div class="form-popup__item form-popup__item--checkbox">
+								<input type="checkbox" class="form-popup__checkbox" id="checkbox"></input>
+								<label for="checkbox">I agree with <a target="_blank" href="https://www.travelwta.com/travel-terms-glossary/">Terms</a> and <a target="_blank" href="https://wixuzman.wixstudio.com/travel-agency/privacy-policy">Privacy</a></label>
+							</div>
+							<div class="form-popup__buttons form-popup__buttons--disable">
+								<button type="submit" class="form-popup__signUp-button colorfull-button" title="Sign Up">sign up</button>
+								<span>or</span>
+								<a href="https://accounts.google.com/signup/v2/kidaccountinfo?flowName=GlifWebSignIn&flowEntry=ServiceLogin&ddm=1" target="_blank" class="form-popup__google-button" title="Sign Up with Google">
+									<svg class="form-popup__icon" width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<g clip-path="url(#clip0_201_28942)">
+											<path d="M5.26623 9.84496C5.73412 8.4294 6.63709 7.19777 7.84635 6.32575C9.0556 5.45374 10.5094 4.98589 12.0002 4.98896C13.6902 4.98896 15.2182 5.58896 16.4182 6.57096L19.9102 3.07996C17.7822 1.22496 15.0552 0.0799561 12.0002 0.0799561C7.27023 0.0799561 3.19823 2.77796 1.24023 6.72996L5.26623 9.84496Z" fill="#EA4335" />
+											<path d="M16.0403 18.093C14.9503 18.796 13.5663 19.171 12.0003 19.171C10.5154 19.1741 9.06711 18.71 7.86054 17.8444C6.65398 16.9788 5.75025 15.7556 5.2773 14.348L1.2373 17.415C2.22855 19.4213 3.76257 21.1094 5.66513 22.2876C7.56768 23.4657 9.76251 24.0867 12.0003 24.08C14.9333 24.08 17.7353 23.037 19.8343 21.08L16.0413 18.093H16.0403Z" fill="#34A853" />
+											<path d="M19.834 21.0799C22.029 19.0319 23.454 15.9839 23.454 12.0799C23.454 11.3699 23.345 10.6069 23.182 9.89795H12V14.5349H18.436C18.119 16.0939 17.266 17.301 16.041 18.0929L19.834 21.0799Z" fill="#4A90E2" />
+											<path d="M5.27712 14.348C5.03247 13.6169 4.90819 12.8509 4.90912 12.08C4.90912 11.298 5.03412 10.547 5.26612 9.84498L1.24012 6.72998C0.416494 8.39267 -0.00807994 10.2245 0.000116455 12.08C0.000116455 14 0.445116 15.81 1.23712 17.415L5.27712 14.348Z" fill="#FBBC05" />
+										</g>
+										<defs>
+											<clipPath id="clip0_201_28942">
+												<rect width="24" height="24" fill="white" transform="translate(0 0.0799561)" />
+											</clipPath>
+										</defs>
+									</svg>
+									<span>Sign Up with Google</span>
+								</a>
+							</div>
+						</form>
+						<div class="popup__login">
+							<span>Already have an account?</span>
+							<button data-popup="#popup-login" class="popup__login-button">Log In</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="popup-login" aria-hidden="true" class="popup">
+			<div class="popup__wrapper">
+				<div class="popup__content">
+					<div class="popup__top-content">
+						<h3 class="popup__title">Login</h3>
+						<button data-close type="button" class="popup__close">
+							<svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<g opacity="0.4" clip-path="url(#clip0_201_28914)">
+									<path d="M12.9397 12.08L17.7997 7.21996C17.9089 7.09243 17.9659 6.92838 17.9595 6.76059C17.953 6.59281 17.8834 6.43365 17.7647 6.31492C17.646 6.19619 17.4868 6.12664 17.319 6.12015C17.1512 6.11367 16.9872 6.17074 16.8597 6.27996L11.9997 11.14L7.13966 6.2733C7.01212 6.16408 6.84807 6.10701 6.68029 6.11349C6.5125 6.11997 6.35334 6.18952 6.23461 6.30825C6.11589 6.42698 6.04633 6.58614 6.03985 6.75393C6.03337 6.92171 6.09044 7.08576 6.19966 7.2133L11.0597 12.08L6.19299 16.94C6.1232 16.9997 6.06652 17.0733 6.02651 17.156C5.98649 17.2387 5.964 17.3288 5.96046 17.4206C5.95691 17.5124 5.97238 17.604 6.0059 17.6895C6.03941 17.7751 6.09025 17.8528 6.15522 17.9177C6.22019 17.9827 6.29789 18.0335 6.38344 18.0671C6.46899 18.1006 6.56055 18.116 6.65236 18.1125C6.74417 18.1089 6.83426 18.0865 6.91697 18.0464C6.99968 18.0064 7.07323 17.9498 7.13299 17.88L11.9997 13.02L16.8597 17.88C16.9872 17.9892 17.1512 18.0463 17.319 18.0398C17.4868 18.0333 17.646 17.9637 17.7647 17.845C17.8834 17.7263 17.953 17.5671 17.9595 17.3993C17.9659 17.2315 17.9089 17.0675 17.7997 16.94L12.9397 12.08Z" fill="#333333" />
+								</g>
+								<defs>
+									<clipPath id="clip0_201_28914">
+										<rect width="24" height="24" fill="white" transform="translate(0 0.0799561)" />
+									</clipPath>
+								</defs>
+							</svg>
+						</button>
+					</div>
+					<div class="popup__body">
+						<form data-ajax action="#" method="GET" class="popup__form-body form-popup">
+							<div class="form-popup__item">
+								<label for="email" class="form-popup__label">Email Address</label>
+								<input data-required="email" type="text" name="email" id="email" data-error="Invalid email address" placeholder="Enter your email address" class="form-popup__input input">
+							</div>
+							<div class="form-popup__item">
+								<label for="password" class="form-popup__label">Password</label>
+								<div class="form-popup__wrapper">
+									<input data-required autocomplete="off" type="password" id="password" placeholder="Enter your password" name="password" class="form-popup__input input">
+									<button class="form__viewpass" type="button">
+										<img src="img/popup/see.svg" alt="Show Icon">
+										<img src="img/popup/hide.svg" alt="Hide Icon">
+									</button>
+								</div>
+							</div>
+							<a href="#" data-popup="#pass" class="form-popup__password-forgot">Forgot your password?</a>
+							<div class="form-popup__buttons">
+								<button type="submit" class="form-popup__signUp-button sign-in colorfull-button" title="Sign In">sign in</button>
+								<span>or</span>
+								<a href="https://accounts.google.com/signup/v2/kidaccountinfo?flowName=GlifWebSignIn&flowEntry=ServiceLogin&ddm=1" target="_blank" class="form-popup__google-button" title="Sign In with Google">
+									<svg class="form-popup__icon" width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<g clip-path="url(#clip0_201_28942)">
+											<path d="M5.26623 9.84496C5.73412 8.4294 6.63709 7.19777 7.84635 6.32575C9.0556 5.45374 10.5094 4.98589 12.0002 4.98896C13.6902 4.98896 15.2182 5.58896 16.4182 6.57096L19.9102 3.07996C17.7822 1.22496 15.0552 0.0799561 12.0002 0.0799561C7.27023 0.0799561 3.19823 2.77796 1.24023 6.72996L5.26623 9.84496Z" fill="#EA4335" />
+											<path d="M16.0403 18.093C14.9503 18.796 13.5663 19.171 12.0003 19.171C10.5154 19.1741 9.06711 18.71 7.86054 17.8444C6.65398 16.9788 5.75025 15.7556 5.2773 14.348L1.2373 17.415C2.22855 19.4213 3.76257 21.1094 5.66513 22.2876C7.56768 23.4657 9.76251 24.0867 12.0003 24.08C14.9333 24.08 17.7353 23.037 19.8343 21.08L16.0413 18.093H16.0403Z" fill="#34A853" />
+											<path d="M19.834 21.0799C22.029 19.0319 23.454 15.9839 23.454 12.0799C23.454 11.3699 23.345 10.6069 23.182 9.89795H12V14.5349H18.436C18.119 16.0939 17.266 17.301 16.041 18.0929L19.834 21.0799Z" fill="#4A90E2" />
+											<path d="M5.27712 14.348C5.03247 13.6169 4.90819 12.8509 4.90912 12.08C4.90912 11.298 5.03412 10.547 5.26612 9.84498L1.24012 6.72998C0.416494 8.39267 -0.00807994 10.2245 0.000116455 12.08C0.000116455 14 0.445116 15.81 1.23712 17.415L5.27712 14.348Z" fill="#FBBC05" />
+										</g>
+										<defs>
+											<clipPath id="clip0_201_28942">
+												<rect width="24" height="24" fill="white" transform="translate(0 0.0799561)" />
+											</clipPath>
+										</defs>
+									</svg>
+									<span>Sign In with Google</span>
+								</a>
+							</div>
+						</form>
+						<div class="popup__login">
+							<span>Don’t have an account ? </span>
+							<button data-popup="#popup" class="popup__login-button">Sign Up</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="pass" aria-hidden="true" class="popup">
+			<div class="popup__wrapper">
+				<div class="popup__content">
+					<div class="popup__top-content popup__top-content--password">
+						<div class="popup__top-icon">
+							<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M7 17C8.15196 16.9985 9.26816 16.5998 10.1604 15.8711C11.0526 15.1424 11.6663 14.1284 11.898 13H14V15H16V13H18V16H20V13H21V11H11.898C11.6663 9.87158 11.0526 8.85755 10.1604 8.1289C9.26816 7.40025 8.15196 7.00154 7 7C4.243 7 2 9.243 2 12C2 14.757 4.243 17 7 17ZM7 9C8.654 9 10 10.346 10 12C10 13.654 8.654 15 7 15C5.346 15 4 13.654 4 12C4 10.346 5.346 9 7 9Z" fill="#FA8B02" />
+							</svg>
+						</div>
+						<h3 class="popup__title">Forgot Password</h3>
+						<div class="popup__top-text">
+							<p>
+								No worries, we'll send you reset instructions.
+							</p>
+						</div>
+					</div>
+					<div class="popup__body">
+						<form action="#" class="popup__form-body form-popup">
+							<div class="form-popup__item">
+								<label for="email" class="form-popup__label">Email Address</label>
+								<input data-required="email" type="text" name="email" id="email" data-error="Invalid email address" placeholder="Enter your email address" class="form-popup__input input">
+							</div>
+							<button type="submit" class="form-popup__signUp-button reset-password colorfull-button" title="Reset Password">Reset Password</button>
+						</form>
+						<div class="popup__login">
+							<img src="img/popup/arrow.svg" alt="Arrow Icon">
+							<button data-popup="#popup-login" class="popup__login-button popup__login-button--password">Back to Login</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 		<header data-scroll="100" class="header">
 			<div class="header__container">
 				<a href="#" class="header__logo"><img src="img/header/logo.svg" alt="Site Logo"></a>
 				<div class="header__menu menu">
 					<nav class="menu__body">
 						<ul class="menu__list">
-							<li class="menu__item"><a href="#" class="menu__link _active">Home
-								</a></li>
-							<li class="menu__item"><a href="#" class="menu__link">About Us</a></li>
-							<li class="menu__item"><a href="#" class="menu__link">Tour Packages</a></li>
-							<li class="menu__item"><a href="#" class="menu__link">Contact Us</a></li>
+							<li class="menu__item"><a href="home.html" target="_blank" class="menu__link _active">Home</a></li>
+							<li class="menu__item"><a href="about.html" target="_blank" class="menu__link">About Us</a></li>
+							<li class="menu__item"><a href="packages.html" target="_blank" class="menu__link">Tour Packages</a></li>
+							<li class="menu__item"><a href="contact.html" target="_blank" class="menu__link">Contact Us</a></li>
 						</ul>
 					</nav>
 				</div>
@@ -37,8 +203,9 @@
 							</g>
 						</svg>
 					</div>
-					<button class="actions-header__login" aria-label="Login button" title="Login">Login</button>
-					<button data-da=".menu__body, 480" class="actions-header__reg-button colorfull-button" aria-label="Sign Up button" title="Sign Up">Sign Up</button>
+					<button data-popup="#popup-login" class="actions-header__login" aria-label="Login button" title="Login">Login</button>
+					<button data-popup="#popup" data-da=".menu__body, 480" class="actions-header__reg-button colorfull-button" aria-label="Sign Up button" title="Sign Up">Sign
+						Up</button>
 					<button type="button" class="actions-header__icon icon-menu" aria-label="Open menu button">
 						<span></span>
 						<span></span>
@@ -53,13 +220,13 @@
 				<div class="hero__container">
 					<div class="hero__body">
 						<div class="hero__header-block">
-							<h1 class="hero__title">
+							<div class="hero__title">
 								<div><span>E</span><span>n</span><span>j</span><span>o</span><span>y</span></div>
 								<div><span>i</span><span>n</span></div>
 								<div><span>t</span><span>h</span><span>e</span></div>
 								<div><span>b</span><span>e</span><span>s</span><span>t</span></div>
 								<div><span>w</span><span>a</span><span>y</span><span>!</span></div>
-							</h1>
+							</div>
 							<div class="hero__text">
 								<p>Enjoy our services for your trip anytime</p>
 							</div>
@@ -82,7 +249,7 @@
 								</nav>
 								<div data-tabs-body class="tabs__content">
 									<div class="tabs__body">
-										<form id="form-tabs-1" action="#" data-one-select class="tabs__items">
+										<form data-ajax id="form-tabs-1" action="#" method="POST" data-one-select class="tabs__items">
 											<div class="tabs__item item-tabs">
 												<div class="item-tabs__icon">
 													<svg width="25" height="16" viewBox="0 0 25 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -184,7 +351,7 @@
 										</form>
 									</div>
 									<div class="tabs__body">
-										<form id="form-tabs-2" action="#" data-one-select class="tabs__items">
+										<form data-ajax id="form-tabs-2" action="#" method="POST" data-one-select class="tabs__items">
 											<div class="tabs__item item-tabs">
 												<div class="item-tabs__icon">
 													<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -521,6 +688,7 @@
 							</div>
 						</div>
 					</div>
+				</div>
 			</section>
 			<section class="page__welcome welcome">
 				<div class="welcome__container">
@@ -583,7 +751,7 @@
 					</div>
 				</div>
 			</section>
-			<section class="page__services services">
+			<div class="page__services services">
 				<div class="services__container">
 					<div class="services__items">
 						<article data-watch data-watch-once data-watch-threshold="0.2" class="services__item item-services">
@@ -624,21 +792,21 @@
 						</article>
 					</div>
 				</div>
-			</section>
+			</div>
 			<section class="page__book book">
 				<div class="book__content-body">
 					<div class="book__container">
 						<div data-watch data-watch-once data-watch-threshold="0.3" class="book__content">
 							<div data-watch data-watch-once data-watch-threshold="0.4" class="book__body">
 								<h2 class="book__title">Book Now Bike</h2>
-								<form id="form-1" action="#" class="book__form form">
+								<form data-ajax id="form-1" action="#" method="POST" class="book__form form">
 									<div class="form__item">
 										<label for="name" class="form__label">Name and Surname</label>
 										<input type="text" name="name" id="name" placeholder="Enter your name and surname" class="form__input input" aria-label="Name and Surname area">
 									</div>
 									<div class="form__item">
 										<label for="email" class="form__label">Email Address</label>
-										<input data-required type="text" name="email" id="email" data-error="Wrong email address" placeholder="Enter your email address" class="form__input input" Email area>
+										<input data-required type="text" name="email" id="email" data-error="Wrong email address" placeholder="Enter your email address" class="form__input input" aria-label="Email area">
 									</div>
 									<div class="form__item">
 										<label for="tel" class="form__label">Telephone Number</label>
@@ -660,7 +828,7 @@
 									</div>
 									<div class="form__item">
 										<label for="time" class="form__label">Time</label>
-										<input data-required type="time" name="time" id="time" data-error="Error" placeholder="Select the time" class="form__input input" aria-label="Time area">
+										<input data-required type="time" name="time" id="time" data-error="Error" class="form__input input" aria-label="Time area">
 									</div>
 									<button type="submit" class="form__button button colorfull-button" aria-label="Button to send form" title="Send form">Book
 										Now</button>
@@ -672,7 +840,7 @@
 					</div>
 				</div>
 			</section>
-			<section class="page__packages packages">
+			<div class="page__packages packages">
 				<div class="packages__container">
 					<div class="packages__items">
 						<article data-watch data-watch-once data-watch-threshold="0.2" class="packages__item item-packages">
@@ -830,10 +998,10 @@
 						</article>
 					</div>
 				</div>
-			</section>
+			</div>
 			<section class="page__testimonials testimonials">
 				<div class="testimonials__container">
-					<div data-watch data-watch-once data-watch data-watch-once data-watch-threshold="0.2" class="testimonials__header">
+					<div data-watch data-watch-once data-watch-threshold="0.2" class="testimonials__header">
 						<h2 class="testimonials__title">Happy Customers Says</h2>
 						<div class="testimonials__buttons">
 							<button type="button" aria-label="Previous swiper button" title="Prev Slide" class="swiper-button-prev">
@@ -919,7 +1087,7 @@
 			<div class="footer__content-body">
 				<div class="footer__container">
 					<div class="footer__body">
-						<a href="#" class="footer__logo"><img src="img/header/logo.svg" alt="Bottom Site Logo"></a>
+						<a href="#" data-goto-header data-goto='.hero' class="footer__logo"><img src="img/header/logo.svg" alt="Bottom Site Logo"></a>
 						<div class="footer__content">
 							<div class="footer__item">
 								<h3 class="footer__item-title">Services</h3>
@@ -967,14 +1135,14 @@
 											</clipPath>
 										</defs>
 									</svg>
-									<a target="_blank" href="tel:	+393463685708" class="address__link"> +39 346 368 5708
+									<a href="tel:	+393463685708" class="address__link"> +39 346 368 5708
 									</a>
 								</div>
 								<div class="address__item">
 									<svg class="address__icon" width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 										<path d="M4.76628 2.83301C3.79382 2.83301 2.86118 3.21932 2.17355 3.90695C1.48592 4.59458 1.09961 5.52721 1.09961 6.49967V6.86818L12.0996 12.7917L23.0996 6.87001V6.49967C23.0996 5.52721 22.7133 4.59458 22.0257 3.90695C21.338 3.21932 20.4054 2.83301 19.4329 2.83301H4.76628ZM23.0996 8.95084L12.5341 14.6397C12.4006 14.7116 12.2513 14.7492 12.0996 14.7492C11.9479 14.7492 11.7987 14.7116 11.6651 14.6397L1.09961 8.95084V17.4997C1.09961 18.4721 1.48592 19.4048 2.17355 20.0924C2.86118 20.78 3.79382 21.1663 4.76628 21.1663H19.4329C20.4054 21.1663 21.338 20.78 22.0257 20.0924C22.7133 19.4048 23.0996 18.4721 23.0996 17.4997V8.95084Z" fill="#FA8B02" />
 									</svg>
-									<a target="_blank" href="mailto:	italiainlimo@gmail.com" class="address__link"> italiainlimo@gmail.com
+									<a href="mailto:	italiainlimo@gmail.com" class="address__link"> italiainlimo@gmail.com
 									</a>
 								</div>
 							</address>
@@ -1134,7 +1302,7 @@
 			travelPreloader();
 		</script>
 	</div>
-	<script src="js/app.min.js?_v=20250106142807"></script>
+	<script src="js/app.min.js?_v=20250126194637"></script>
 </body>
 
 </html>
