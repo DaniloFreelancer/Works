@@ -5012,7 +5012,48 @@
             }));
         }));
     }));
-    window["FLS"] = true;
+    const canvas = document.getElementById("starCanvas");
+    const ctx = canvas.getContext("2d");
+    let stars = [];
+    const numStars = 150;
+    function resizeCanvas() {
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+        createStars();
+    }
+    window.addEventListener("resize", resizeCanvas);
+    resizeCanvas();
+    function createStars() {
+        stars = [];
+        for (let i = 0; i < numStars; i++) stars.push({
+            x: Math.random() * canvas.width,
+            y: Math.random() * canvas.height,
+            radius: Math.random() * 2 + .5,
+            opacity: Math.random(),
+            speed: .02 + Math.random() * .05
+        });
+    }
+    function drawStars() {
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        ctx.fillStyle = "white";
+        stars.forEach((star => {
+            ctx.globalAlpha = star.opacity;
+            ctx.beginPath();
+            ctx.arc(star.x, star.y, star.radius, 0, Math.PI * 2);
+            ctx.fill();
+        }));
+    }
+    function animate() {
+        stars.forEach((star => {
+            star.opacity += (Math.random() - .5) * star.speed;
+            star.opacity = Math.max(.3, Math.min(1, star.opacity));
+        }));
+        drawStars();
+        requestAnimationFrame(animate);
+    }
+    createStars();
+    animate();
+    window["FLS"] = false;
     menuInit();
     spollers();
     formFieldsInit({
