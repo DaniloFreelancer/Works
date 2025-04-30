@@ -2,7 +2,7 @@
 	"items": [
 		{
 			"id": 1,
-			"image": "/assets/img/blog/01.jpg",
+			"image": "./assets/img/blog/01.jpg",
 			"date": "29 April 2024",
 			"title": "The Importance of Diversification in Investment Portfolios",
 			"text": "<p>Venenatis aliquet odio orci viverra quisque ultricies nec. Mollis dolor diam vitae est varius magna.<p>",
@@ -10,7 +10,7 @@
 		},
 		{
 			"id": 2,
-			"image": "/assets/img/blog/02.jpg",
+			"image": "./assets/img/blog/02.jpg",
 			"date": "29 April 2024",
 			"title": "Estate Planning Essentials: Protecting Your Legacy",
 			"text": "<p>Venenatis aliquet odio orci viverra quisque ultricies nec. Mollis dolor diam vitae est varius magna.<p>",
@@ -18,7 +18,7 @@
 		},
 		{
 			"id": 3,
-			"image": "/assets/img/blog/03.jpg",
+			"image": "./assets/img/blog/03.jpg",
 			"date": "29 April 2024",
 			"title": "The Impact of Inflation on Savings and Investments",
 			"text": "<p>Venenatis aliquet odio orci viverra quisque ultricies nec. Mollis dolor diam vitae est varius magna.<p>",
